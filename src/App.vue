@@ -1,13 +1,20 @@
+
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+ <p>Un jour on saura faire marcher la tag v-icon</p>
+    <app-filtre-bouton></app-filtre-bouton>
     <router-view/>
+
   </div>
 </template>
 
 <script>
+import FiltreBouton from '../src/components/FilterButton.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    appFiltreBouton: FiltreBouton
+  }
 }
 </script>
 

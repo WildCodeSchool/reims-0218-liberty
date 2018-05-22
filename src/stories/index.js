@@ -3,6 +3,10 @@ import { storiesOf } from '@storybook/vue'
 // Components
 import MyButton from '../components/Button.vue'
 import FiltreBouton from '../components/FilterButton.vue'
+import test from '../components/Test.vue'
+import Vuetify from 'vuetify'
+import Vue from 'vue'
+Vue.use(Vuetify)
 // Stories: Book Component
 
 storiesOf('button', module)
@@ -14,4 +18,7 @@ storiesOf('button', module)
     components: { FiltreBouton },
     template: '<filtre-bouton />'
   }))
-
+  .add('Tests', () => ({
+    components: { test },
+    template: '<test></test>'
+  }))
