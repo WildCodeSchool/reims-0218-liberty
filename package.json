@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^1.0.18"
   },
   "devDependencies": {
     "@storybook/vue": "^3.4.5",

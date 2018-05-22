@@ -8,5 +8,5 @@ import MyButton from '../components/Button.vue'
 storiesOf('button', module)
   .add('active', () => ({
     components: { MyButton },
-    template: '<my-button />'
+    template: '<my-button>coucou</my-button>'
   }))
