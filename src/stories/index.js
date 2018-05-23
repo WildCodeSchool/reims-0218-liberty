@@ -10,6 +10,8 @@ import MessagesBloques from "../components/MessagesBloques.vue";
 import MessagesDiffuses from "../components/MessagesDiffuses.vue";
 import Tous from "../components/Tous.vue";
 import Test from "../components/Test.vue";
+import FieldKeywords from "../components/FieldKeywords.vue";
+import LabelKeywordsChosen from "../components/LabelKeywordsChosen.vue";
 // Stories: Book Component
 
 storiesOf("Boutons", module)
@@ -34,3 +36,14 @@ storiesOf("Boutons", module)
     template: "<tous />"
   }))
 
+  storiesOf("Champs de sélection", module)
+  .add("Sélection de mots clés", () => ({
+    components: { FieldKeywords },
+    template: "<field-keywords />"
+  }))
+
+  storiesOf('Labels activés', module)
+  .add('Nuage de mots clés', () => ({
+    components: { LabelKeywordsChosen },
+    template: '<label-keywords-chosen />'
+  }))

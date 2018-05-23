@@ -15,6 +15,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
+    "@mdi/font": "^2.4.85",
     "material-icons": "^0.2.3",
     "mdi": "^2.2.43",
     "vue": "^2.5.2",
