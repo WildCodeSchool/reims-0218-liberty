@@ -1,16 +1,15 @@
 <template>
-  <v-btn outline color="grey" class="rounded">
-    <v-icon class="ml-0 pr-2">label</v-icon>
+  <v-btn class="rounded gradient">
     {{this.text}}
   </v-btn>
 </template>
 
 <script>
 export default {
-  name: "FiltreBouton",
+  name: "Tous",
   data: function() {
     return {
-      text: "Filtre mots-clés"
+      text: "Tous"
     };
   }
 };
@@ -22,5 +21,9 @@ export default {
 .rounded {
   border-radius: 5px;
   font-size: 10px;
+}
+.gradient {
+   background: linear-gradient(45deg, indigo, turquoise 96%);
+  color: white;
 }
 </style>
