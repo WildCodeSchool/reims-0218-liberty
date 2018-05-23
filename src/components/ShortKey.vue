@@ -1,20 +1,38 @@
 <template>
     <span>
-        Définir la touche raccourci:
-        <input type="text" readonly id="definedShortKey" value="">
+        Définir la touche raccourci
+        <input class="inputField" type="text" readonly id="definedShortKey" value="">
         <button>C'est prêt !</button><v-icon>mouse</v-icon>
     </span>
 </template>
 
 <script>
 
-// Script d'attribution de touche clavier
-// Recours à l'événement focus, appliqué à l'input
-// Ecouter l'input fait
-// Avoir la possibilité de le changer à tout moment
-
 export default {
-    name: 'MaterialIcons'
+    name: 'MaterialIcons',
+    mounted() {
+        // Script d'attribution de touche clavier
+        // Recours à l'événement focus, appliqué à l'input
+        // Ecouter l'input fait
+        // Avoir la possibilité de le changer à tout moment
+        const target = document.getElementById("definedShortKey")
+        let inputDefined = "F3" // Valeur par défaut
+        const activatePlaceholder = () => {
+            // alert("Il y a focus !")
+            target.setAttribute("placeholder", "Appuyez sur une touche")
+        }
+
+        const killPlaceholder = () => {
+            // alert("Il y a focus !")
+            target.setAttribute("placeholder", "")
+        }
+
+        target.addEventListener("focusin", activatePlaceholder, false)
+        target.addEventListener("focusout", killPlaceholder, false)
+        document.addEventListener('keydown', function(event) {
+           target.value = event.key
+        })
+    }
 }
 </script>
 
@@ -24,20 +42,20 @@ span {
     width: 100%;
 }
 
-input {
+.inputField {
     border: 1px solid black;
-    background-color: #999;
     margin: 0 0.5em;
     width: 15%;
 }
 
 button {
     min-width: 10%;
-    border-radius: 50%;
-    background-color: darkslategrey;
+    border-radius: 33.33% / 50%;
+    background-color: #aaa;
     color: white;
-    margin: 1em;
-    padding: 1em
+    font-weight: bold;
+    margin: 0 1em;
+    padding: 1em;
 }
 
 </style>
