@@ -13,6 +13,8 @@ import Publier from '../components/Publier.vue'
 import Moderation from '../components/Moderation.vue'
 import ActivitiesForm from '../components/ActivitiesForm.vue'
 import MyMessage from '../components/Message.vue'
+import MyCloud from '../components/WordCloud.vue'
+
 Vue.use(Vuetify)
 // Stories: Book Component
 
@@ -72,4 +74,8 @@ storiesOf('Bloc', module)
   .add('bloc de message', () => ({
     components: { MyMessage },
     template: '<my-message>memessage</my-message>'
+  }))
+  .add('nuage de mots-clés', () => ({
+    components: { MyCloud },
+    template: '<my-cloud>nuage de mots-clés</my-cloud>'
   }))
