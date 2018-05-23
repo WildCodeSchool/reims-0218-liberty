@@ -2,7 +2,6 @@ import Vuetify from 'vuetify'
 import Vue from 'vue'
 // stories/index.js
 import { storiesOf } from '@storybook/vue'
-// Components
 import MyButton from '../components/Button.vue'
 import FiltreBouton from '../components/FilterButton.vue'
 import MessagesBloques from '../components/MessagesBloques.vue'
@@ -13,6 +12,7 @@ import LabelKeywordsChosen from '../components/LabelKeywordsChosen.vue'
 import Publier from '../components/Publier.vue'
 import Moderation from '../components/Moderation.vue'
 import ActivitiesForm from '../components/ActivitiesForm.vue'
+import MyMessage from '../components/Message.vue'
 Vue.use(Vuetify)
 // Stories: Book Component
 
@@ -64,4 +64,12 @@ storiesOf('Moderation', module)
     template: '<activities-form />'
   }))
 
-// storiesOf('ActivitiesForm', module)
+storiesOf('Bloc', module)
+  .add('ActivitiesForm', () => ({
+    components: { ActivitiesForm },
+    template: '<activities-form />'
+  }))
+  .add('bloc de message', () => ({
+    components: { MyMessage },
+    template: '<my-message>memessage</my-message>'
+  }))
