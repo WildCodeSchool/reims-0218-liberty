@@ -1,6 +1,9 @@
 import { storiesOf } from '@storybook/vue'
 import MyButton from '../components/Button.vue'
 import MyMessage from '../components/Message.vue'
+import Vuetify from 'vuetify'
+import Vue from 'vue'
+Vue.use(Vuetify)
 
 storiesOf('MyButton', module)
   .add('story as a component', () => ({

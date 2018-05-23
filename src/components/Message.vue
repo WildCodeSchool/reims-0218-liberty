@@ -20,7 +20,11 @@
                         <img id="cover" src="http://cache.magicmaman.com/data/photo/w800_c18/137/elsa-home.jpg">
                         <p><input type="text" placeholder="Associez ce message à un ou plusieurs mots-clés..."></p>
                         <div id="actionButton">
-                            <button>Bouton 1</button><button>Bouton 2</button><button>Bouton 3</button><button>Bouton 4</button><button>Bouton 5</button>
+                            <v-icon>check_box_marked_outline</v-icon>
+                            <v-icon>image_plus</v-icon>
+                            <v-icon>cast_connected</v-icon>
+                            <v-icon>mouse</v-icon> <!-- pencil -->
+                            <v-icon>mouse</v-icon> <!-- trash -->
                         </div>
                     </v-flex>
                 </v-layout>
@@ -31,18 +35,13 @@
 
 <script>
 export default {
-    props: {
-        name: "Madame Soleil",
-        shortName: "MadameSoleil",
-        date: "2018-01-28",
-        avatar: "http://cache.magicmaman.com/data/photo/w800_c18/137/elsa-home.jpg",
-        message: "Il fait un froid de coin-coin !",
-        cover: "http://cache.magicmaman.com/data/photo/w800_c18/137/elsa-home.jpg",
-    }
+    name: 'MaterialIcons'
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
 #card {
             width: 50%;
             min-width: 300px;
@@ -78,8 +77,8 @@ export default {
             width: 100%;
         }
 
-        button {
-            margin: 0 5%;
-            width: 10%;
+        #actionButton i {
+            margin: 0 2%;
+            width: 32px;
         }
 </style>
