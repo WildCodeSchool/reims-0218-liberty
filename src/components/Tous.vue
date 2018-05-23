@@ -23,7 +23,9 @@ export default {
   font-size: 10px;
 }
 .gradient {
-   background: linear-gradient(45deg, indigo, turquoise 96%);
+  background: linear-gradient(45deg, indigo, turquoise 96%);
   color: white;
+  font-weight: 800;
+  letter-spacing: .2rem;
 }
 </style>

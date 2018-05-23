@@ -3,11 +3,12 @@
 <template>
   <v-container fluid>
       <tous />
-    <div d-inline-flex>
+      <v-spacer />
+    <span>
       <messages-diffuses />
       <messages-bloques />
       <filtre-bouton />
-    </div>
+    </span>
  </v-container>
 </template>
 
