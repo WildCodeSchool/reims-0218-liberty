@@ -14,6 +14,7 @@ import Moderation from '../components/Moderation.vue'
 import ActivitiesForm from '../components/ActivitiesForm.vue'
 import MyMessage from '../components/Message.vue'
 import MyCloud from '../components/WordCloud.vue'
+import MyShortKey from '../components/ShortKey.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -71,11 +72,15 @@ storiesOf('Bloc', module)
     components: { ActivitiesForm },
     template: '<activities-form />'
   }))
-  .add('bloc de message', () => ({
+  .add('Bloc de message', () => ({
     components: { MyMessage },
     template: '<my-message>memessage</my-message>'
   }))
-  .add('nuage de mots-clés', () => ({
+  .add('Nuage de mots-clés', () => ({
     components: { MyCloud },
     template: '<my-cloud>nuage de mots-clés</my-cloud>'
+  }))
+  .add('Attribution du raccourci clavier', () => ({
+    components: { MyShortKey },
+    template: '<my-short-key></my-short-key>'
   }))
