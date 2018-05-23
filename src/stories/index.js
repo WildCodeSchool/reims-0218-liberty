@@ -1,49 +1,67 @@
-import Vuetify from "vuetify";
-import Vue from "vue";
-Vue.use(Vuetify);
+import Vuetify from 'vuetify'
+import Vue from 'vue'
 // stories/index.js
-import { storiesOf } from "@storybook/vue";
+import { storiesOf } from '@storybook/vue'
 // Components
-import MyButton from "../components/Button.vue";
-import FiltreBouton from "../components/FilterButton.vue";
-import MessagesBloques from "../components/MessagesBloques.vue";
-import MessagesDiffuses from "../components/MessagesDiffuses.vue";
-import Tous from "../components/Tous.vue";
-import Test from "../components/Test.vue";
-import FieldKeywords from "../components/FieldKeywords.vue";
-import LabelKeywordsChosen from "../components/LabelKeywordsChosen.vue";
+import MyButton from '../components/Button.vue'
+import FiltreBouton from '../components/FilterButton.vue'
+import MessagesBloques from '../components/MessagesBloques.vue'
+import MessagesDiffuses from '../components/MessagesDiffuses.vue'
+import Tous from '../components/Tous.vue'
+import FieldKeywords from '../components/FieldKeywords.vue'
+import LabelKeywordsChosen from '../components/LabelKeywordsChosen.vue'
+import Publier from '../components/Publier.vue'
+import Moderation from '../components/Moderation.vue'
+import ActivitiesForm from '../components/ActivitiesForm.vue'
+Vue.use(Vuetify)
 // Stories: Book Component
 
-storiesOf("Boutons", module)
-  .add("de base", () => ({
+storiesOf('Boutons', module)
+  .add('de base', () => ({
     components: { MyButton },
-    template: "<my-button></my-button>"
+    template: '<my-button />'
   }))
-  .add("bouton qui filtre les mots-clés", () => ({
+  .add('bouton qui filtre les mots-clés', () => ({
     components: { FiltreBouton },
-    template: "<filtre-bouton />"
+    template: '<filtre-bouton />'
   }))
-  .add("Messages bloqués", () => ({
+  .add('Messages bloqués', () => ({
     components: { MessagesBloques },
-    template: "<messages-bloques />"
+    template: '<messages-bloques />'
   }))
-  .add("Messages diffusés", () => ({
+  .add('Messages diffusés', () => ({
     components: { MessagesDiffuses },
-    template: "<messages-diffuses />"
+    template: '<messages-diffuses />'
   }))
-  .add("Tous", () => ({
+  .add('Tous', () => ({
     components: { Tous },
-    template: "<tous />"
+    template: '<tous />'
   }))
 
-  storiesOf("Champs de sélection", module)
-  .add("Sélection de mots clés", () => ({
+storiesOf('Champs de sélection', module)
+  .add('Sélection de mots clés', () => ({
     components: { FieldKeywords },
-    template: "<field-keywords />"
+    template: '<field-keywords />'
   }))
 
-  storiesOf('Labels activés', module)
+storiesOf('Labels activés', module)
   .add('Nuage de mots clés', () => ({
     components: { LabelKeywordsChosen },
     template: '<label-keywords-chosen />'
   }))
+  .add('Publier', () => ({
+    components: { Publier },
+    template: '<publier />'
+  }))
+
+storiesOf('Moderation', module)
+  .add('Moderation', () => ({
+    components: { Moderation },
+    template: '<moderation />'
+  }))
+  .add('ActivitiesForm', () => ({
+    components: { ActivitiesForm },
+    template: '<activities-form />'
+  }))
+
+// storiesOf('ActivitiesForm', module)
