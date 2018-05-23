@@ -1,15 +1,12 @@
-import Vue from 'vue'
-Vue.use(Vuetify)
-
 <template>
   <v-app>
     <v-btn outline color="grey" class="rounded">
       {{this.text}}
       </v-btn>
       <span class="group pa-2">
-        <v-icon class="icones">mouse</v-icon>
+        <v-icon>mouse</v-icon>
       </span>
-      <span class="group pa-2 icones">
+      <span class="group pa-2">
         <v-icon color="black">home</v-icon>
         <v-icon dark left>event</v-icon>
         <v-icon>info</v-icon>
@@ -34,10 +31,6 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 .rounded {
   border-radius: 5px;
-  font-family: "Material Icons";
-}
-
-.icones {
   font-family: "Material Icons";
 }
 
