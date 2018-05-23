@@ -4,7 +4,7 @@
       1
     </v-chip>
     <v-chip class="blueChip">
-      Nuage de mots clés
+      {{ this.activity }}
     </v-chip>
      <v-switch color="cyan"
       :label="`Switch 1: ${switch1.toString()}`"
@@ -17,29 +17,30 @@
 
 <script>
   export default {
-    name: "LabelKeywordsChosen",
+    name: "LabelActivity",
     data: function() {
       return {
         chipColor: "#102C60",
         checkbox: true,
         radioGroup: 1,
-        switch1: true
+        switch1: true,
+        activity: "Nuage de mots clés"
       }
     }
   };
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+  @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-.application--wrap .blueChip {
-  background-color: rgb(15, 64, 92);
-  color: white;
-  font-weight:800;
-  width: fit-content;
-}
+  .application--wrap .blueChip {
+    background-color: rgb(15, 64, 92);
+    color: white;
+    font-weight:800;
+    width: fit-content;
+  }
 
-.application--wrap label {
-  display: none;
-}
+  .application--wrap label {
+    display: none;
+  }
 </style>

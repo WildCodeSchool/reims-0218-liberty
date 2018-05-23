@@ -15,6 +15,7 @@ import ActivitiesForm from '../components/ActivitiesForm.vue'
 import MyMessage from '../components/Message.vue'
 import MyCloud from '../components/WordCloud.vue'
 import MyShortKey from '../components/ShortKey.vue'
+import LabelActivity from '../components/LabelActivity.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -39,6 +40,12 @@ storiesOf('Boutons', module)
   .add('Tous', () => ({
     components: { Tous },
     template: '<tous />'
+  }))
+
+  storiesOf('Labels', module)
+  .add('labels activités', () => ({
+    components: { LabelActivity },
+    template: '<label-activity />'
   }))
 
 storiesOf('Champs de sélection', module)
