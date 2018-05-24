@@ -1,15 +1,15 @@
 
 
 <template>
-  <v-container fluid>
+  <v-toolbar>
       <tous />
       <v-spacer />
-    <span>
+    <div class="hidden-sm-and-down">
       <messages-diffuses />
       <messages-bloques />
       <filtre-bouton />
-    </span>
- </v-container>
+    </div>
+ </v-toolbar>
 </template>
 
 <script>

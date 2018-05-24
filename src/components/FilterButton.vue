@@ -22,5 +22,7 @@ export default {
 .rounded {
   border-radius: 5px;
   font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .2rem;
 }
 </style>

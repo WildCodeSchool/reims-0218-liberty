@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-toolbar>
     <v-chip class="blueChip" d-inline-block>
       1
     </v-chip>
@@ -12,7 +12,7 @@
     ></v-switch>
     <v-icon color="cyan">cast</v-icon>
     <!-- le vrai: cast-connected -->
-  </v-app>
+  </v-toolbar>
 </template>
 
 <script>

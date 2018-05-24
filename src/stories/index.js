@@ -42,7 +42,7 @@ storiesOf('Boutons', module)
     template: '<tous />'
   }))
 
-  storiesOf('Labels', module)
+storiesOf('Labels', module)
   .add('labels activités', () => ({
     components: { LabelActivity },
     template: '<label-activity />'
@@ -55,6 +55,10 @@ storiesOf('Champs de sélection', module)
   }))
 
 storiesOf('Labels activés', module)
+  .add('Activités', () => ({
+    components: { LabelActivity },
+    template: '<label-activity />'
+  }))
   .add('Nuage de mots clés', () => ({
     components: { LabelKeywordsChosen },
     template: '<label-keywords-chosen />'

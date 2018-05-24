@@ -6,12 +6,6 @@
     <v-chip class="blueChip">
       {{ this.activity }}
     </v-chip>
-     <v-switch color="cyan"
-      :label="`Switch 1: ${switch1.toString()}`"
-      v-model="switch1"
-    ></v-switch>
-    <v-icon color="cyan">cast</v-icon>
-    <!-- le vrai: cast-connected -->
   </v-app>
 </template>
 
