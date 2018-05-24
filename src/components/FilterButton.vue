@@ -7,13 +7,13 @@
 
 <script>
 export default {
-  name: "FiltreBouton",
-  data: function() {
+  name: 'FiltreBouton',
+  data: function () {
     return {
-      text: "Filtre mots-clés"
-    };
+      text: 'Filtre mots-clés'
+    }
   }
-};
+}
 </script>
 
 <style>
