@@ -2,10 +2,10 @@
   <div>
     <v-toolbar>
       <v-chip class="blueChip">
-        1
+        {{activity.index}}
       </v-chip>
       <v-chip class="blueChip">
-        Nuage de mots clés
+        {{activity.title}}
       </v-chip>
       <!-- <v-toolbar-items > -->
     <div>
@@ -24,6 +24,12 @@
 <script>
 export default {
   name: "LabelKeywordsChosen",
+  props: {
+    activity: {
+      type: Array,
+      required: true
+    }
+  },
   data: function() {
     return {
       chipColor: "#102C60",
