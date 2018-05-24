@@ -1,5 +1,6 @@
 <template>
   <v-btn outline color="grey" class="rounded">
+    <v-icon>cast</v-icon>
     {{this.text}}
   </v-btn>
 </template>
