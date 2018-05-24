@@ -2,7 +2,7 @@
     <span>
         Définir la touche raccourci
         <input class="inputField" type="text" readonly id="definedShortKey" value="">
-        <button>C'est prêt !</button><v-icon>mouse</v-icon>
+        <v-chip>C'est prêt !</v-chip><v-icon>mouse</v-icon>
     </span>
 </template>
 
@@ -55,6 +55,9 @@ export default {
                 case "à":
                     target.value = "0"
                     break
+                case " ":
+                    target.value = "ESPACE"
+                    break
                 default:
                     break
             }
@@ -67,22 +70,24 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 span {
     width: 100%;
+    color: #72768d;
 }
 
 .inputField {
     border: 1px solid black;
     margin: 0 0.5em;
-    width: 15%;
+    width: auto;
 }
 
-button {
-    min-width: 10%;
-    border-radius: 33.33% / 50%;
-    background-color: #aaa;
-    color: white;
-    font-weight: bold;
+.chip {
+    background-color: #72768d;
     margin: 0 1em;
-    padding: 1em;
+    width: auto;
+}
+
+.chip__content {
+    color: white;
+    font-weight: 800;
 }
 
 </style>
