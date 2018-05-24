@@ -3,19 +3,19 @@
         <v-content>
             <v-layout row wrap>
                 <v-flex xs12>
-                    <p id="author">Sherlock Holmes Officiel - @SherlockOff - 24 mai 2018</p>
+                    <p id="author">{{this.author}} - @{{this.arobase}} - {{this.date}}</p>
                 </v-flex>
             </v-layout>
             <v-layout row id="bodyMessage">
                 <v-flex hidden-xs-only>
-                    <v-avatar :size="64"><img id="avatar" src="https://i.pinimg.com/originals/ef/c8/d1/efc8d1918502b53a8615711bb75ec7b7.jpg"></v-avatar>
+                    <v-avatar :size="64"><img id="avatar" v-bind:src="this.avatar"></v-avatar>
                 </v-flex>
                 <v-flex xs12 md10>
-                    <p id="message">Je lis en vous comme dans un livre grand ouvert. Je sais que Dracula a menti à propos de son alibi. Il ne pouvait pas être en rendez-vous chez Pôle Emploi, on était dimanche ! Dracula est donc accusé du meurtre de Maxence Millescamps !</p>
+                    <p id="message">{{this.message}}</p>
                 </v-flex>
             </v-layout>
             <v-layout row wrap>
-                <img id="cover" src="https://i.kinja-img.com/gawker-media/image/upload/s---dtVtuO7--/c_scale,f_auto,fl_progressive,q_80,w_800/obbfrtkouoiki2zhad0f.jpg">
+                <img id="cover" v-bind:src="this.cover">
                 <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
                 <span id="actionButton" class="mx-auto">
                     <v-icon>check_box_marked_outline</v-icon>
@@ -31,7 +31,18 @@
 
 <script>
 export default {
-    name: 'MaterialIcons'
+  name: 'Message',
+  props: ['author', 'arobase', 'date', 'avatar', 'message', 'cover'],
+  data: function () {
+    return {
+      author: this.author,
+      arobase: this.arobase,
+      date: this.date,
+      avatar: this.avatar,
+      message: this.message,
+      cover: this.cover
+    }
+  }
 }
 </script>
 
