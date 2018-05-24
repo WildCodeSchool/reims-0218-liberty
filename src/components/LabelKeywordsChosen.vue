@@ -1,22 +1,24 @@
 <template>
-
+  <div>
     <v-toolbar>
-
       <v-chip class="blueChip">
         1
       </v-chip>
       <v-chip class="blueChip">
         Nuage de mots clés
       </v-chip>
-      <v-switch color="cyan"
+      <!-- <v-toolbar-items > -->
+    <div>
+      <v-switch color="cyan" hide-details class="ml-2"
         :label="`Switch 1: ${switch1.toString()}`"
         v-model="switch1"
       ></v-switch>
-      <v-icon color="cyan">cast</v-icon>
+    </div>
+      <v-icon color="cyan" class="ml-2">cast</v-icon>
       <!-- le vrai: cast-connected -->
-
+      <!-- </v-toolbar-items> -->
     </v-toolbar>
-
+  </div>
 </template>
 
 <script>
@@ -36,7 +38,7 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-.blueChip {
+.theme--light .chip, .application .theme--light.chip .blueChip {
   background-color: rgb(15, 64, 92);
   color: white;
   font-weight: 800;

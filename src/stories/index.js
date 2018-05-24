@@ -16,6 +16,8 @@ import MyMessage from '../components/Message.vue'
 import MyCloud from '../components/WordCloud.vue'
 import MyShortKey from '../components/ShortKey.vue'
 import LabelActivity from '../components/LabelActivity.vue'
+import SwitchActivityOption from '../components/SwitchActivityOption.vue'
+import ListLabelActivities from '../components/ListLabelActivities.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -41,6 +43,11 @@ storiesOf('Boutons', module)
     components: { Tous },
     template: '<tous />'
   }))
+  .add('Switch', () => ({
+    components: { SwitchActivityOption },
+    template: '<switch-activity-option />'
+  }))
+
 
 storiesOf('Labels', module)
   .add('labels activités', () => ({
@@ -78,7 +85,7 @@ storiesOf('Moderation', module)
     template: '<activities-form />'
   }))
 
-storiesOf('Bloc', module)
+storiesOf('Blocs', module)
   .add('ActivitiesForm', () => ({
     components: { ActivitiesForm },
     template: '<activities-form />'
@@ -94,4 +101,9 @@ storiesOf('Bloc', module)
   .add('Attribution du raccourci clavier', () => ({
     components: { MyShortKey },
     template: '<my-short-key></my-short-key>'
+  }))
+  .add('Liste des activités sélectionnées', () => ({
+    components: { ListLabelActivities },
+    template: '<list-label-activities></list-label-activities>'
+
   }))
