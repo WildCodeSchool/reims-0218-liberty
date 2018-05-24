@@ -11,26 +11,53 @@
 export default {
     name: 'MaterialIcons',
     mounted() {
-        // Script d'attribution de touche clavier
-        // Recours à l'événement focus, appliqué à l'input
-        // Ecouter l'input fait
-        // Avoir la possibilité de le changer à tout moment
         const target = document.getElementById("definedShortKey")
-        let inputDefined = "F3" // Valeur par défaut
         const activatePlaceholder = () => {
-            // alert("Il y a focus !")
             target.setAttribute("placeholder", "Appuyez sur une touche")
         }
 
         const killPlaceholder = () => {
-            // alert("Il y a focus !")
             target.setAttribute("placeholder", "")
         }
 
         target.addEventListener("focusin", activatePlaceholder, false)
         target.addEventListener("focusout", killPlaceholder, false)
         document.addEventListener('keydown', function(event) {
-           target.value = event.key
+           target.value = (event.key).toLowerCase()
+            switch (target.value) {
+                case "&":
+                    target.value = "1"
+                    break
+                case "é":
+                    target.value = "2"
+                    break
+                case "\"":
+                    target.value = "3"
+                    break
+                case "'":
+                    target.value = "4"
+                    break
+                case "(":
+                    target.value = "5"
+                    break
+                case "-":
+                    target.value = "6"
+                    break
+                case "è":
+                    target.value = "7"
+                    break
+                case "_":
+                    target.value = "8"
+                    break
+                case "ç":
+                    target.value = "9"
+                    break
+                case "à":
+                    target.value = "0"
+                    break
+                default:
+                    break
+            }
         })
     }
 }
