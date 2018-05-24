@@ -1,5 +1,3 @@
-
-
 <template>
   <v-toolbar>
       <tous />
@@ -9,7 +7,7 @@
       <messages-bloques />
       <filtre-bouton />
     </div>
- </v-toolbar>
+  </v-toolbar>
 </template>
 
 <script>

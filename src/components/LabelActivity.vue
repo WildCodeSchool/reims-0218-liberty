@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+  <span>
     <v-chip class="blueChip" d-inline-block>
       1
     </v-chip>
     <v-chip class="blueChip">
       {{ this.activity }}
     </v-chip>
-  </v-app>
+  </span>
 </template>
 
 <script>
@@ -27,14 +27,14 @@
 <style>
   @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-  .application--wrap .blueChip {
+   .blueChip {
     background-color: rgb(15, 64, 92);
     color: white;
     font-weight:800;
     width: fit-content;
   }
 
-  .application--wrap label {
+  label {
     display: none;
   }
 </style>
