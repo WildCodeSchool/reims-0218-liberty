@@ -18,6 +18,7 @@ import MyShortKey from '../components/ShortKey.vue'
 import LabelActivity from '../components/LabelActivity.vue'
 import SwitchActivityOption from '../components/SwitchActivityOption.vue'
 import ListLabelActivities from '../components/ListLabelActivities.vue'
+import FloatingButton from '../components/FloatingButton.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -47,7 +48,10 @@ storiesOf('Boutons', module)
     components: { SwitchActivityOption },
     template: '<switch-activity-option />'
   }))
-
+  .add('Bouton flottant', () => ({
+    components: { FloatingButton },
+    template: '<floating-button />'
+  }))
 
 storiesOf('Labels', module)
   .add('labels activités', () => ({
