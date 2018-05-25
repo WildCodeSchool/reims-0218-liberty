@@ -15,6 +15,7 @@ import ActivitiesForm from '../components/ActivitiesForm.vue'
 import MyMessage from '../components/Message.vue'
 import MyCloud from '../components/WordCloud.vue'
 import MyShortKey from '../components/ShortKey.vue'
+import MyReaction from '../components/PublicReaction.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -83,4 +84,8 @@ storiesOf('Bloc', module)
   .add('Attribution du raccourci clavier', () => ({
     components: { MyShortKey },
     template: '<my-short-key></my-short-key>'
+  }))
+  .add('Encart de réaction du public', () => ({
+    components: { MyReaction },
+    template: '<my-reaction></my-reaction>'
   }))
