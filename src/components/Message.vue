@@ -47,46 +47,21 @@
                     </v-flex>
                 </v-layout>
                 <v-layout row wrap>
+                  <div class="illustration">
                     <img id="cover" src="http://www.toutelatele.com/IMG/arton54183.jpg">
-                    <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-                    <span id="actionButton" class="mx-auto">
-                        <v-icon>check_box_marked_outline</v-icon>
-                        <v-icon>image_plus</v-icon>
-                        <v-icon>cast_connected</v-icon>
-                        <v-icon>mouse</v-icon> <!-- pencil -->
-                        <v-icon>mouse</v-icon> <!-- trash -->
-                    </span>
+                  </div>
+                  <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
+                  <span id="actionButton" class="mx-auto">
+                      <v-icon>check_box_marked_outline</v-icon>
+                      <v-icon>image_plus</v-icon>
+                      <v-icon>cast_connected</v-icon>
+                      <v-icon>mouse</v-icon> <!-- pencil -->
+                      <v-icon>mouse</v-icon> <!-- trash -->
+                  </span>
                 </v-layout>
             </v-content>
         </div>
-        <div id="card">
-            <v-content>
-                <v-layout row wrap>
-                    <v-flex xs12>
-                        <p id="author">Florian "Conan" Hourlier - @DetectiveFlorian - 25 mai 2018</p>
-                    </v-flex>
-                </v-layout>
-                <v-layout row id="bodyMessage">
-                    <v-flex hidden-xs-only>
-                        <v-avatar :size="64"><img id="avatar" src="https://zupimages.net/up/18/21/6yz9.jpg"></v-avatar>
-                    </v-flex>
-                    <v-flex xs12 md10>
-                        <p id="message">@SuperNanny, vous aurez le même sort que celui qui oserait faire 3 fois un double au Monopoly: la prison, sans passer par la case départ, et sans toucher les 20000 Francs !</p>
-                    </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                    <img id="cover" src="https://medias.comixtrip.fr/wp-content/uploads/2015/12/aoyamaDetectiveconan81-7.jpg">
-                    <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-                    <span id="actionButton" class="mx-auto">
-                        <v-icon>check_box_marked_outline</v-icon>
-                        <v-icon>image_plus</v-icon>
-                        <v-icon>cast_connected</v-icon>
-                        <v-icon>mouse</v-icon> <!-- pencil -->
-                        <v-icon>mouse</v-icon> <!-- trash -->
-                    </span>
-                </v-layout>
-            </v-content>
-        </div>
+
     </v-app>
 </template>
 
@@ -111,7 +86,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #card {
-    width: 30%;
+    width: 60%;
     min-width: 300px;
     border-radius: 5%;
     border: 2px solid purple;
@@ -144,10 +119,12 @@ export default {
 }
 
 #cover {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     padding: 0;
 }
+
+
 
 #message {
     text-align: left;
