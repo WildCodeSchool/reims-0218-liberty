@@ -1,14 +1,13 @@
-
-
 <template>
-  <v-container fluid>
+  <v-toolbar>
       <tous />
-    <div d-inline-flex>
+      <v-spacer />
+    <div class="hidden-sm-and-down">
       <messages-diffuses />
       <messages-bloques />
       <filtre-bouton />
     </div>
- </v-container>
+  </v-toolbar>
 </template>
 
 <script>
