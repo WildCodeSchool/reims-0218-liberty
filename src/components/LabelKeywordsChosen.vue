@@ -26,7 +26,7 @@ export default {
   name: "LabelKeywordsChosen",
   props: {
     activity: {
-      type: Array,
+      type: Object,
       required: true
     }
   },
