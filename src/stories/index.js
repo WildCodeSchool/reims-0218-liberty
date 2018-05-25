@@ -71,10 +71,6 @@ storiesOf('Labels activés', module)
     components: { LabelActivity },
     template: '<label-activity />'
   }))
-  .add('Nuage de mots clés', () => ({
-    components: { LabelKeywordsChosen },
-    template: '<label-keywords-chosen />'
-  }))
   .add('Publier', () => ({
     components: { Publier },
     template: '<publier />'
