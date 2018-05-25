@@ -39,7 +39,7 @@
     display: inline-block;
     border: 1px solid #777;
     padding: 0.25em 0.75em;
-    border-radius: 50%;
+    border-radius: 7px;
     margin: 0.5em 1em;
 }
 
