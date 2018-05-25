@@ -1,21 +1,52 @@
+<!-- <template>
+    <div id="card">
+        <v-content>
+            <v-layout row wrap>
+                <v-flex xs12>
+                    <p id="author">{{author}} - @{{arobase}} - {{date}}</p>
+                </v-flex>
+            </v-layout>
+            <v-layout row id="bodyMessage">
+                <v-flex hidden-xs-only>
+                    <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
+                </v-flex>
+                <v-flex xs12 md10>
+                    <p id="message">{{message}}</p>
+                </v-flex>
+            </v-layout>
+            <v-layout row wrap>
+                <img id="cover" v-bind:src="cover">
+                <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
+                <span id="actionButton" class="mx-auto">
+                    <v-icon>check_box_marked_outline</v-icon>
+                    <v-icon>image_plus</v-icon>
+                    <v-icon>cast_connected</v-icon>
+                    <v-icon>mouse</v-icon>
+                    <v-icon>mouse</v-icon>
+                </span>
+            </v-layout>
+        </v-content>
+    </div>
+</template> -->
+
 <template>
     <div id="card">
         <v-content>
             <v-layout row wrap>
                 <v-flex xs12>
-                    <p id="author">{{this.author}} - @{{this.arobase}} - {{this.date}}</p>
+                    <p id="author">Super Nanny Officiel - @SuperNanny - 25 mai 2018</p>
                 </v-flex>
             </v-layout>
             <v-layout row id="bodyMessage">
                 <v-flex hidden-xs-only>
-                    <v-avatar :size="64"><img id="avatar" v-bind:src="this.avatar"></v-avatar>
+                    <v-avatar :size="64"><img id="avatar" src="https://pbs.twimg.com/media/DSEsQf7W0AA5rNd.jpg"></v-avatar>
                 </v-flex>
                 <v-flex xs12 md10>
-                    <p id="message">{{this.message}}</p>
+                    <p id="message">Maxence est comme un enfant de 3 ans. Toujours en train de râler pour un oui ou pour un non. Si je devais vous donner un conseil, ça serait de le priver de kebabs pour le restant de ses jours ; et de le forcer à boire de l'huile de foie de morue ! C'est un ami qui m'a proposé cette idée ! :)</p>
                 </v-flex>
             </v-layout>
             <v-layout row wrap>
-                <img id="cover" v-bind:src="this.cover">
+                <img id="cover" src="http://www.toutelatele.com/IMG/arton54183.jpg">
                 <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
                 <span id="actionButton" class="mx-auto">
                     <v-icon>check_box_marked_outline</v-icon>
@@ -35,12 +66,12 @@ export default {
   props: ['author', 'arobase', 'date', 'avatar', 'message', 'cover'],
   data: function () {
     return {
-      author: this.author,
-      arobase: this.arobase,
-      date: this.date,
-      avatar: this.avatar,
-      message: this.message,
-      cover: this.cover
+      addAuthor: this.author,
+      addArobase: this.arobase,
+      addDate: this.date,
+      addAvatar: this.avatar,
+      addMessage: this.message,
+      addCover: this.cover
     }
   }
 }
