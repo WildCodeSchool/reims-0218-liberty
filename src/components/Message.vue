@@ -31,8 +31,8 @@
 
 <template>
     <v-app>
-        <div id="card">
-            <v-content>
+        <div>
+            <v-flex xs6 id="card">
                 <v-layout row wrap>
                     <v-flex xs12>
                         <p id="author">Super Nanny Officiel - @SuperNanny - 25 mai 2018</p>
@@ -47,9 +47,12 @@
                     </v-flex>
                 </v-layout>
                 <v-layout row wrap>
+                  <v-flex xs12>
                   <div class="illustration">
                     <img id="cover" src="http://www.toutelatele.com/IMG/arton54183.jpg">
                   </div>
+                </v-flex>
+
                   <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
                   <span id="actionButton" class="mx-auto">
                       <v-icon>check_box_marked_outline</v-icon>
@@ -59,7 +62,7 @@
                       <v-icon>mouse</v-icon> <!-- trash -->
                   </span>
                 </v-layout>
-            </v-content>
+            </v-flex>
         </div>
 
     </v-app>
@@ -86,7 +89,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #card {
-    width: 60%;
+    /* width: 100%; */
     min-width: 300px;
     border-radius: 5%;
     border: 2px solid purple;
@@ -119,12 +122,10 @@ export default {
 }
 
 #cover {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     padding: 0;
 }
-
-
 
 #message {
     text-align: left;
