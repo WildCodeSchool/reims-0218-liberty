@@ -21,7 +21,7 @@ export default {
 .rounded {
   border-radius: 5px;
   font-size: 10px;
-  backgroung-color: "green";
-  color: "white"
 }
+
+
 </style>
