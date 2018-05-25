@@ -24,6 +24,7 @@ export default {
 .rounded {
   border-radius: 5px;
   font-family: "Material Icons";
+  width: fit-content;
 }
 
 </style>

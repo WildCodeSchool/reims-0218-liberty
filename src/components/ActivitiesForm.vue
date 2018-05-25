@@ -20,6 +20,7 @@
 </template>
 
 <script>
+  import Tous from "./Tous.vue";
 export default {
   name: 'ActivitiesForm',
   data: function () {

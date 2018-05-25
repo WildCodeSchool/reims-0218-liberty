@@ -15,6 +15,11 @@ import ActivitiesForm from '../components/ActivitiesForm.vue'
 import MyMessage from '../components/Message.vue'
 import MyCloud from '../components/WordCloud.vue'
 import MyShortKey from '../components/ShortKey.vue'
+import LabelActivity from '../components/LabelActivity.vue'
+import SwitchActivityOption from '../components/SwitchActivityOption.vue'
+import ListLabelActivities from '../components/ListLabelActivities.vue'
+import FloatingButton from '../components/FloatingButton.vue'
+import MyReaction from '../components/PublicReaction.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -40,6 +45,20 @@ storiesOf('Boutons', module)
     components: { Tous },
     template: '<tous />'
   }))
+  .add('Switch', () => ({
+    components: { SwitchActivityOption },
+    template: '<switch-activity-option />'
+  }))
+  .add('Bouton flottant', () => ({
+    components: { FloatingButton },
+    template: '<floating-button />'
+  }))
+
+storiesOf('Labels', module)
+  .add('labels activités', () => ({
+    components: { LabelActivity },
+    template: '<label-activity />'
+  }))
 
 storiesOf('Champs de sélection', module)
   .add('Sélection de mots clés', () => ({
@@ -48,9 +67,9 @@ storiesOf('Champs de sélection', module)
   }))
 
 storiesOf('Labels activés', module)
-  .add('Nuage de mots clés', () => ({
-    components: { LabelKeywordsChosen },
-    template: '<label-keywords-chosen />'
+  .add('Activités', () => ({
+    components: { LabelActivity },
+    template: '<label-activity />'
   }))
   .add('Publier', () => ({
     components: { Publier },
@@ -67,7 +86,7 @@ storiesOf('Moderation', module)
     template: '<activities-form />'
   }))
 
-storiesOf('Bloc', module)
+storiesOf('Blocs', module)
   .add('ActivitiesForm', () => ({
     components: { ActivitiesForm },
     template: '<activities-form />'
@@ -83,4 +102,13 @@ storiesOf('Bloc', module)
   .add('Attribution du raccourci clavier', () => ({
     components: { MyShortKey },
     template: '<my-short-key></my-short-key>'
+  }))
+  .add('Encart de réaction du public', () => ({
+    components: { MyReaction },
+    template: '<my-reaction></my-reaction>'
+  }))
+  .add('Liste des activités sélectionnées', () => ({
+    components: { ListLabelActivities },
+    template: '<list-label-activities></list-label-activities>'
+
   }))
