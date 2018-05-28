@@ -26,19 +26,19 @@ export default {
 </script>
 
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-  .cyanSwitch {
-    color: cyan;
-  }
+.cyanSwitch {
+  color: cyan;
+}
 
-  .input-group.input-group--selection-controls.switch label {
-    padding-left: 14px;
+.input-group.input-group--selection-controls.switch label {
+  padding-left: 14px;
 
-    /* display: none; */
-  }
+  /* display: none; */
+}
 
 div .input-group.input-group--selection-controls .switch {
-    flex-wrap: nowrap;
-  }
+  flex-wrap: nowrap;
+}
 </style>

@@ -24,16 +24,20 @@ export default {
   },
   data: function() {
     return {
-      listActivities: [{
-        index: 1,
-        title: "Nuage de mots clés"},
+      listActivities: [
         {
-        index: 2,
-        title: "Vote"},
+          index: 1,
+          title: "Nuage de mots clés"
+        },
         {
-        index: 3,
-        title: "Réaction du public"
-        }]
+          index: 2,
+          title: "Vote"
+        },
+        {
+          index: 3,
+          title: "Réaction du public"
+        }
+      ]
     };
   }
 };
@@ -41,6 +45,4 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
-
-
 </style>
