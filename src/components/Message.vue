@@ -1,34 +1,3 @@
-<!-- <template>
-    <div id="card">
-        <v-content>
-            <v-layout row wrap>
-                <v-flex xs12>
-                    <p id="author">{{author}} - @{{arobase}} - {{date}}</p>
-                </v-flex>
-            </v-layout>
-            <v-layout row id="bodyMessage">
-                <v-flex hidden-xs-only>
-                    <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
-                </v-flex>
-                <v-flex xs12 md10>
-                    <p id="message">{{message}}</p>
-                </v-flex>
-            </v-layout>
-            <v-layout row wrap>
-                <img id="cover" v-bind:src="cover">
-                <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-                <span id="actionButton" class="mx-auto">
-                    <v-icon>check_box_marked_outline</v-icon>
-                    <v-icon>image_plus</v-icon>
-                    <v-icon>cast_connected</v-icon>
-                    <v-icon>mouse</v-icon>
-                    <v-icon>mouse</v-icon>
-                </span>
-            </v-layout>
-        </v-content>
-    </div>
-</template> -->
-
 <template>
     <v-app>
         <div id="card">
