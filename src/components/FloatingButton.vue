@@ -46,27 +46,25 @@
 </template>
 
 <script>
-  export default {
-    name: "FloatingButton",
-    data: () => ({
-      direction: 'top',
-      right: true,
-      bottom: true,
-      transition: 'scale-transition'
-    })
-  }
-
+export default {
+  name: "FloatingButton",
+  data: () => ({
+    direction: 'top',
+    right: true,
+    bottom: true,
+    transition: 'scale-transition'
+  })
+}
 </script>
 
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-  #create .speed-dial {
-    position: absolute;
-  }
+#create .speed-dial {
+  position: absolute;
+}
 
-  #create .btn--floating {
-    position: relative;
-  }
-
+#create .btn--floating {
+  position: relative;
+}
 </style>

@@ -21,39 +21,40 @@
 
 <script>
 export default {
-  name: 'Reaction-Public',
-  data: function () {
+  name: "Reaction-Public",
+  data: function() {
     return {
       text: "Réaction du public",
       column: null,
       row: null,
       switch1: true
-    }
+    };
   }
-}
+};
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 #optionsPublic {
-    text-align: left;
-    line-height: 4em;
+  text-align: left;
+  line-height: 4em;
 }
 
 #optionsPublic li input {
-    margin-left: 4em;
+  margin-left: 4em;
 }
 
-#box, #affichage {
-    border: 1px solid black;
+#box,
+#affichage {
+  border: 1px solid black;
 }
 
 #box {
-    width: 100%;
-    height: 5em;
+  width: 100%;
+  height: 5em;
 }
 
 #affichage {
-    height: 2em;
-    width: 4em;
+  height: 2em;
+  width: 4em;
 }
 </style>
