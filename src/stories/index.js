@@ -20,6 +20,7 @@ import SwitchActivityOption from '../components/SwitchActivityOption.vue'
 import ListLabelActivities from '../components/ListLabelActivities.vue'
 import FloatingButton from '../components/FloatingButton.vue'
 import MyReaction from '../components/PublicReaction.vue'
+import PageActivities from '../components/PageActivities.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -111,4 +112,10 @@ storiesOf('Blocs', module)
     components: { ListLabelActivities },
     template: '<list-label-activities></list-label-activities>'
 
+  }))
+
+storiesOf('Pages', module)
+  .add('page Modération', () => ({
+    components: { PageActivities },
+    template: '<page-activities />'
   }))
