@@ -23,16 +23,17 @@
           Personnalisez la box du message :
         </v-list-tile>
         <v-spacer></v-spacer>
-        <v-list-tile>
+
           <v-list-tile-content>
           <v-text-field
+              id="reaction-input"
               name="personnalisation"
               label="Réagissez en direct !"
               placeholder="Réagissez en direct !"
               textarea
           />
         </v-list-tile-content>
-        </v-list-tile>
+
 
       </v-list>
     </v-layout>
@@ -54,6 +55,10 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 #optionsPublic {
   text-align: left;
+}
+
+#reaction-input {
+  height: 20px;
 }
 
 .label-hidden label {
