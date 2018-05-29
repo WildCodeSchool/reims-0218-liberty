@@ -4,9 +4,9 @@
       <v-layout row wrap>
         <v-flex xs6>
           <v-switch v-model="switch1" label="1" value="1"></v-switch>
-          <v-switch v-model="switch1" label="2" value="2"></v-switch>
-          <v-switch v-model="switch1" label="3" value="3"></v-switch>
-          <v-switch v-model="switch1" label="4" value="4"></v-switch>
+          <v-switch v-model="switch2" label="2" value="2"></v-switch>
+          <v-switch v-model="switch3" label="3" value="3"></v-switch>
+          <v-switch v-model="switch4" label="4" value="4"></v-switch>
         </v-flex>
         <v-flex xs6>
           <v-radio-group v-model="row" row>
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  import Tous from "./Tous.vue";
+import Tous from "./Tous.vue";
 export default {
   name: 'ActivitiesForm',
   data: function () {
@@ -28,7 +28,10 @@ export default {
       text: "ActivitiesForm",
       column: null,
       row: null,
-      switch1: true
+      switch1: true,
+      switch2: true,
+      switch3: true,
+      switch4: true
     }
   }
 }

@@ -14,10 +14,10 @@ export default {
 </script>
 
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-  .rounded {
-    border-radius: 5px;
-    font-size: 10px;
-  }
+.rounded {
+  border-radius: 5px;
+  font-size: 10px;
+}
 </style>

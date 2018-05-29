@@ -1,4 +1,4 @@
-# reims-0218-liberty
+# reims-0218-liberty des 3 mousquetaires
 
 > A Vue.js project
 

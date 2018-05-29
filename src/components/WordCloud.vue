@@ -28,11 +28,10 @@
 </template>
 
 <style>
-
 #wordCloud {
-    width: 100%;
-    color: #999;
-    margin: 2em;
+  width: 100%;
+  color: #999;
+  margin: 2em;
 }
 
 .word {
@@ -43,5 +42,4 @@
     /* border-radius: 7px; */
     margin: 0.5em 1em;
 }
-
 </style>
