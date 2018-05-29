@@ -11,6 +11,7 @@ import WordCloud from "./WordCloud.vue";
 import ListLabelActivities from "./ListLabelActivities.vue";
 import ActivitiesForm from "./ActivitiesForm.vue";
 import ShortKey from "./ShortKey.vue";
+import PublicReaction from "./PublicReaction.vue";
 
 export default {
   name: "PageModeration",
@@ -18,7 +19,8 @@ export default {
     WordCloud,
     ListLabelActivities,
     ActivitiesForm,
-    ShortKey
+    ShortKey,
+    PublicReaction
   }
 }
 </script>

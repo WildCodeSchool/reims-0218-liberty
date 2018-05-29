@@ -4,14 +4,30 @@
       <v-layout row wrap>
         <ul id="optionsPublic">
             <li>
-                Style d'affichage à l'écran <input type="radio" name="affichage" id="bandeau"> Bandeau <input type="radio" name="affichage" id="pleinepage"> Pleine page
+                Style d'affichage à l'écran
+              <v-radio-group v-model="row" row>
+                <v-radio label="bandeau" value="radio-1" ></v-radio>
+                <v-radio label="pleine page" value="radio-2"></v-radio>
+              </v-radio-group>
             </li>
-            <li>
-                Temps d'affichage du message <input type="number" name="affichage" id="affichage" min="2" max="20" step="1"> secondes
+            <li class="label-hidden">
+              Temps d'affichage du message :
+              <v-text-field
+                label="secondes"
+                placeholder="10"
+                value="10"
+                suffix="secondes"
+                box
+              />
             </li>
-            <li>
-                <p>Personnalisez la box du message:</p>
-                <textarea name="box" id="box" placeholder="Réagissez en direct !"></textarea>
+            <li class="label-hidden">
+                <p>Personnalisez la box du message :</p>
+                <v-text-field
+                  name="personnalisation"
+                  label="Réagissez en direct !"
+                  placeholder="Réagissez en direct !"
+                  textarea
+              />
             </li>
         </ul>
       </v-layout>
@@ -21,13 +37,11 @@
 
 <script>
 export default {
-  name: "Reaction-Public",
+  name: "PublicReaction",
   data: function() {
     return {
-      text: "Réaction du public",
       column: null,
-      row: null,
-      switch1: true
+      row: null
     };
   }
 };
@@ -36,25 +50,10 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 #optionsPublic {
   text-align: left;
-  line-height: 4em;
+  line-height: 2em;
 }
 
-#optionsPublic li input {
-  margin-left: 4em;
-}
-
-#box,
-#affichage {
-  border: 1px solid black;
-}
-
-#box {
-  width: 100%;
-  height: 5em;
-}
-
-#affichage {
-  height: 2em;
-  width: 4em;
+.label-hidden label {
+  visibility: hidden;
 }
 </style>

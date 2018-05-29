@@ -19,7 +19,7 @@ import LabelActivity from '../components/LabelActivity.vue'
 import SwitchActivityOption from '../components/SwitchActivityOption.vue'
 import ListLabelActivities from '../components/ListLabelActivities.vue'
 import FloatingButton from '../components/FloatingButton.vue'
-import MyReaction from '../components/PublicReaction.vue'
+import PublicReaction from '../components/PublicReaction.vue'
 import PageActivities from '../components/PageActivities.vue'
 
 Vue.use(Vuetify)
@@ -105,8 +105,8 @@ storiesOf('Blocs', module)
     template: '<my-short-key></my-short-key>'
   }))
   .add('Encart de réaction du public', () => ({
-    components: { MyReaction },
-    template: '<my-reaction></my-reaction>'
+    components: { PublicReaction },
+    template: '<public-reaction />'
   }))
   .add('Liste des activités sélectionnées', () => ({
     components: { ListLabelActivities },
@@ -115,7 +115,7 @@ storiesOf('Blocs', module)
   }))
 
 storiesOf('Pages', module)
-  .add('page Modération', () => ({
+  .add('page Activités', () => ({
     components: { PageActivities },
     template: '<page-activities />'
   }))
