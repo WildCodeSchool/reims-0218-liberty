@@ -20,6 +20,7 @@ import SwitchActivityOption from '../components/SwitchActivityOption.vue'
 import ListLabelActivities from '../components/ListLabelActivities.vue'
 import FloatingButton from '../components/FloatingButton.vue'
 import PublicReaction from '../components/PublicReaction.vue'
+import PageActivities from '../components/PageActivities.vue'
 import WordDragAndDrop from '../components/WordDragAndDrop.vue'
 
 Vue.use(Vuetify)
@@ -129,4 +130,10 @@ storiesOf('Blocs', module)
       ActivitiesForm
     },
     template: '<activities-form />'
+  }))
+
+storiesOf('Pages', module)
+  .add('page Activités', () => ({
+    components: { PageActivities },
+    template: '<page-activities />'
   }))
