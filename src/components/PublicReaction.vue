@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "Reaction-Public",
+  name: "PublicReaction",
   data: function() {
     return {
       text: "Réaction du public",

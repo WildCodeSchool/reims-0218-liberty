@@ -22,8 +22,8 @@
 <script>
 import Tous from "./Tous.vue";
 export default {
-  name: 'ActivitiesForm',
-  data: function () {
+  name: "ActivitiesForm",
+  data: function() {
     return {
       text: "ActivitiesForm",
       column: null,
@@ -32,15 +32,14 @@ export default {
       switch2: true,
       switch3: true,
       switch4: true
-    }
+    };
   }
-}
+};
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
 .rounded {
   border-radius: 5px;
   font-family: "Material Icons";
 }
-
 </style>

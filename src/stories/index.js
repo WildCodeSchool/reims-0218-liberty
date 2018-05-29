@@ -2,42 +2,41 @@ import Vuetify from 'vuetify'
 import Vue from 'vue'
 // stories/index.js
 import { storiesOf } from '@storybook/vue'
-import MyButton from '../components/Button.vue'
-import FiltreBouton from '../components/FilterButton.vue'
+import Button from '../components/Button.vue'
+import FilterButton from '../components/FilterButton.vue'
 import MessagesBloques from '../components/MessagesBloques.vue'
 import MessagesDiffuses from '../components/MessagesDiffuses.vue'
 import Tous from '../components/Tous.vue'
 import FieldKeywords from '../components/FieldKeywords.vue'
-import LabelKeywordsChosen from '../components/LabelKeywordsChosen.vue'
 import Publier from '../components/Publier.vue'
 import Moderation from '../components/Moderation.vue'
 import ActivitiesForm from '../components/ActivitiesForm.vue'
-import MyMessage from '../components/Message.vue'
-import MyCloud from '../components/WordCloud.vue'
-import MyShortKey from '../components/ShortKey.vue'
+import Message from '../components/Message.vue'
+import ShortKey from '../components/ShortKey.vue'
 import LabelActivity from '../components/LabelActivity.vue'
 import SwitchActivityOption from '../components/SwitchActivityOption.vue'
 import ListLabelActivities from '../components/ListLabelActivities.vue'
 import FloatingButton from '../components/FloatingButton.vue'
-import MyReaction from '../components/PublicReaction.vue'
+import PublicReaction from '../components/PublicReaction.vue'
+import WordDragAndDrop from '../components/WordDragAndDrop.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
 
 storiesOf('Boutons', module)
-  .add('de base', () => ({
-    components: { MyButton },
-    template: '<my-button />'
+  .add('Button', () => ({
+    components: { Button },
+    template: '<button />'
   }))
-  .add('bouton qui filtre les mots-clés', () => ({
-    components: { FiltreBouton },
-    template: '<filtre-bouton />'
+  .add('FilterButton', () => ({
+    components: { FilterButton },
+    template: '<filter-button />'
   }))
-  .add('Messages bloqués', () => ({
+  .add('MessagesBloques', () => ({
     components: { MessagesBloques },
     template: '<messages-bloques />'
   }))
-  .add('Messages diffusés', () => ({
+  .add('MessagesDiffuses', () => ({
     components: { MessagesDiffuses },
     template: '<messages-diffuses />'
   }))
@@ -45,29 +44,27 @@ storiesOf('Boutons', module)
     components: { Tous },
     template: '<tous />'
   }))
-  .add('Switch', () => ({
+  .add('SwitchActivityOption', () => ({
     components: { SwitchActivityOption },
     template: '<switch-activity-option />'
   }))
-  .add('Bouton flottant', () => ({
+  .add('FloatingButton', () => ({
     components: { FloatingButton },
     template: '<floating-button />'
   }))
-
-storiesOf('Labels', module)
-  .add('labels activités', () => ({
-    components: { LabelActivity },
-    template: '<label-activity />'
+  .add('WordDragAndDrop', () => ({
+    components: { WordDragAndDrop },
+    template: '<word-drag-and-drop />'
   }))
 
-storiesOf('Champs de sélection', module)
-  .add('Sélection de mots clés', () => ({
+storiesOf('FieldKeywords', module)
+  .add('FieldKeywords', () => ({
     components: { FieldKeywords },
     template: '<field-keywords />'
   }))
 
-storiesOf('Labels activés', module)
-  .add('Activités', () => ({
+storiesOf('LabelActivity', module)
+  .add('LabelActivity', () => ({
     components: { LabelActivity },
     template: '<label-activity />'
   }))
@@ -87,28 +84,20 @@ storiesOf('Moderation', module)
   }))
 
 storiesOf('Blocs', module)
-  .add('ActivitiesForm', () => ({
-    components: { ActivitiesForm },
-    template: '<activities-form />'
+  .add('Message', () => ({
+    components: { Message },
+    template: '<message />'
   }))
-  .add('Bloc de message', () => ({
-    components: { MyMessage },
-    template: '<my-message>memessage</my-message>'
+  .add('ShortKey', () => ({
+    components: { ShortKey },
+    template: '<short-key />'
   }))
-  .add('Nuage de mots-clés', () => ({
-    components: { MyCloud },
-    template: '<my-cloud>nuage de mots-clés</my-cloud>'
+  .add('PublicReaction', () => ({
+    components: { PublicReaction },
+    template: '<public-reaction />'
   }))
-  .add('Attribution du raccourci clavier', () => ({
-    components: { MyShortKey },
-    template: '<my-short-key></my-short-key>'
-  }))
-  .add('Encart de réaction du public', () => ({
-    components: { MyReaction },
-    template: '<my-reaction></my-reaction>'
-  }))
-  .add('Liste des activités sélectionnées', () => ({
+  .add('ListLabelActivities', () => ({
     components: { ListLabelActivities },
-    template: '<list-label-activities></list-label-activities>'
+    template: '<list-label-activities />'
 
   }))

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "MaterialIcons",
+  name: "ShortKey",
   mounted() {
     const target = document.getElementById("definedShortKey");
     const activatePlaceholder = () => {

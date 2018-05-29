@@ -2,7 +2,6 @@
   <v-app>
     <v-list>
       <template v-for="activity in listActivities">
-        <!-- <v-btn :key="activity.index">{{activity.title}}</v-btn> -->
         <label-keywords-chosen :key="activity.index" v-bind:activity="activity">
         </label-keywords-chosen>
       </template>

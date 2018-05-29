@@ -7,13 +7,13 @@
 
 <script>
 export default {
-  name: 'FiltreBouton',
-  data: function () {
+  name: "FilterButton",
+  data: function() {
     return {
-      text: 'Filtre mots-clés'
-    }
+      text: "Filtre mots-clés"
+    };
   }
-}
+};
 </script>
 
 <style>
@@ -23,6 +23,6 @@ export default {
   border-radius: 5px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 </style>
