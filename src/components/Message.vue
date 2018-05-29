@@ -4,21 +4,21 @@
             <v-flex xs6 id="card">
                 <v-layout row wrap>
                     <v-flex xs12>
-                        <p id="author">Super Nanny Officiel - @SuperNanny - 25 mai 2018</p>
+                        <p id="author">{{ author }} - @{{ arobase }} - {{ date }}</p>
                     </v-flex>
                 </v-layout>
                 <v-layout row id="bodyMessage">
                     <v-flex hidden-xs-only>
-                        <v-avatar :size="64"><img id="avatar" src="https://pbs.twimg.com/media/DSEsQf7W0AA5rNd.jpg"></v-avatar>
+                        <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
                     </v-flex>
                     <v-flex xs12 md10>
-                        <p id="message">Maxence est comme un enfant de 3 ans. Toujours en train de râler pour un oui ou pour un non. Si je devais vous donner un conseil, ça serait de le priver de kebabs pour le restant de ses jours ; et de le forcer à boire de l'huile de foie de morue ! C'est un ami qui m'a proposé cette idée ! :)</p>
+                        <p id="message">{{ message }}</p>
                     </v-flex>
                 </v-layout>
                 <v-layout row wrap>
                   <v-flex xs12 justify-center>
                   <div class="illustration text-xs-center">
-                    <img id="cover" src="http://www.toutelatele.com/IMG/arton54183.jpg">
+                    <img id="cover" v-bind:src="cover">
                   </div>
                 </v-flex>
 
@@ -40,7 +40,32 @@
 <script>
 export default {
   name: "Message",
-  props: ["author", "arobase", "date", "avatar", "message", "cover"],
+  props: {
+    author: {
+      type: String,
+      required: true
+    },
+    arobase: {
+      type: String,
+      required: true
+    },
+    date: {
+      type: String,
+      required: true
+    },
+    avatar: {
+      type: String,
+      required: true
+    },
+    message: {
+      type: String,
+      required: true
+    },
+    cover: {
+      type: String,
+      required: true
+    }
+  },
   data: function() {
     return {
       addAuthor: this.author,
@@ -91,8 +116,8 @@ export default {
 }
 
 #cover {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 240px;
   padding: 0;
   margin: auto;
 }
