@@ -1,7 +1,6 @@
 <template>
   <v-list id="activities">
     <template v-for="activity in listActivities">
-      <!-- <v-btn :key="activity.index">{{activity.title}}</v-btn> -->
       <label-keywords-chosen :key="activity.index" v-bind:activity="activity">
       </label-keywords-chosen>
     </template>
@@ -10,15 +9,11 @@
 
 <script>
 import LabelKeywordsChosen from "./LabelKeywordsChosen.vue";
-import Tous from "./Tous.vue";
-import LabelActivity from "./LabelActivity.vue";
 
 export default {
   name: "ListLabelActivities",
   components: {
-    LabelKeywordsChosen,
-    Tous,
-    LabelActivity
+    LabelKeywordsChosen
   },
   data: function() {
     return {

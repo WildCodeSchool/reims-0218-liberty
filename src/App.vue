@@ -26,15 +26,15 @@
 </template>
 
 <script>
-import FiltreBouton from "../src/components/FilterButton.vue";
-import Message from "../src/components/Message.vue";
+import FiltreBouton from '../src/components/FilterButton.vue'
+import Message from '../src/components/Message.vue'
 export default {
-  name: "App",
+  name: 'App',
   components: {
     FiltreBouton,
     Message
   }
-};
+}
 </script>
 
 <style>

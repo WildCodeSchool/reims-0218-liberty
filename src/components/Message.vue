@@ -39,9 +39,9 @@
 
 <script>
 export default {
-  name: "Message",
-  props: ["author", "arobase", "date", "avatar", "message", "cover"],
-  data: function() {
+  name: 'Message',
+  props: ['author', 'arobase', 'date', 'avatar', 'message', 'cover'],
+  data: function () {
     return {
       addAuthor: this.author,
       addArobase: this.arobase,
@@ -49,9 +49,9 @@ export default {
       addAvatar: this.avatar,
       addMessage: this.message,
       addCover: this.cover
-    };
+    }
   }
-};
+}
 </script>
 
 <style>
