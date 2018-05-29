@@ -8,7 +8,6 @@ import MessagesBloques from '../components/MessagesBloques.vue'
 import MessagesDiffuses from '../components/MessagesDiffuses.vue'
 import Tous from '../components/Tous.vue'
 import FieldKeywords from '../components/FieldKeywords.vue'
-import LabelKeywordsChosen from '../components/LabelKeywordsChosen.vue'
 import Publier from '../components/Publier.vue'
 import Moderation from '../components/Moderation.vue'
 import ActivitiesForm from '../components/ActivitiesForm.vue'
@@ -21,6 +20,7 @@ import ListLabelActivities from '../components/ListLabelActivities.vue'
 import FloatingButton from '../components/FloatingButton.vue'
 import MyReaction from '../components/PublicReaction.vue'
 import GroupMessages from '../components/GroupMessages.vue'
+import ComponentGroupMessages from '../components/Ensemble.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -110,9 +110,15 @@ storiesOf('Blocs', module)
   }))
   .add('Liste des activités sélectionnées', () => ({
     components: { ListLabelActivities },
-    template: '<list-label-activities></list-label-activities>'    
+    template: '<list-label-activities></list-label-activities>'
   }))
   .add('Groupe de messages', () => ({
     components: { GroupMessages },
     template: '<group-messages></group-messages>'
+  }))
+
+storiesOf('Groupe de composants', module)
+  .add('Groupe de messages', () => ({
+    components: { ComponentGroupMessages },
+    template: '<component-group-messages></component-group-messages>'
   }))
