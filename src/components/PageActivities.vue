@@ -1,9 +1,22 @@
 <template>
 <v-app>
-  <word-cloud />
-  <list-label-activities />
-  <activities-form />
-  <short-key />
+  <v-layout row>
+    <word-cloud />
+  </v-layout>
+  <v-layout row>
+    <list-label-activities />
+  </v-layout>
+  <v-layout row>
+    <v-flex xs6>
+      <activities-form />
+    </v-flex>
+    <v-flex xs6>
+      <public-reaction />
+    </v-flex>
+  </v-layout>
+  <v-layout>
+    <short-key />
+  </v-layout>
 </v-app>
 </template>
 <script>
