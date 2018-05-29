@@ -20,6 +20,7 @@ import SwitchActivityOption from '../components/SwitchActivityOption.vue'
 import ListLabelActivities from '../components/ListLabelActivities.vue'
 import FloatingButton from '../components/FloatingButton.vue'
 import MyReaction from '../components/PublicReaction.vue'
+import GroupMessages from '../components/GroupMessages.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -109,6 +110,9 @@ storiesOf('Blocs', module)
   }))
   .add('Liste des activités sélectionnées', () => ({
     components: { ListLabelActivities },
-    template: '<list-label-activities></list-label-activities>'
-
+    template: '<list-label-activities></list-label-activities>'    
+  }))
+  .add('Groupe de messages', () => ({
+    components: { GroupMessages },
+    template: '<group-messages></group-messages>'
   }))
