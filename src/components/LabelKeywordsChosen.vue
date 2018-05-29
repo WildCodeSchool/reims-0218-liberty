@@ -44,7 +44,8 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
-.theme--light .chip, .application .theme--light.chip .blueChip {
+.theme--light .chip,
+.application .theme--light.chip .blueChip {
   background-color: rgb(15, 64, 92);
   color: white;
   font-weight: 800;
@@ -56,7 +57,7 @@ input {
 }
 
 .input-group.input-group--selection-controls.switch label {
-    padding-left: 14px;
-    display: none;
+  padding-left: 14px;
+  display: none;
 }
 </style>

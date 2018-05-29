@@ -1,13 +1,11 @@
 <template>
-  <v-app>
-    <v-list>
-      <template v-for="activity in listActivities">
-        <!-- <v-btn :key="activity.index">{{activity.title}}</v-btn> -->
-        <label-keywords-chosen :key="activity.index" v-bind:activity="activity">
-        </label-keywords-chosen>
-      </template>
-    </v-list>
-  </v-app>
+  <v-list id="activities">
+    <template v-for="activity in listActivities">
+      <!-- <v-btn :key="activity.index">{{activity.title}}</v-btn> -->
+      <label-keywords-chosen :key="activity.index" v-bind:activity="activity">
+      </label-keywords-chosen>
+    </template>
+  </v-list>
 </template>
 
 <script>
@@ -45,4 +43,8 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
+
+#activities {
+  width: 100%;
+}
 </style>
