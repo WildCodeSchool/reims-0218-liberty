@@ -1,7 +1,9 @@
 import Vuetify from 'vuetify'
 import Vue from 'vue'
 // stories/index.js
-import { storiesOf } from '@storybook/vue'
+import {
+  storiesOf
+} from '@storybook/vue'
 import Button from '../components/Button.vue'
 import FilterButton from '../components/FilterButton.vue'
 import MessagesBloques from '../components/MessagesBloques.vue'
@@ -23,81 +25,108 @@ import WordDragAndDrop from '../components/WordDragAndDrop.vue'
 Vue.use(Vuetify)
 // Stories: Book Component
 
-storiesOf('Boutons', module)
+storiesOf('Bouttons', module)
   .add('Button', () => ({
-    components: { Button },
+    components: {
+      Button
+    },
     template: '<button />'
   }))
   .add('FilterButton', () => ({
-    components: { FilterButton },
+    components: {
+      FilterButton
+    },
     template: '<filter-button />'
   }))
   .add('MessagesBloques', () => ({
-    components: { MessagesBloques },
+    components: {
+      MessagesBloques
+    },
     template: '<messages-bloques />'
   }))
   .add('MessagesDiffuses', () => ({
-    components: { MessagesDiffuses },
+    components: {
+      MessagesDiffuses
+    },
     template: '<messages-diffuses />'
   }))
   .add('Tous', () => ({
-    components: { Tous },
+    components: {
+      Tous
+    },
     template: '<tous />'
   }))
   .add('SwitchActivityOption', () => ({
-    components: { SwitchActivityOption },
+    components: {
+      SwitchActivityOption
+    },
     template: '<switch-activity-option />'
   }))
   .add('FloatingButton', () => ({
-    components: { FloatingButton },
+    components: {
+      FloatingButton
+    },
     template: '<floating-button />'
   }))
   .add('WordDragAndDrop', () => ({
-    components: { WordDragAndDrop },
+    components: {
+      WordDragAndDrop
+    },
     template: '<word-drag-and-drop />'
   }))
-
-storiesOf('FieldKeywords', module)
-  .add('FieldKeywords', () => ({
-    components: { FieldKeywords },
-    template: '<field-keywords />'
-  }))
-
-storiesOf('LabelActivity', module)
   .add('LabelActivity', () => ({
-    components: { LabelActivity },
+    components: {
+      LabelActivity
+    },
     template: '<label-activity />'
   }))
   .add('Publier', () => ({
-    components: { Publier },
+    components: {
+      Publier
+    },
     template: '<publier />'
-  }))
-
-storiesOf('Moderation', module)
-  .add('Moderation', () => ({
-    components: { Moderation },
-    template: '<moderation />'
-  }))
-  .add('ActivitiesForm', () => ({
-    components: { ActivitiesForm },
-    template: '<activities-form />'
   }))
 
 storiesOf('Blocs', module)
   .add('Message', () => ({
-    components: { Message },
+    components: {
+      Message
+    },
     template: '<message />'
   }))
   .add('ShortKey', () => ({
-    components: { ShortKey },
+    components: {
+      ShortKey
+    },
     template: '<short-key />'
   }))
   .add('PublicReaction', () => ({
-    components: { PublicReaction },
+    components: {
+      PublicReaction
+    },
     template: '<public-reaction />'
   }))
   .add('ListLabelActivities', () => ({
-    components: { ListLabelActivities },
+    components: {
+      ListLabelActivities
+    },
     template: '<list-label-activities />'
-
+  }))
+  .add('FieldKeywords', () => ({
+    components: {
+      FieldKeywords
+    },
+    template: '<field-keywords />'
+  }))
+  .add('Moderation', () => ({
+    components: {
+      Moderation
+    },
+    template: '<moderation />'
+  }))
+  .add('ActivitiesForm', () => ({
+    components: {
+      ActivitiesForm
+    },
+    template: '<activities-form />'
   }))

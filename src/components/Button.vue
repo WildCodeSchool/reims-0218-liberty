@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  name: "Button",
   props: {
     rounded: Boolean,
     handleClick: {
