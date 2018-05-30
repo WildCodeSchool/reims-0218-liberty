@@ -2,7 +2,6 @@ import Vuetify from 'vuetify'
 import Vue from 'vue'
 // stories/index.js
 import { storiesOf } from '@storybook/vue'
-import Button from '../components/Button.vue'
 import FilterButton from '../components/FilterButton.vue'
 import MessagesBloques from '../components/MessagesBloques.vue'
 import MessagesDiffuses from '../components/MessagesDiffuses.vue'
@@ -25,12 +24,6 @@ Vue.use(Vuetify)
 // Stories: Book Component
 
 storiesOf('Bouttons', module)
-  .add('Button', () => ({
-    components: {
-      Button
-    },
-    template: '<button />'
-  }))
   .add('FilterButton', () => ({
     components: {
       FilterButton

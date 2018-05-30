@@ -14,11 +14,9 @@
 <script>
 export default {
   name: 'WordDragAndDrop',
-  data: function() {
-    return {
-      activity: 'Nuage de mots clés'
-    }
-  }
+  data: () => ({
+    activity: 'Nuage de mots clés'
+  })
 }
 </script>
 

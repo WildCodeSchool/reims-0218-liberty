@@ -43,12 +43,10 @@
 <script>
 export default {
   name: 'PublicReaction',
-  data: function() {
-    return {
-      column: null,
-      row: null
-    }
-  }
+  data: () => ({
+    column: null,
+    row: null
+  })
 }
 </script>
 <style>

@@ -12,11 +12,9 @@
 <script>
 export default {
   name: 'Publier',
-  data: function() {
-    return {
-      text: 'Publier un message'
-    }
-  }
+  data: () => ({
+    text: 'Publier un message'
+  })
 }
 </script>
 <style>

@@ -8,11 +8,9 @@
 <script>
 export default {
   name: 'FilterButton',
-  data: function() {
-    return {
-      text: 'Filtre mots-clés'
-    }
-  }
+  data: () => ({
+    text: 'Filtre mots-clés'
+  })
 }
 </script>
 

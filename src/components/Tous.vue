@@ -7,11 +7,9 @@
 <script>
 export default {
   name: 'Tous',
-  data: function() {
-    return {
-      text: 'Tous'
-    }
-  }
+  data: () => ({
+    text: 'Tous'
+  })
 }
 </script>
 

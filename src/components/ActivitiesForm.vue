@@ -36,8 +36,7 @@
 import Tous from './Tous.vue'
 export default {
   name: 'ActivitiesForm',
-  data: function() {
-    return {
+  data: () => ({
       text: 'ActivitiesForm',
       column: null,
       row: null,
@@ -51,8 +50,7 @@ export default {
       2: true,
       3: true,
       4: true
-    }
-  }
+    })
 }
 </script>
 <style>

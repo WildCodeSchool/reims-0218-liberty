@@ -18,11 +18,9 @@ export default {
   components: {
     Publier
   },
-  data: function() {
-    return {
-      text: 'Moderation'
-    }
-  }
+  data: () => ({
+    text: 'Moderation'
+  })
 }
 </script>
 <style>

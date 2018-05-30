@@ -7,11 +7,9 @@
 <script>
 export default {
   name: 'MessagesBloques',
-  data: function() {
-    return {
-      text: 'Message bloqués'
-    }
-  }
+  data: () => ({
+    text: 'Message bloqués'
+  })
 }
 </script>
 

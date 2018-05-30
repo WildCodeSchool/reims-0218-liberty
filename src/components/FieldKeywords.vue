@@ -24,11 +24,9 @@ export default {
     MessagesDiffuses,
     Tous
   },
-  data: function() {
-    return {
-      column: null,
-      row: null
-    }
-  }
+  data: () => ({
+    column: null,
+    row: null
+  })
 }
 </script>

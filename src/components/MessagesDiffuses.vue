@@ -8,11 +8,9 @@
 <script>
 export default {
   name: 'MessagesDiffuses',
-  data: function() {
-    return {
-      text: 'Messages diffusés'
-    }
-  }
+  data: () => ({
+    text: 'Messages diffusés'
+  })
 }
 </script>
 

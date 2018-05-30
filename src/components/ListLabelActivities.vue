@@ -15,8 +15,7 @@ export default {
   components: {
     LabelKeywordsChosen
   },
-  data: function() {
-    return {
+  data: () =>  ({
       listActivities: [
         {
           index: 1,
@@ -31,8 +30,7 @@ export default {
           title: 'Réaction du public'
         }
       ]
-    }
-  }
+  })
 }
 </script>
 

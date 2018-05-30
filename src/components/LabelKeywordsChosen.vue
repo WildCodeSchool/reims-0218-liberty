@@ -30,14 +30,12 @@ export default {
       required: true
     }
   },
-  data: function() {
-    return {
-      chipColor: '#102C60',
-      checkbox: true,
-      radioGroup: 1,
-      switch1: true
-    }
-  }
+  data: () => ({
+    chipColor: '#102C60',
+    checkbox: true,
+    radioGroup: 1,
+    switch1: true
+  })
 }
 </script>
 
