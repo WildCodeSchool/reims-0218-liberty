@@ -15,7 +15,6 @@
             label="secondes"
             placeholder="10"
             value="10"
-            suffix="secondes"
             box
           />
         </v-list-tile>
@@ -23,7 +22,6 @@
           Personnalisez la box du message :
         </v-list-tile>
         <v-spacer></v-spacer>
-
           <v-list-tile-content>
           <v-text-field
               id="reaction-input"
@@ -33,8 +31,6 @@
               textarea
           />
         </v-list-tile-content>
-
-
       </v-list>
     </v-layout>
   </v-container>
@@ -59,7 +55,4 @@ export default {
   height: 20px;
 }
 
-.label-hidden label {
-  visibility: hidden;
-}
 </style>
