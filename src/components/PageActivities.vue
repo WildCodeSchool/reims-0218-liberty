@@ -1,5 +1,8 @@
 <template>
 <v-app>
+    <v-layout row>
+    <title-page-activities />
+  </v-layout>
   <v-layout row>
     <word-drag-and-drop />
   </v-layout>
@@ -20,6 +23,7 @@
 </v-app>
 </template>
 <script>
+import TitlePageActivities from './TitlePageActivities.vue'
 import WordDragAndDrop from './WordDragAndDrop.vue'
 import ListLabelActivities from './ListLabelActivities.vue'
 import ActivitiesForm from './ActivitiesForm.vue'
@@ -29,6 +33,7 @@ import PublicReaction from './PublicReaction.vue'
 export default {
   name: 'PageModeration',
   components: {
+    TitlePageActivities,
     WordDragAndDrop,
     ListLabelActivities,
     ActivitiesForm,

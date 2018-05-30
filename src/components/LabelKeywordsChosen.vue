@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar>
+    <v-list-tile>
       <v-chip class="blueChip">
         {{activity.index}}
       </v-chip>
@@ -17,7 +17,7 @@
       <v-icon color="cyan" class="ml-2">cast</v-icon>
       <!-- le vrai: cast-connected -->
       <!-- </v-toolbar-items> -->
-    </v-toolbar>
+    </v-list-tile>
   </div>
 </template>
 
