@@ -11,13 +11,13 @@
 
 <script>
 export default {
-  name: "LabelActivity",
+  name: 'LabelActivity',
   data: function() {
     return {
-      activity: "Nuage de mots clés"
-    };
+      activity: 'Nuage de mots clés'
+    }
   }
-};
+}
 </script>
 
 <style>

@@ -8,65 +8,65 @@
 
 <script>
 export default {
-  name: "ShortKey",
+  name: 'ShortKey',
   mounted() {
-    const target = document.getElementById("definedShortKey");
+    const target = document.getElementById('definedShortKey')
     const activatePlaceholder = () => {
-      target.setAttribute("placeholder", "Appuyez sur une touche");
-    };
+      target.setAttribute('placeholder', 'Appuyez sur une touche')
+    }
 
     const killPlaceholder = () => {
-      target.setAttribute("placeholder", "");
-    };
+      target.setAttribute('placeholder', '')
+    }
 
-    target.addEventListener("focusin", activatePlaceholder, false);
-    target.addEventListener("focusout", killPlaceholder, false);
-    document.addEventListener("keydown", function(event) {
-      target.value = event.key.toLowerCase();
+    target.addEventListener('focusin', activatePlaceholder, false)
+    target.addEventListener('focusout', killPlaceholder, false)
+    document.addEventListener('keydown', function(event) {
+      target.value = event.key.toLowerCase()
       switch (target.value) {
-        case "&":
-          target.value = "1";
-          break;
-        case "é":
-          target.value = "2";
-          break;
+        case '&':
+          target.value = '1'
+          break
+        case 'é':
+          target.value = '2'
+          break
         case '"':
-          target.value = "3";
-          break;
+          target.value = '3'
+          break
         case "'":
-          target.value = "4";
-          break;
-        case "(":
-          target.value = "5";
-          break;
-        case "-":
-          target.value = "6";
-          break;
-        case "è":
-          target.value = "7";
-          break;
-        case "_":
-          target.value = "8";
-          break;
-        case "ç":
-          target.value = "9";
-          break;
-        case "à":
-          target.value = "0";
-          break;
-        case " ":
-          target.value = "ESPACE";
-          break;
+          target.value = '4'
+          break
+        case '(':
+          target.value = '5'
+          break
+        case '-':
+          target.value = '6'
+          break
+        case 'è':
+          target.value = '7'
+          break
+        case '_':
+          target.value = '8'
+          break
+        case 'ç':
+          target.value = '9'
+          break
+        case 'à':
+          target.value = '0'
+          break
+        case ' ':
+          target.value = 'ESPACE'
+          break
         default:
-          break;
+          break
       }
-    });
+    })
   }
-};
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 span {
   width: 100%;
   color: #72768d;

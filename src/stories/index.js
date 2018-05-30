@@ -1,9 +1,7 @@
 import Vuetify from 'vuetify'
 import Vue from 'vue'
 // stories/index.js
-import {
-  storiesOf
-} from '@storybook/vue'
+import { storiesOf } from '@storybook/vue'
 import Button from '../components/Button.vue'
 import FilterButton from '../components/FilterButton.vue'
 import MessagesBloques from '../components/MessagesBloques.vue'
@@ -132,8 +130,7 @@ storiesOf('Blocs', module)
     template: '<activities-form />'
   }))
 
-storiesOf('Pages', module)
-  .add('page Activités', () => ({
-    components: { PageActivities },
-    template: '<page-activities />'
-  }))
+storiesOf('Pages', module).add('page Activités', () => ({
+  components: { PageActivities },
+  template: '<page-activities />'
+}))

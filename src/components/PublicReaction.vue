@@ -42,17 +42,17 @@
 
 <script>
 export default {
-  name: "PublicReaction",
+  name: 'PublicReaction',
   data: function() {
     return {
       column: null,
       row: null
-    };
+    }
   }
-};
+}
 </script>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 #optionsPublic {
   text-align: left;
 }

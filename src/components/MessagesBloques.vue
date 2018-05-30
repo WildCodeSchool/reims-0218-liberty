@@ -6,22 +6,20 @@
 
 <script>
 export default {
-  name: "MessagesBloques",
+  name: 'MessagesBloques',
   data: function() {
     return {
-      text: "Message bloqués"
-    };
+      text: 'Message bloqués'
+    }
   }
-};
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .rounded {
   border-radius: 5px;
   font-size: 10px;
 }
-
-
 </style>

@@ -4,17 +4,17 @@
 
 <script>
 export default {
-  name: "Button",
+  name: 'Button',
   props: {
     rounded: Boolean,
     handleClick: {
       default: () => () => null
     },
     color: {
-      default: "#42b983"
+      default: '#42b983'
     }
   }
-};
+}
 </script>
 
 <style>

@@ -33,27 +33,27 @@
 </template>
 
 <script>
-import Tous from "./Tous.vue";
+import Tous from './Tous.vue'
 export default {
-  name: "ActivitiesForm",
+  name: 'ActivitiesForm',
   data: function() {
     return {
-      text: "ActivitiesForm",
+      text: 'ActivitiesForm',
       column: null,
       row: null,
       options: [
-        "Activité permanente",
-        "Modération",
-        "Autoriser les photos",
-        "Voir le pseudo",
+        'Activité permanente',
+        'Modération',
+        'Autoriser les photos',
+        'Voir le pseudo'
       ],
       1: true,
       2: true,
       3: true,
       4: true
-    };
+    }
   }
-};
+}
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
@@ -64,6 +64,6 @@ export default {
 
 .rounded {
   border-radius: 5px;
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
 }
 </style>

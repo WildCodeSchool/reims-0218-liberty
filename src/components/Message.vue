@@ -41,7 +41,7 @@
 export default {
   name: 'Message',
   props: ['author', 'arobase', 'date', 'avatar', 'message', 'cover'],
-  data: function () {
+  data: function() {
     return {
       addAuthor: this.author,
       addArobase: this.arobase,
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #card {
   width: 60%;

@@ -11,24 +11,24 @@
 </template>
 
 <script>
-import FiltreBouton from "./FilterButton.vue";
-import MessagesBloques from "./MessagesBloques.vue";
-import MessagesDiffuses from "./MessagesDiffuses.vue";
-import Tous from "./Tous.vue";
+import FiltreBouton from './FilterButton.vue'
+import MessagesBloques from './MessagesBloques.vue'
+import MessagesDiffuses from './MessagesDiffuses.vue'
+import Tous from './Tous.vue'
 
 export default {
-  name: "FieldKeywords",
+  name: 'FieldKeywords',
   components: {
     FiltreBouton,
     MessagesBloques,
     MessagesDiffuses,
     Tous
-    },
+  },
   data: function() {
     return {
       column: null,
       row: null
-    };
+    }
   }
 }
 </script>

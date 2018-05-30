@@ -20,14 +20,14 @@
 </v-app>
 </template>
 <script>
-import WordDragAndDrop from "./WordDragAndDrop.vue";
-import ListLabelActivities from "./ListLabelActivities.vue";
-import ActivitiesForm from "./ActivitiesForm.vue";
-import ShortKey from "./ShortKey.vue";
-import PublicReaction from "./PublicReaction.vue";
+import WordDragAndDrop from './WordDragAndDrop.vue'
+import ListLabelActivities from './ListLabelActivities.vue'
+import ActivitiesForm from './ActivitiesForm.vue'
+import ShortKey from './ShortKey.vue'
+import PublicReaction from './PublicReaction.vue'
 
 export default {
-  name: "PageModeration",
+  name: 'PageModeration',
   components: {
     WordDragAndDrop,
     ListLabelActivities,

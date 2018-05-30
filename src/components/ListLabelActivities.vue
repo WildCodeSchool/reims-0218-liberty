@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import LabelKeywordsChosen from "./LabelKeywordsChosen.vue";
+import LabelKeywordsChosen from './LabelKeywordsChosen.vue'
 
 export default {
-  name: "ListLabelActivities",
+  name: 'ListLabelActivities',
   components: {
     LabelKeywordsChosen
   },
@@ -20,24 +20,24 @@ export default {
       listActivities: [
         {
           index: 1,
-          title: "Nuage de mots clés"
+          title: 'Nuage de mots clés'
         },
         {
           index: 2,
-          title: "Vote"
+          title: 'Vote'
         },
         {
           index: 3,
-          title: "Réaction du public"
+          title: 'Réaction du public'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #activities {
   width: 100%;

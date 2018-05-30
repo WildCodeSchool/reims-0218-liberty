@@ -12,7 +12,7 @@
 <script>
 export default {
   name: 'Publier',
-  data: function () {
+  data: function() {
     return {
       text: 'Publier un message'
     }
@@ -23,8 +23,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 .rounded {
   border-radius: 5px;
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
   width: fit-content;
 }
-
 </style>
