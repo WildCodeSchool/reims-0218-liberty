@@ -2,21 +2,21 @@
   <v-app>
     <moderation />
     <field-keywords />
-    <list-last-messages />
+    <list-messages />
   </v-app>
 </template>
 
 <script>
 import Moderation from "./Moderation.vue"
 import FieldKeywords from "./FieldKeywords.vue"
-import ListLastMessages from "./GroupMessages.vue"
+import ListMessages from "./ListMessages.vue"
 
 export default {
-  name: "EnsembleMessage",
+  name: "PageModeration",
   components: {
     Moderation,
     FieldKeywords,
-    ListLastMessages
+    ListMessages
   }
 };
 </script>

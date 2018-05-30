@@ -7,22 +7,20 @@
 
 <script>
 export default {
-  name: 'FiltreBouton',
-  data: function () {
-    return {
-      text: 'Filtre mots-clés'
-    }
-  }
+  name: 'FilterButton',
+  data: () => ({
+    text: 'Filtre mots-clés'
+  })
 }
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .rounded {
   border-radius: 5px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 </style>

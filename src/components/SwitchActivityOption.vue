@@ -13,20 +13,18 @@
 
 <script>
 export default {
-  name: "SwitchActivityOption",
-  data: function() {
-    return {
-      switchColor: "cyan",
-      checkbox: true,
-      radioGroup: 1,
-      switch1: true
-    };
-  }
-};
+  name: 'SwitchActivityOption',
+  data: () => ({
+    switchColor: 'cyan',
+    checkbox: true,
+    radioGroup: 1,
+    switch1: true
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .cyanSwitch {
   color: cyan;

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <template v-for="message in listMessages">
+    <template v-for="message in messages">
       <message
         :key="message.index"
         v-bind:author=message.author
@@ -18,13 +18,13 @@
 import Message from './Message.vue'
 
 export default {
-  name: "ListLastMessages",
+  name: "ListMessages",
   components: {
     Message
   },
   data: function() {
     return {
-      listMessages: [
+      messages: [
         {
           index: 1,
           author: "Madame de Montespan",

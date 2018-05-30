@@ -23,28 +23,27 @@
 
 <script>
 export default {
-  name: "LabelKeywordsChosen",
+  name: 'LabelKeywordsChosen',
   props: {
     activity: {
       type: Object,
       required: true
     }
   },
-  data: function() {
-    return {
-      chipColor: "#102C60",
-      checkbox: true,
-      radioGroup: 1,
-      switch1: true
-    };
-  }
-};
+  data: () => ({
+    chipColor: '#102C60',
+    checkbox: true,
+    radioGroup: 1,
+    switch1: true
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-.theme--light .chip, .application .theme--light.chip .blueChip {
+.theme--light .chip,
+.application .theme--light.chip .blueChip {
   background-color: rgb(15, 64, 92);
   color: white;
   font-weight: 800;
@@ -56,7 +55,7 @@ input {
 }
 
 .input-group.input-group--selection-controls.switch label {
-    padding-left: 14px;
-    display: none;
+  padding-left: 14px;
+  display: none;
 }
 </style>

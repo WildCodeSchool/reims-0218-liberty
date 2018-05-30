@@ -5,30 +5,28 @@
     <div class="hidden-sm-and-down">
       <messages-diffuses />
       <messages-bloques />
-      <filtre-bouton />
+      <filter-bouton />
     </div>
   </v-toolbar>
 </template>
 
 <script>
-import FiltreBouton from "./FilterButton.vue";
-import MessagesBloques from "./MessagesBloques.vue";
-import MessagesDiffuses from "./MessagesDiffuses.vue";
-import Tous from "./Tous.vue";
+import FilterBouton from './FilterButton.vue'
+import MessagesBloques from './MessagesBloques.vue'
+import MessagesDiffuses from './MessagesDiffuses.vue'
+import Tous from './Tous.vue'
 
 export default {
-  name: "FieldKeywords",
+  name: 'FieldKeywords',
   components: {
-    FiltreBouton,
+    FilterBouton,
     MessagesBloques,
     MessagesDiffuses,
     Tous
-    },
-  data: function() {
-    return {
-      column: null,
-      row: null
-    };
-  }
+  },
+  data: () => ({
+    column: null,
+    row: null
+  })
 }
 </script>

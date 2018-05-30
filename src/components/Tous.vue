@@ -6,17 +6,15 @@
 
 <script>
 export default {
-  name: "Tous",
-  data: function() {
-    return {
-      text: "Tous"
-    };
-  }
-};
+  name: 'Tous',
+  data: () => ({
+    text: 'Tous'
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .rounded {
   border-radius: 5px;
@@ -26,6 +24,6 @@ export default {
   background: linear-gradient(45deg, indigo, turquoise 96%);
   color: white;
   font-weight: 800;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 </style>
