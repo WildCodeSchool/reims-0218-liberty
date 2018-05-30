@@ -8,20 +8,39 @@
         adding a text after the switch
         + visibility hidden on the label just in case it reappears in other setups.
         -->
-        <v-list>
-          <template v-for="(option, index) in options">
-            <v-list-tile :key="index">
+        <!--<v-list>-->
+          {{options}}
+          <div v-for="(option, index) in options" :key="index">
+            {{option}}
+            {{option.label}}
+            <!--
+            <v-list-tile>
               <v-list-tile-action>
-                <v-switch :v-model="index" :label="option" value="1"></v-switch>
-              </v-list-tile-action>
+                -->
+                <!-- tout changer selon le nouvel objet dans options -->
+               <!-- <v-switch :v-model="option.switch" label="jkkl" hide-details class="ml-2" />
+              -->
+              <v-switch color="cyan" hide-details class="ml-2"
+        :label="`Switch 1: ${switch1.toString()}`"
+        v-model="option.switch"
+      ></v-switch>
+              <!--</v-list-tile-action>-->
+              <!--
               <v-list-tile-content>
-              {{ option }}
+              {{ option.label }}
               </v-list-tile-content>
+-->
+           <!-- </v-list-tile>-->
 
-            </v-list-tile>
+          </div>
+        <!--</v-list>-->
+         <v-switch color="cyan" hide-details class="ml-2"
+        :label="`Switch 1: ${switch1.toString()}`"
+        v-model="switch1"
+      ></v-switch>
 
-          </template>
-        </v-list>
+
+
         <!-- <span class="no-label"><v-switch v-model="switch1" label="Activité permanente" value="1"></v-switch> Activité permanente</span>
         <span class="no-label"><v-switch v-model="switch2" label="Modération" value="2"></v-switch>Modération</span>
         <span class="no-label"><v-switch v-model="switch3" label="Autoriser les photos" value="3"></v-switch>Autoriser les photos</span>
@@ -41,15 +60,30 @@ export default {
       column: null,
       row: null,
       options: [
-        'Activité permanente',
-        'Modération',
-        'Autoriser les photos',
-        'Voir le pseudo'
+        {
+          label:'Activité permanente',
+          switch:false
+
+        },
+        {
+          label:'Modération',
+          switch:true
+        },
+        {
+          label:'Autoriser les photos',
+          switch:false
+        },
+        {
+          label:'Voir le pseudo',
+          switch:false
+        }
       ],
+      switch: false,
       1: true,
       2: true,
       3: true,
-      4: true
+      4: true,
+      switch1: true
     })
 }
 </script>

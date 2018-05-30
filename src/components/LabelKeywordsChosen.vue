@@ -56,6 +56,6 @@ input {
 
 .input-group.input-group--selection-controls.switch label {
   padding-left: 14px;
-  display: none;
+  /* display: none; */
 }
 </style>
