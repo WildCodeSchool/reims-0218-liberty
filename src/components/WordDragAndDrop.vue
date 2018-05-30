@@ -4,10 +4,10 @@
     <v-chip class="blueChip">
       {{ this.activity }}
     </v-chip>
-  </div>
-  <p>
-    <v-icon>label</v-icon> glisser l'activité à ajouter mettre ci dessous
-  </p>
+    </div>
+    <p>
+      <v-icon>label</v-icon> glisser l'activité à ajouter mettre ci dessous
+    </p>
   </v-container>
 </template>
 

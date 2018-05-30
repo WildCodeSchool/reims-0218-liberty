@@ -1,8 +1,14 @@
 <template>
   <v-app>
-    <moderation />
-    <field-keywords />
-    <list-messages />
+    <v-layout row>
+      <moderation />
+    </v-layout>
+    <v-layout row>
+      <field-keywords />
+    </v-layout>
+    <v-layout row>
+      <list-messages />
+    </v-layout>
   </v-app>
 </template>
 
