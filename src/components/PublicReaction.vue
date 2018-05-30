@@ -24,11 +24,11 @@
         <v-spacer></v-spacer>
           <v-list-tile-content>
           <v-text-field
-              id="reaction-input"
-              name="personnalisation"
-              label="Réagissez en direct !"
-              placeholder="Réagissez en direct !"
-              textarea
+            id="reaction-input"
+            name="personnalisation"
+            label="Réagissez en direct !"
+            placeholder="Réagissez en direct !"
+            textarea
           />
         </v-list-tile-content>
       </v-list>
