@@ -20,9 +20,11 @@
   <v-layout>
     <short-key />
   </v-layout>
+  <floating-button class="floating" />
 </v-app>
 </template>
 <script>
+import FloatingButton from './FloatingButton.vue'
 import TitlePageActivities from './TitlePageActivities.vue'
 import WordDragAndDrop from './WordDragAndDrop.vue'
 import ListLabelActivities from './ListLabelActivities.vue'
@@ -33,6 +35,7 @@ import PublicReaction from './PublicReaction.vue'
 export default {
   name: 'PageModeration',
   components: {
+    FloatingButton,
     TitlePageActivities,
     WordDragAndDrop,
     ListLabelActivities,
@@ -42,3 +45,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .floating {
+    z-index: 3;
+  }
+</style>

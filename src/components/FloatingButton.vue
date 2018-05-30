@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div>
     <v-card height="300" id="create">
       <v-container>
       <v-speed-dial class="speed-dial speed-dial--right speed-dial--bottom speed-dial--direction-top"
@@ -40,7 +40,7 @@
       </v-speed-dial>
       </v-container>
     </v-card>
-  </v-app>
+  </div>
 </template>
 
 <script>
