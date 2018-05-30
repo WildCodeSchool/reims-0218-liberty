@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+  <v-container>
     <v-btn outline color="grey" class="rounded">
       <span class="group pa-2">
         <v-icon>mouse</v-icon> <!-- lead-pencil -->
       </span>
       {{this.text}}
     </v-btn>
-  </v-app>
+  </v-container>
 </template>
 
 <script>

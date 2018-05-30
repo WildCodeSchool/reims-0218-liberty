@@ -1,14 +1,15 @@
 <template>
-  <v-app>
-    <div>
+    <v-container fluid grid-list-md>
       <h2>
         <span class="group pa-2">
         <v-icon>mouse</v-icon> <!-- lead-pencil -->
-        </span>{{ this.text }}
+        {{ this.text }}
+      </span>
       </h2>
+
       <Publier />
-    </div>
-  </v-app>
+
+    </v-container>
 </template>
 
 <script>
