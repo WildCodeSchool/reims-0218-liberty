@@ -45,18 +45,18 @@
 
 <script>
 export default {
-  name: "FloatingButton",
+  name: 'FloatingButton',
   data: () => ({
-    direction: "top",
+    direction: 'top',
     right: true,
     bottom: true,
-    transition: "scale-transition"
+    transition: 'scale-transition'
   })
-};
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #create .speed-dial {
   position: absolute;

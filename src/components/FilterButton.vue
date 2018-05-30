@@ -7,17 +7,15 @@
 
 <script>
 export default {
-  name: "FilterButton",
-  data: function() {
-    return {
-      text: "Filtre mots-clés"
-    };
-  }
-};
+  name: 'FilterButton',
+  data: () => ({
+    text: 'Filtre mots-clés'
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .rounded {
   border-radius: 5px;

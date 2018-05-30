@@ -23,26 +23,24 @@
 
 <script>
 export default {
-  name: "LabelKeywordsChosen",
+  name: 'LabelKeywordsChosen',
   props: {
     activity: {
       type: Object,
       required: true
     }
   },
-  data: function() {
-    return {
-      chipColor: "#102C60",
-      checkbox: true,
-      radioGroup: 1,
-      switch1: true
-    };
-  }
-};
+  data: () => ({
+    chipColor: '#102C60',
+    checkbox: true,
+    radioGroup: 1,
+    switch1: true
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .theme--light .chip,
 .application .theme--light.chip .blueChip {

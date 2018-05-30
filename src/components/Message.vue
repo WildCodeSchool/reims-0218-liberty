@@ -41,21 +41,19 @@
 export default {
   name: 'Message',
   props: ['author', 'arobase', 'date', 'avatar', 'message', 'cover'],
-  data: function () {
-    return {
-      addAuthor: this.author,
-      addArobase: this.arobase,
-      addDate: this.date,
-      addAvatar: this.avatar,
-      addMessage: this.message,
-      addCover: this.cover
-    }
-  }
+  data: () => ({
+    addAuthor: this.author,
+    addArobase: this.arobase,
+    addDate: this.date,
+    addAvatar: this.avatar,
+    addMessage: this.message,
+    addCover: this.cover
+  })
 }
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #card {
   width: 60%;

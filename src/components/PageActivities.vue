@@ -1,7 +1,7 @@
 <template>
 <v-app>
   <v-layout row>
-    <word-cloud />
+    <word-drag-and-drop />
   </v-layout>
   <v-layout row>
     <list-label-activities />
@@ -20,16 +20,16 @@
 </v-app>
 </template>
 <script>
-import WordCloud from "./WordCloud.vue";
-import ListLabelActivities from "./ListLabelActivities.vue";
-import ActivitiesForm from "./ActivitiesForm.vue";
-import ShortKey from "./ShortKey.vue";
-import PublicReaction from "./PublicReaction.vue";
+import WordDragAndDrop from './WordDragAndDrop.vue'
+import ListLabelActivities from './ListLabelActivities.vue'
+import ActivitiesForm from './ActivitiesForm.vue'
+import ShortKey from './ShortKey.vue'
+import PublicReaction from './PublicReaction.vue'
 
 export default {
-  name: "PageModeration",
+  name: 'PageModeration',
   components: {
-    WordCloud,
+    WordDragAndDrop,
     ListLabelActivities,
     ActivitiesForm,
     ShortKey,

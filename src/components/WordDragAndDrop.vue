@@ -13,17 +13,15 @@
 
 <script>
 export default {
-  name: "WordDragAndDrop",
-  data: function() {
-    return {
-      activity: "Nuage de mots clés"
-    };
-  }
-};
+  name: 'WordDragAndDrop',
+  data: () => ({
+    activity: 'Nuage de mots clés'
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .blueChip {
   color: rgb(90, 90, 90);

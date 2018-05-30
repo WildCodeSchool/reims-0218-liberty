@@ -7,17 +7,15 @@
 
 <script>
 export default {
-  name: "MessagesDiffuses",
-  data: function() {
-    return {
-      text: "Messages diffusés"
-    };
-  }
-};
+  name: 'MessagesDiffuses',
+  data: () => ({
+    text: 'Messages diffusés'
+  })
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .rounded {
   border-radius: 5px;
