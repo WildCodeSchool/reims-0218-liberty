@@ -1,5 +1,5 @@
 <template>
-<v-app>
+<v-app id="page-activities">
     <v-layout row>
     <title-page-activities />
   </v-layout>
@@ -20,7 +20,7 @@
   <v-layout>
     <short-key />
   </v-layout>
-  <floating-button class="floating" />
+  <floating-button id="floating-component"/>
 </v-app>
 </template>
 
@@ -52,8 +52,13 @@ export default {
     background-color: rgb(225, 233, 232);
 
   }
-  .floating {
-    z-index: 3;
-  }
 
+#page-activities {
+  position: relative
+}
+
+#floating-component {
+  position: absolute;
+  right: 0;
+}
 </style>

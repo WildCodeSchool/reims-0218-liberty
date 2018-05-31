@@ -46,8 +46,5 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-.rounded {
-  border-radius: 5px;
-  font-family: 'Material Icons';
-}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card height="300" id="create">
+    <v-card height="300" id="floating-button-card">
       <v-container>
       <v-speed-dial class="speed-dial speed-dial--right speed-dial--bottom speed-dial--direction-top"
       >
@@ -58,11 +58,20 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-#create .speed-dial {
+#floating-button-card .speed-dial {
   position: absolute;
 }
 
-#create .btn--floating {
+#floating-button-card .btn--floating {
   position: relative;
+}
+
+div #floating-button-card {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 12px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    z-index:99;
 }
 </style>

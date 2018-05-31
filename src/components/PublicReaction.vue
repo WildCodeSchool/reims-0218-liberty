@@ -27,7 +27,6 @@
             id="reaction-input"
             name="personnalisation"
             label="Réagissez en direct !"
-            placeholder="Réagissez en direct !"
             textarea
           />
         </v-list-tile-content>
