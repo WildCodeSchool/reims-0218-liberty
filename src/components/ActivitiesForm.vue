@@ -31,7 +31,7 @@ export default {
         },
         {
           label:'Modération',
-          switch:true
+          switch:false
         },
         {
           label:'Autoriser les photos',

@@ -35,7 +35,7 @@ export default {
     chipColor: '#102C60',
     checkbox: true,
     radioGroup: 1,
-    switch1: true
+    switch1: false
   })
 }
 </script>
@@ -57,6 +57,5 @@ input {
 
 .input-group.input-group--selection-controls.switch label {
   padding-left: 14px;
-  /* display: none; */
 }
 </style>

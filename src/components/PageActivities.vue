@@ -50,7 +50,6 @@ export default {
 <style>
   #activity-options {
     background-color: rgb(225, 233, 232);
-
   }
 
 #page-activities {
