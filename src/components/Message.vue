@@ -21,7 +21,7 @@
               <img id="cover" v-bind:src="cover">
             </div>
           </v-flex>
-            <v-icon>label</v-icon>
+            <v-icon id="inputIcon">label</v-icon>
             <v-text-field class="textfield" placeholder="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
             <span id="actionButton">
               <v-icon class="icon">check_box_marked_outline</v-icon>
@@ -143,6 +143,16 @@ input {
 #actionButton .icon {
   width: 17%;
   margin: 0 1%;
+}
+
+.textfield {
+  margin-left: 12px;
+  height: 36px;
+}
+
+#inputIcon {
+  margin-left: 12px;
+  height: 24px;
 }
 
 </style>
