@@ -51,4 +51,9 @@ export default {
 #activity-options-left label {
   font-weight: bold;
 }
+
+#activity-options-left .list{
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+}
 </style>
