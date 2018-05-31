@@ -23,12 +23,12 @@
           </v-flex>
             <v-icon>label</v-icon>
             <v-text-field class="textfield" placeholder="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-            <span id="actionButton" class="mx-auto pb-0">
-              <v-icon>check_box_marked_outline</v-icon>
-              <v-icon>image_plus</v-icon>
-              <v-icon>cast_connected</v-icon>
-              <v-icon>mouse</v-icon> <!-- pencil -->
-              <v-icon>mouse</v-icon> <!-- trash -->
+            <span id="actionButton">
+              <v-icon class="icon">check_box_marked_outline</v-icon>
+              <v-icon class="icon">image_plus</v-icon>
+              <v-icon class="icon">cast_connected</v-icon>
+              <v-icon class="icon">mouse</v-icon> <!-- pencil -->
+              <v-icon class="icon">mouse</v-icon> <!-- trash -->
             </span>
           </v-layout>
         </v-flex>
@@ -135,11 +135,14 @@ input {
 
 #actionButton {
   width: 100%;
+  height: 50px;
+  padding: 0 2%;
   text-align: center;
 }
 
 #actionButton .icon {
-  width: 8%;
-  margin: 5%;
+  width: 17%;
+  margin: 0 1%;
 }
+
 </style>
