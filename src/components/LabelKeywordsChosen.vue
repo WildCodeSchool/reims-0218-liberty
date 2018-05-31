@@ -8,7 +8,6 @@
       <v-chip class="blueChip">
         {{activity.title}}
       </v-chip>
-      <!-- <v-toolbar-items > -->
     <div>
       <v-switch color="cyan" hide-details class="ml-2"
         :label="`Switch 1: ${switch1.toString()}`"
@@ -17,7 +16,7 @@
     </div>
       <v-icon color="cyan" class="ml-2">cast</v-icon>
       <!-- le vrai: cast-connected -->
-      <!-- </v-toolbar-items> -->
+      <p class="unfinished-description" ml-4>Cette activité n'est pas complète</p>
     </v-list-tile>
   </div>
 </template>
@@ -57,5 +56,11 @@ input {
 
 .input-group.input-group--selection-controls.switch label {
   padding-left: 14px;
+}
+
+.unfinished-description {
+  color: orange;
+  font-size: 13px;
+  font-weight: bolder;
 }
 </style>
