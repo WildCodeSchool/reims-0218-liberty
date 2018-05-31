@@ -1,10 +1,10 @@
 <template>
   <v-container fluid grid-list-md>
-    <div>
+    <span v-for="(activity, index) in activities" :key="index">
     <v-chip class="blueChip">
-      {{ this.activity }}
+      {{ activity }}
     </v-chip>
-    </div>
+    </span>
     <p>
       <v-icon>label</v-icon> glisser l'activité à ajouter mettre ci dessous
     </p>
@@ -15,7 +15,7 @@
 export default {
   name: 'WordDragAndDrop',
   data: () => ({
-    activity: 'Nuage de mots clés'
+    activities: ['Nuage de mots clés', 'sondage', 'Quiz QCM', 'Réaction du public', 'Pixel']
   })
 }
 </script>

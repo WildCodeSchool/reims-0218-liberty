@@ -23,6 +23,7 @@
   <floating-button class="floating" />
 </v-app>
 </template>
+
 <script>
 import FloatingButton from './FloatingButton.vue'
 import TitlePageActivities from './TitlePageActivities.vue'
