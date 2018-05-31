@@ -3,9 +3,11 @@
     <v-layout row>
     <title-page-activities />
   </v-layout>
+  <hr />
   <v-layout row>
     <word-drag-and-drop />
   </v-layout>
+  <hr />
   <v-layout row>
     <list-label-activities />
   </v-layout>
@@ -21,6 +23,7 @@
     <short-key />
   </v-layout>
   <floating-button id="floating-component"/>
+  <hr />
 </v-app>
 </template>
 
