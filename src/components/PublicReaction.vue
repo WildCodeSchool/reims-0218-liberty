@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-list id="optionsPublic">
         <v-list-tile>
-            <p class="">Style d'affichage à l'écran</p>
+          <p class="">Style d'affichage à l'écran</p>
           <v-radio-group v-model="row" row>
             <v-radio label="bandeau" value="radio-1" ></v-radio>
             <v-radio label="pleine page" value="radio-2"></v-radio>
