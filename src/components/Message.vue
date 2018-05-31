@@ -1,39 +1,37 @@
 <template>
-    <v-app>
-      <div>
-        <v-flex xs6 id="card">
-          <v-layout row wrap>
-            <v-flex xs12>
-              <p id="author">{{ author }} - @{{ arobase }} - {{ date }}</p>
-            </v-flex>
-          </v-layout>
-          <v-layout row id="bodyMessage">
-            <v-flex hidden-xs-only>
-              <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
-            </v-flex>
-            <v-flex xs12 md10>
-              <p id="message">{{ message }}</p>
-            </v-flex>
-          </v-layout>
-          <v-layout row wrap>
-            <v-flex xs12 justify-center>
-            <div class="illustration text-xs-center">
-              <img id="cover" v-bind:src="cover">
-            </div>
-          </v-flex>
-            <v-icon id="inputIcon">label</v-icon>
-            <v-text-field class="textfield" placeholder="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-            <span id="actionButton">
-              <v-icon class="icon">check_box_marked_outline</v-icon>
-              <v-icon class="icon">image_plus</v-icon>
-              <v-icon class="icon">cast_connected</v-icon>
-              <v-icon class="icon">mouse</v-icon> <!-- pencil -->
-              <v-icon class="icon">mouse</v-icon> <!-- trash -->
-            </span>
-          </v-layout>
+  <div>
+    <v-flex xs6 id="card">
+      <v-layout row wrap>
+        <v-flex xs12>
+          <p id="author">{{ author }} - @{{ arobase }} - {{ date }}</p>
         </v-flex>
-      </div>
-    </v-app>
+      </v-layout>
+      <v-layout row id="bodyMessage">
+        <v-flex hidden-xs-only>
+          <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
+        </v-flex>
+        <v-flex xs12 md10>
+          <p id="message">{{ message }}</p>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap>
+        <v-flex xs12 justify-center>
+        <div class="illustration text-xs-center">
+          <div id="cover" :style="{'background-image': 'url(' + this.cover + ')'}"></div>
+        </div>
+      </v-flex>
+        <v-icon id="inputIcon">label</v-icon>
+        <v-text-field class="textfield" placeholder="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
+        <span id="actionButton">
+          <v-icon class="icon">check_box_marked_outline</v-icon>
+          <v-icon class="icon">image_plus</v-icon>
+          <v-icon class="icon">cast_connected</v-icon>
+          <v-icon class="icon">mouse</v-icon> <!-- pencil -->
+          <v-icon class="icon">mouse</v-icon> <!-- trash -->
+        </span>
+      </v-layout>
+    </v-flex>
+  </div>
 </template>
 
 <script>
@@ -122,6 +120,9 @@ export default {
   height: 240px;
   padding: 0;
   margin: auto;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
 }
 
 #message {
