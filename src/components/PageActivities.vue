@@ -9,7 +9,7 @@
   <v-layout row>
     <list-label-activities />
   </v-layout>
-  <v-layout row>
+  <v-layout row id="activity-options">
     <v-flex xs6>
       <activities-form />
     </v-flex>
@@ -48,7 +48,12 @@ export default {
 </script>
 
 <style>
+  #activity-options {
+    background-color: rgb(225, 233, 232);
+
+  }
   .floating {
     z-index: 3;
   }
+
 </style>

@@ -49,10 +49,11 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 #optionsPublic {
   text-align: left;
+  background-color: rgb(255, 255, 255,0);
+  color: rgba(0, 0, 0, 0.54);
 }
 
 #reaction-input {
-  height: 20px;
+  height: 2em;
 }
-
 </style>
