@@ -10,10 +10,10 @@
     <list-label-activities />
   </v-layout>
   <v-layout row id="activity-options">
-    <v-flex xs6>
+    <v-flex xs12 sm6>
       <activities-form />
     </v-flex>
-    <v-flex xs6>
+    <v-flex xs12 sm6>
       <public-reaction />
     </v-flex>
   </v-layout>
