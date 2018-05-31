@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-flex>
     <template v-for="message in messages">
       <message
         :key="message.index"
@@ -11,7 +11,7 @@
         v-bind:cover=message.cover
       ></message>
     </template>
-  </v-app>
+  </v-flex>
 </template>
 
 <script>

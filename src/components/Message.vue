@@ -21,8 +21,9 @@
               <img id="cover" v-bind:src="cover">
             </div>
           </v-flex>
-            <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-            <span id="actionButton" class="mx-auto">
+            <v-icon>label</v-icon>
+            <v-text-field class="textfield" placeholder="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
+            <span id="actionButton" class="mx-auto pb-0">
               <v-icon>check_box_marked_outline</v-icon>
               <v-icon>image_plus</v-icon>
               <v-icon>cast_connected</v-icon>
@@ -109,6 +110,11 @@ export default {
   font-size: 8px;
   margin: 0;
   padding: 0;
+}
+
+.input-group__details:after,
+.input-group__details:before {
+  display: none;
 }
 
 #cover {
