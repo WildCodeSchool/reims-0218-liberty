@@ -17,12 +17,12 @@
               Temps d'affichage du message :
             </li>
             <v-text-field
-              label="secondes"
               placeholder="10"
               value="10"
               box
               class="time-input"
             />
+            <p>secondes</p>
           </v-list-tile>
           <v-list-tile>
             <li>
@@ -58,13 +58,13 @@ export default {
   text-align: left;
   background-color: rgb(255, 255, 255,0);
   color: rgba(0, 0, 0, 0.54);
+  max-width: 100%;
 }
 
 .time-input {
   margin: 0 0.5em;
   position: absolute;
-width: 40px;
-
+  width: 40px;
 }
 
 .time-input .input-group__input {

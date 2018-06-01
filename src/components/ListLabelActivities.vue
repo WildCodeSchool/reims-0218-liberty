@@ -1,8 +1,11 @@
 <template>
   <v-list id="activities">
     <template v-for="activity in listActivities">
-      <label-keywords-chosen :key="activity.index" v-bind:activity="activity">
-      </label-keywords-chosen>
+      <label-keywords-chosen
+        :key="activity.index"
+        v-bind:activity="activity"
+        v:bind:listActivities.length="activitiesLength" />
+// TODO: correct this v-bind. We need to pass listActivities.length to the child.
     </template>
   </v-list>
 </template>
