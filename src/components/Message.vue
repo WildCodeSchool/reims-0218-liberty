@@ -148,7 +148,7 @@ input {
 
 #actionButton {
   width: 100%;
-  height: 50px;
+  height: 28px;
   padding: 0 2%;
   text-align: center;
 }
