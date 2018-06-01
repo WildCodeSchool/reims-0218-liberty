@@ -31,5 +31,6 @@ export default {
   width: fit-content;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05em;
+  background: linear-gradient(to right, #4959A3 0%, #3ACED9 100%);
 }
 </style>
