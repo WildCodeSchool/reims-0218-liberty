@@ -21,6 +21,7 @@
     "vue": "^2.5.2",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1",
+    "vue-slicksort": "^0.1.8",
     "vuetify": "^1.0.18"
   },
   "devDependencies": {

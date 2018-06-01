@@ -1,7 +1,9 @@
 import Vuetify from 'vuetify'
 import Vue from 'vue'
 // stories/index.js
-import { storiesOf } from '@storybook/vue'
+import {
+  storiesOf
+} from '@storybook/vue'
 import FilterButton from '../components/FilterButton.vue'
 import MessagesBloques from '../components/MessagesBloques.vue'
 import MessagesDiffuses from '../components/MessagesDiffuses.vue'
@@ -22,6 +24,7 @@ import PageActivities from '../components/PageActivities.vue'
 import PageModeration from '../components/PageModeration.vue'
 import WordDragAndDrop from '../components/WordDragAndDrop.vue'
 import TitlePageActivities from '../components/TitlePageActivities.vue'
+import DragAndDrop from '../components/DragAndDrop.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -140,10 +143,22 @@ storiesOf('Blocs', module)
 
 storiesOf('Pages', module)
   .add('page Activités', () => ({
-    components: { PageActivities },
+    components: {
+      PageActivities
+    },
     template: '<page-activities />'
   }))
   .add('page Modération', () => ({
-    components: { PageModeration },
+    components: {
+      PageModeration
+    },
     template: '<page-moderation />'
+  }))
+
+storiesOf('MaxenceTest', module)
+  .add('DragAndDrop', () => ({
+    components: {
+      DragAndDrop
+    },
+    template: '<drag-and-drop />'
   }))
