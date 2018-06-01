@@ -9,12 +9,12 @@
         {{activity.title}}
       </v-chip>
     <div>
-      <v-switch color="cyan" hide-details class="ml-2"
+      <v-switch hide-details class="ml-2"
         :label="`Switch 1: ${switch1.toString()}`"
         v-model="switch1"
       ></v-switch>
     </div>
-      <v-icon color="cyan" class="ml-2">cast</v-icon>
+      <v-icon class="ml-2" v-bind:class="[switch1 ? 'activeClass':'inactiveClass']">cast</v-icon>
       <!-- le vrai: cast-connected -->
       <p v-if="!switch1" class="unfinished-description" ml-4>Cette activité n'est pas complète</p>
     </v-list-tile>
@@ -35,7 +35,12 @@ export default {
     checkbox: true,
     radioGroup: 1,
     switch1: false
-  })
+  }),
+  methods:{
+    getClass(){
+      return this.switch1
+  }
+}
 }
 </script>
 
@@ -62,5 +67,13 @@ input {
   color: orange;
   font-size: 13px;
   font-weight: bolder;
+}
+
+.activeClass {
+  color:cyan !important;
+}
+
+.inactiveClass {
+  color: rgba(0,0,0,0.2);
 }
 </style>
