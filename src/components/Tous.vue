@@ -30,5 +30,6 @@ export default {
   color: white;
   width: fit-content;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05em;
 }
 </style>

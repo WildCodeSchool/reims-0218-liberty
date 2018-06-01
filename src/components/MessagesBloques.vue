@@ -8,7 +8,7 @@
 export default {
   name: 'MessagesBloques',
   data: () => ({
-    text: 'Message bloqués'
+    text: 'Messages bloqués'
   })
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-btn outline color="grey" class="rounded">
+  <v-btn outline color="grey" class="rounded publierMessage">
     <span class="group px-0 my-auto">
       <strong>
         <v-icon>mouse</v-icon> <!-- lead-pencil -->
@@ -19,7 +19,7 @@ export default {
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
-.rounded {
+.publierMessage {
   border-radius: 5px;
   width: fit-content;
   font-family: "Roboto", sans-serif;

@@ -81,7 +81,13 @@ export default {
   min-width: 300px;
   min-height: 500px;
   border-radius: 5%;
-  border: 2px solid purple;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right,
+  #4959A3
+  0%,
+  #3ACED9
+  100%);
+  border-image-slice: 1;
   padding: 0;
   margin: 24px 5%;
 }
