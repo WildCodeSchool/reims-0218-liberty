@@ -1,38 +1,35 @@
 <template>
-    <v-app>
-      <div>
-        <v-flex xs6 id="card">
-          <v-layout row wrap>
-            <v-flex xs12>
-              <p id="author">{{ author }} - @{{ arobase }} - {{ date }}</p>
-            </v-flex>
-          </v-layout>
-          <v-layout row id="bodyMessage">
-            <v-flex hidden-xs-only>
-              <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
-            </v-flex>
-            <v-flex xs12 md10>
-              <p id="message">{{ message }}</p>
-            </v-flex>
-          </v-layout>
-          <v-layout row wrap>
-            <v-flex xs12 justify-center>
-            <div class="illustration text-xs-center">
-              <img id="cover" v-bind:src="cover">
-            </div>
-          </v-flex>
-            <v-icon>label</v-icon> <v-text-field value="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
-            <span id="actionButton" class="mx-auto">
-              <v-icon>check_box_marked_outline</v-icon>
-              <v-icon>image_plus</v-icon>
-              <v-icon>cast_connected</v-icon>
-              <v-icon>mouse</v-icon> <!-- pencil -->
-              <v-icon>mouse</v-icon> <!-- trash -->
-            </span>
-          </v-layout>
-        </v-flex>
+  <div id="card">
+    <v-layout row wrap>
+      <v-flex xs12>
+        <p id="author">{{ author }} - @{{ arobase }} - {{ date }}</p>
+      </v-flex>
+    </v-layout>
+    <v-layout row id="bodyMessage">
+      <v-flex hidden-xs-only>
+        <v-avatar :size="64"><img id="avatar" v-bind:src="avatar"></v-avatar>
+      </v-flex>
+      <v-flex xs12 md10>
+        <p id="message">{{ message }}</p>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap>
+      <v-flex xs12 justify-center>
+      <div class="illustration text-xs-center">
+        <div id="cover" :style="{'background-image': 'url(' + this.cover + ')'}"></div>
       </div>
-    </v-app>
+    </v-flex>
+      <v-icon id="inputIcon">label</v-icon>
+      <v-text-field class="textfield" placeholder="Associez ce message à un ou plusieurs mots-clés"></v-text-field>
+      <span id="actionButton">
+        <v-icon class="icon">check_box_marked_outline</v-icon>
+        <v-icon class="icon">image_plus</v-icon>
+        <v-icon class="icon">cast_connected</v-icon>
+        <v-icon class="icon">mouse</v-icon> <!-- pencil -->
+        <v-icon class="icon">mouse</v-icon> <!-- trash -->
+      </span>
+    </v-layout>
+  </div>
 </template>
 
 <script>
@@ -79,12 +76,14 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #card {
-  width: 60%;
+  width: 40%;
+  display: inline-grid;
   min-width: 300px;
+  min-height: 500px;
   border-radius: 5%;
   border: 2px solid purple;
   padding: 0;
-  margin: 1em;
+  margin: 24px 5%;
 }
 
 #avatar {
@@ -111,11 +110,19 @@ export default {
   padding: 0;
 }
 
+.input-group__details:after,
+.input-group__details:before {
+  display: none;
+}
+
 #cover {
   width: 100%;
   height: 240px;
   padding: 0;
   margin: auto;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
 }
 
 #message {
@@ -129,11 +136,24 @@ input {
 
 #actionButton {
   width: 100%;
+  height: 50px;
+  padding: 0 2%;
   text-align: center;
 }
 
 #actionButton .icon {
-  width: 8%;
-  margin: 5%;
+  width: 17%;
+  margin: 0 1%;
 }
+
+.textfield {
+  margin-left: 12px;
+  height: 36px;
+}
+
+#inputIcon {
+  margin-left: 12px;
+  height: 24px;
+}
+
 </style>

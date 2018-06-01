@@ -1,15 +1,11 @@
 <template>
-    <v-container fluid grid-list-md>
+    <v-layout justify-space-between>
       <h2>
-        <span class="group pa-2">
         <v-icon>mouse</v-icon> <!-- lead-pencil -->
         {{ this.text }}
-      </span>
       </h2>
-
       <Publier />
-
-    </v-container>
+    </v-layout>
 </template>
 
 <script>
