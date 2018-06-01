@@ -134,6 +134,7 @@ export default {
 #message {
   text-align: left;
   margin: 0.5em;
+  font-size: 16px;
 }
 
 input {

@@ -40,7 +40,7 @@ export default {
           arobase: "FlorianHourlier",
           date: "25 mai 2018 - 11h27",
           avatar: "https://forums.dctp.ws/download/file.php?avatar=13904_1487801514.jpg",
-          message: "Ne la laisse pas tomber, elle est si fragile, être une femme libérée, tu sais c'est pas si facile. ♫",
+          message: "Tu dis que la vie qu'on t'a donné est faite pour ça, tant de choses grâce au son tu connaitras. Ton coeur est un saphir de pick-up, on a trouvé des décibels dans ton check-up ! Et tu chantes chantes chantes ce refrain qui te plait ! Et tu tapes tapes tapes, c'est ta façon d'aimer ! Ce rythme qui t'entraine jusqu'au bout de la nuit, réveille en toi le tourbillon d'un vent de folie !",
           cover: "http://www.topkool.com/fr/wp-content/uploads/2013/01/detective-conan-012.jpg",
         },
         {
