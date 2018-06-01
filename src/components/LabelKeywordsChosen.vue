@@ -16,7 +16,7 @@
     </div>
       <v-icon color="cyan" class="ml-2">cast</v-icon>
       <!-- le vrai: cast-connected -->
-      <p class="unfinished-description" ml-4>Cette activité n'est pas complète</p>
+      <p v-if="!switch1" class="unfinished-description" ml-4>Cette activité n'est pas complète</p>
     </v-list-tile>
   </div>
 </template>
