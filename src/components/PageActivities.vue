@@ -7,7 +7,7 @@
   <v-layout row>
     <word-drag-and-drop />
   </v-layout>
-  <hr />
+  <hr class="bold-hr" />
   <v-layout row>
     <list-label-activities />
   </v-layout>
@@ -62,5 +62,12 @@ export default {
 #floating-component {
   position: absolute;
   right: 0;
+}
+
+.bold-hr {
+    border: none;
+    height: 2px;
+    color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
 }
 </style>
