@@ -10,7 +10,6 @@
       </v-chip>
     <div>
       <v-switch hide-details class="ml-2"
-        :label="`Switch 1: ${switch1.toString()}`"
         v-model="switch1"
       ></v-switch>
     </div>
