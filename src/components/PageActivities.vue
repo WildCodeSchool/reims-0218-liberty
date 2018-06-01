@@ -53,6 +53,10 @@ export default {
 <style>
   #activity-options {
     background-color: rgb(225, 233, 232);
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgba(0,0,0,0.2);
   }
 
 #page-activities {
