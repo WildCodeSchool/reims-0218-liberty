@@ -1,15 +1,11 @@
 <template>
-    <v-container fluid grid-list-md>
+    <v-layout justify-space-between>
       <h2>
-        <span class="group pa-2">
         <v-icon>mouse</v-icon> <!-- lead-pencil -->
         {{ this.text }}
-      </span>
       </h2>
-
       <Publier />
-
-    </v-container>
+    </v-layout>
 </template>
 
 <script>
@@ -20,7 +16,7 @@ export default {
     Publier
   },
   data: () => ({
-    text: 'Moderation'
+    text: 'Modération'
   })
 }
 </script>
@@ -29,5 +25,13 @@ export default {
 .rounded {
   border-radius: 5px;
   font-family: 'Material Icons';
+}
+
+h2 {
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  height: 32px;
+  margin: auto 0 auto 0.5em;
 }
 </style>
