@@ -1,7 +1,7 @@
 <template>
   <v-container fluid grid-list-md>
     <span v-for="(activity, index) in activities" :key="index">
-    <v-chip class="blueChip">
+    <v-chip outline color="grey" class="drag-activity-chip">
       {{ activity }}
     </v-chip>
     </span>
@@ -24,10 +24,11 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-.blueChip {
-  color: rgb(90, 90, 90);
-  border: 1px solid rgb(145, 145, 145);
-  font-weight: 800;
+.drag-activity-chip {
+  /* color: rgb(0,0,0,0.2);
+  border: 2px solid rgb(0,0,0,0.2);
+  background-color: rgba(255,255,255,0);
+   */
   width: fit-content;
 }
 
