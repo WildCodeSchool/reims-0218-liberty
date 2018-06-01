@@ -46,7 +46,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-.list__tile .blueChip {
+.list__tile > .blueChip {
   background-color: rgb(15, 64, 92);
   color: white;
   font-weight: 800;
