@@ -1,5 +1,5 @@
 <template>
-  <span id="shortkey">
+  <span id="shortkey" class="ml-2 mt-4">
     Définir la touche raccourci
     <input class="inputField" type="text" readonly id="definedShortKey" value="">
     <v-chip class="activity-ready">C'est prêt !</v-chip>
