@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-list-tile>
-      <v-icon>drag_indicator</v-icon>
+      <v-icon>more_vert</v-icon>
       <v-chip class="blueChip">
         {{activity.index}}
       </v-chip>
