@@ -74,4 +74,8 @@ div #floating-button-card {
     0px 1px 3px 0px rgba(0, 0, 0, 0);
     z-index:99;
 }
+
+button i {
+  margin-top: 15px;
+}
 </style>
