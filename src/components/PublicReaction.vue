@@ -15,13 +15,15 @@
           <v-list-tile class="label-hidden">
             <li>
               Temps d'affichage du message :
+              <input type="number" class="time-input" placeholder="10" min="5" max="20"/>
+              <!-- <v-text-field
+                placeholder="10"
+                value="10"
+                box
+                class="time-input"
+              /> -->
+              secondes
             </li>
-            <v-text-field
-              label="secondes"
-              placeholder="10"
-              value="10"
-              box
-            />
           </v-list-tile>
           <v-list-tile>
             <li>
@@ -60,6 +62,21 @@ export default {
 
 #reaction-input {
   height: 1em;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    width: 56px;
+    padding: 0 0.5em;
+    margin-left: 0.25em;
+    border: 1px solid black;
+    background-color: white;
 }
 
 
