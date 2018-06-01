@@ -10,7 +10,7 @@
           dark
           fab
         >
-          <v-icon>account_circle</v-icon>
+          <v-icon>apps</v-icon>
           <v-icon>close</v-icon>
         </v-btn>
         <v-btn
@@ -73,5 +73,9 @@ div #floating-button-card {
     0px 0px 0px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0);
     z-index:99;
+}
+
+button i {
+  margin-top: 15px;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <span>
+  <span id="shortkey" class="ml-2 mt-4">
     Définir la touche raccourci
     <input class="inputField" type="text" readonly id="definedShortKey" value="">
-    <v-chip>C'est prêt !</v-chip>
+    <v-chip class="activity-ready">C'est prêt !</v-chip>
     <v-icon>delete</v-icon>
   </span>
 </template>
@@ -68,25 +68,25 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
-span {
-  width: 100%;
-  color: #72768d;
+
+#shortkey {
+  color:  rgba(0,0,0,0.54)
 }
 
+#shortkey > .activity-ready > .chip__content {
+  background: rgba(0,0,0,0.54);
+  color: white;
+  font-weight: 800;
+}
+
+.activity-ready {
+  background-color:rgba(0,0,0,0.3);
+  margin: 0 1em;
+  width: auto;
+}
 .inputField {
   border: 1px solid black;
   margin: 0 0.5em;
   width: auto;
-}
-
-.chip {
-  background-color: #72768d;
-  margin: 0 1em;
-  width: auto;
-}
-
-.chip__content {
-  color: white;
-  font-weight: 800;
 }
 </style>
