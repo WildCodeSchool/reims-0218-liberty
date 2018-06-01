@@ -77,13 +77,13 @@ export default {
 
 #card {
   width: 40%;
-  display: inline-block;
+  display: inline-grid;
   min-width: 300px;
+  min-height: 500px;
   border-radius: 5%;
   border: 2px solid purple;
   padding: 0;
   margin: 24px 5%;
-  page-break-inside: avoid;
 }
 
 #avatar {
