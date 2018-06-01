@@ -16,7 +16,7 @@ export default {
     Publier
   },
   data: () => ({
-    text: 'Moderation'
+    text: 'Modération'
   })
 }
 </script>
@@ -25,5 +25,13 @@ export default {
 .rounded {
   border-radius: 5px;
   font-family: 'Material Icons';
+}
+
+h2 {
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  height: 32px;
+  margin: auto 0 auto 0.5em;
 }
 </style>

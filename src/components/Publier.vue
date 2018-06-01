@@ -1,8 +1,10 @@
 <template>
   <v-btn outline color="grey" class="rounded">
-    <span class="group pa-2">
-      <v-icon>mouse</v-icon> <!-- lead-pencil -->
-      {{this.text}}
+    <span class="group px-0 my-auto">
+      <strong>
+        <v-icon>mouse</v-icon> <!-- lead-pencil -->
+        {{this.text}}
+      </strong>
     </span>
   </v-btn>
 </template>
@@ -16,10 +18,22 @@ export default {
 }
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
 .rounded {
   border-radius: 5px;
-  font-family: 'Material Icons';
   width: fit-content;
+  font-family: "Roboto", sans-serif;
+}
+
+.icon {
+  height: 26px;
+}
+
+.group {
+  color: black;
+}
+
+.toolbar__content > :not(.btn):not(.menu):last-child:not(:only-child) {
+  margin-right: 0;
 }
 </style>
