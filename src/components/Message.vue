@@ -107,6 +107,7 @@ export default {
   text-align: left;
   color: #9094a7;
   margin: 0.5em 1em;
+  font-size: 14px;
 }
 
 .input-group {
@@ -114,6 +115,10 @@ export default {
   font-size: 8px;
   margin: 0;
   padding: 0;
+}
+
+.input-group--text-field input {
+  font-size: 12px;
 }
 
 .input-group__details:after,
@@ -156,6 +161,7 @@ input {
 .textfield {
   margin-left: 12px;
   height: 36px;
+  font-size: 10px;
 }
 
 #inputIcon {
