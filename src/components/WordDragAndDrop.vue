@@ -5,7 +5,8 @@
       {{ activity }}
     </v-chip>
     </span>
-    <p>
+    <p class="drag-and-drop-indication">
+      <!-- This is a SINGLE arrow down, we need a double one -->
       <v-icon>keyboard_arrow_down</v-icon> Glissez l'activité à ajouter ci-dessous
     </p>
   </v-container>
@@ -15,7 +16,7 @@
 export default {
   name: 'WordDragAndDrop',
   data: () => ({
-    activities: ['Nuage de mots clés', 'sondage', 'Quiz QCM', 'Réaction du public', 'Pixel']
+    activities: ['Nuage de mots clés', 'Sondage', 'Quiz / QCM', 'Réaction du public', 'Pixel']
   })
 }
 </script>
@@ -28,5 +29,9 @@ export default {
   border: 1px solid rgb(145, 145, 145);
   font-weight: 800;
   width: fit-content;
+}
+
+.drag-and-drop-indication {
+  font-size: 0.8em;
 }
 </style>
