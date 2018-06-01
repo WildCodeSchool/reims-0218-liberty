@@ -69,6 +69,10 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
+#shortkey {
+  color:  rgba(0,0,0,0.54)
+}
+
 #shortkey > .activity-ready > .chip__content {
   background: rgba(0,0,0,0.54);
   color: white;

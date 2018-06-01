@@ -25,14 +25,11 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .drag-activity-chip {
-  /* color: rgb(0,0,0,0.2);
-  border: 2px solid rgb(0,0,0,0.2);
-  background-color: rgba(255,255,255,0);
-   */
   width: fit-content;
 }
 
 .drag-and-drop-indication {
   font-size: 0.8em;
+  color: rgba(0,0,0,0.54)
 }
 </style>
