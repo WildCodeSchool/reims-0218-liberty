@@ -12,7 +12,7 @@
               <v-radio label="pleine page" value="radio-2"></v-radio>
             </v-radio-group>
           </v-list-tile>
-          <v-list-tile class="label-hidden">
+          <v-list-tile class="time-tile">
             <li>
               Temps d'affichage du message :
             </li>
@@ -21,6 +21,7 @@
               placeholder="10"
               value="10"
               box
+              class="time-input"
             />
           </v-list-tile>
           <v-list-tile>
@@ -59,15 +60,36 @@ export default {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.time-input {
+  margin: 0 0.5em;
+  position: absolute;
+width: 40px;
+
+}
+
+.time-input .input-group__input {
+  border: 1px solid rgba(0,0,0,0.5);
+  margin-left: 10px;
+  height: 22.9px;
+
+}
+
+.time-input label {
+  position: relative;
+  left: 80px;
+}
+
 .reaction-tile > .reaction-text-field {
   background-color: whitesmoke;
-  width: 20em;
+  color: rgba(0, 0, 0, 0.54);
+  width: 24em;
 }
 
 .input-group__details {
   display: none;
 }
-.input-group {
+
+.reaction-tile .input-group {
   padding-top: 35px;
 }
 
