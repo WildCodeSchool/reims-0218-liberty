@@ -85,8 +85,8 @@ export default {
   width: auto;
 }
 .inputField {
-  border: 1px solid black;
+  border: 1px solid rgba(0,0,0,0.5);
   margin: 0 0.5em;
-  width: auto;
+  width: 40px;
 }
 </style>
