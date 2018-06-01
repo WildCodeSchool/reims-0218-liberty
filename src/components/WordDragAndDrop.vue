@@ -6,7 +6,7 @@
     </v-chip>
     </span>
     <p>
-      <v-icon>label</v-icon> glisser l'activité à ajouter mettre ci dessous
+      <v-icon>keyboard_arrow_down</v-icon> Glissez l'activité à ajouter ci-dessous
     </p>
   </v-container>
 </template>
