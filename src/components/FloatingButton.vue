@@ -69,9 +69,9 @@ export default {
 div #floating-button-card {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 12px;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0),
     0px 0px 0px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    0px 1px 3px 0px rgba(0, 0, 0, 0);
     z-index:99;
 }
 </style>
