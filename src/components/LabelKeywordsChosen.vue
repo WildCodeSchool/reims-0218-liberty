@@ -15,7 +15,7 @@
       ></v-switch>
     </div>
       <v-icon hide-details class="ml-2" v-bind:class="[switch1 ? 'activeClass':'inactiveClass']">cast_connected</v-icon>
-      <p v-if="!switch1" class="unfinished-description" ml-4>Cette activité n'est pas complète</p>
+      <p v-if="!switch1" class="unfinished-description">Cette activité n'est pas complète</p>
     </v-list-tile>
   </div>
 </template>
@@ -66,6 +66,9 @@ input {
   color: orange;
   font-size: 13px;
   font-weight: bolder;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-right: auto;
 }
 
 .activeClass {
