@@ -2,7 +2,8 @@
   <span>
     Définir la touche raccourci
     <input class="inputField" type="text" readonly id="definedShortKey" value="">
-    <v-chip>C'est prêt !</v-chip><v-icon>mouse</v-icon>
+    <v-chip>C'est prêt !</v-chip>
+    <v-icon>delete</v-icon>
   </span>
 </template>
 

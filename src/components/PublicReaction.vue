@@ -3,14 +3,14 @@
     <v-layout row wrap>
       <v-list id="optionsPublic">
         <v-list-tile>
-            Style d'affichage à l'écran
+          <p class="">Style d'affichage à l'écran</p>
           <v-radio-group v-model="row" row>
             <v-radio label="bandeau" value="radio-1" ></v-radio>
             <v-radio label="pleine page" value="radio-2"></v-radio>
           </v-radio-group>
         </v-list-tile>
         <v-list-tile class="label-hidden">
-          Temps d'affichage du message :
+          <p>Temps d'affichage du message :</p>
           <v-text-field
             label="secondes"
             placeholder="10"
@@ -19,16 +19,13 @@
           />
         </v-list-tile>
         <v-list-tile class="label-hidden">
-          Personnalisez la box du message :
+          <p>Personnalisez la box du message :</p>
         </v-list-tile>
-        <v-spacer></v-spacer>
           <v-list-tile-content>
           <v-text-field
             id="reaction-input"
             name="personnalisation"
             label="Réagissez en direct !"
-            placeholder="Réagissez en direct !"
-            textarea
           />
         </v-list-tile-content>
       </v-list>
@@ -49,10 +46,11 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 #optionsPublic {
   text-align: left;
+  background-color: rgb(255, 255, 255,0);
+  color: rgba(0, 0, 0, 0.54);
 }
 
 #reaction-input {
-  height: 20px;
+  height: 1em;
 }
-
 </style>

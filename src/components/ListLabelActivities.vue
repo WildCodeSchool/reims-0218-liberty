@@ -15,21 +15,21 @@ export default {
   components: {
     LabelKeywordsChosen
   },
-  data: () =>  ({
-      listActivities: [
-        {
-          index: 1,
-          title: 'Nuage de mots clés'
-        },
-        {
-          index: 2,
-          title: 'Vote'
-        },
-        {
-          index: 3,
-          title: 'Réaction du public'
-        }
-      ]
+  data: () => ({
+    listActivities: [
+      {
+        index: 1,
+        title: 'Nuage de mots clés'
+      },
+      {
+        index: 2,
+        title: 'Vote'
+      },
+      {
+        index: 3,
+        title: 'Réaction du public'
+      }
+    ]
   })
 }
 </script>

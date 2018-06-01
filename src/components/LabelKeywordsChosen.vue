@@ -1,23 +1,22 @@
 <template>
   <div>
-    <v-toolbar>
+    <v-list-tile>
+      <v-icon>more_vert</v-icon>
       <v-chip class="blueChip">
         {{activity.index}}
       </v-chip>
       <v-chip class="blueChip">
         {{activity.title}}
       </v-chip>
-      <!-- <v-toolbar-items > -->
     <div>
-      <v-switch color="cyan" hide-details class="ml-2"
+      <v-switch hide-details class="ml-2"
         :label="`Switch 1: ${switch1.toString()}`"
         v-model="switch1"
       ></v-switch>
     </div>
-      <v-icon color="cyan" class="ml-2">cast</v-icon>
-      <!-- le vrai: cast-connected -->
-      <!-- </v-toolbar-items> -->
-    </v-toolbar>
+      <v-icon hide-details class="ml-2" v-bind:class="[switch1 ? 'activeClass':'inactiveClass']">cast_connected</v-icon>
+      <p v-if="!switch1" class="unfinished-description" ml-4>Cette activité n'est pas complète</p>
+    </v-list-tile>
   </div>
 </template>
 
@@ -34,8 +33,13 @@ export default {
     chipColor: '#102C60',
     checkbox: true,
     radioGroup: 1,
-    switch1: true
-  })
+    switch1: false
+  }),
+  methods:{
+    getClass(){
+      return this.switch1
+  }
+}
 }
 </script>
 
@@ -56,6 +60,19 @@ input {
 
 .input-group.input-group--selection-controls.switch label {
   padding-left: 14px;
-  /* display: none; */
+}
+
+.unfinished-description {
+  color: orange;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.activeClass {
+  color:cyan !important;
+}
+
+.inactiveClass {
+  color: rgba(0,0,0,0.2);
 }
 </style>

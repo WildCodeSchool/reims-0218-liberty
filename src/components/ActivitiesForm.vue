@@ -1,16 +1,18 @@
 <template>
-  <!-- <v-container grid-list-md text-xs-center> -->
+  <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
-      <v-flex xs6 ml-6>
-        <div v-for="(option, index) in options" :key="index">
+      <v-flex xs12 md-6 id="activity-options-left">
+        <v-list v-for="(option, index) in options" :key="index">
+          <v-list-tile>
           <v-switch color="cyan" hide-details class="ml-2"
             :label="option.label"
             v-model="option.switch"
           />
-        </div>
+          </v-list-tile>
+        </v-list>
       </v-flex>
     </v-layout>
-  <!-- </v-container> -->
+  </v-container>
 </template>
 
 <script>
@@ -29,7 +31,7 @@ export default {
         },
         {
           label:'Modération',
-          switch:true
+          switch:false
         },
         {
           label:'Autoriser les photos',
@@ -46,8 +48,12 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-.rounded {
-  border-radius: 5px;
-  font-family: 'Material Icons';
+#activity-options-left label {
+  font-weight: bold;
+}
+
+#activity-options-left .list{
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
 }
 </style>

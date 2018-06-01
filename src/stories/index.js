@@ -21,6 +21,7 @@ import PublicReaction from '../components/PublicReaction.vue'
 import PageActivities from '../components/PageActivities.vue'
 import PageModeration from '../components/PageModeration.vue'
 import WordDragAndDrop from '../components/WordDragAndDrop.vue'
+import TitlePageActivities from '../components/TitlePageActivities.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -117,6 +118,12 @@ storiesOf('Blocs', module)
       Moderation
     },
     template: '<moderation />'
+  }))
+  .add('TitlePageActivities', () => ({
+    components: {
+      TitlePageActivities
+    },
+    template: '<title-page-activities />'
   }))
   .add('ActivitiesForm', () => ({
     components: {
