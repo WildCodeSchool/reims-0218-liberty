@@ -10,7 +10,7 @@
           dark
           fab
         >
-          <v-icon>account_circle</v-icon>
+          <v-icon>apps</v-icon>
           <v-icon>close</v-icon>
         </v-btn>
         <v-btn
