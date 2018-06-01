@@ -28,11 +28,12 @@
               Personnalisez la box du message :
             </li>
           </v-list-tile>
-            <v-list-tile-content>
+            <v-list-tile-content class="reaction-tile">
             <v-text-field
               id="reaction-input"
               name="personnalisation"
               label="Réagissez en direct !"
+              class="reaction-text-field"
             />
           </v-list-tile-content>
         </ul>
@@ -58,9 +59,22 @@ export default {
   color: rgba(0, 0, 0, 0.54);
 }
 
-#reaction-input {
-  height: 1em;
+.reaction-tile > .reaction-text-field {
+  background-color: whitesmoke;
+  width: 20em;
 }
 
+.input-group__details {
+  display: none;
+}
+.input-group {
+  padding-top: 35px;
+}
+
+.reaction-text-field label {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+}
 
 </style>
