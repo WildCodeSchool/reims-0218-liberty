@@ -1,29 +1,31 @@
 <template>
 <v-app id="page-activities">
+  <v-container>
+      <v-layout row>
+      <title-page-activities />
+    </v-layout>
+    <hr />
     <v-layout row>
-    <title-page-activities />
-  </v-layout>
-  <hr />
-  <v-layout row>
-    <word-drag-and-drop />
-  </v-layout>
-  <hr class="bold-hr" />
-  <v-layout row>
-    <list-label-activities />
-  </v-layout>
-  <v-layout row id="activity-options">
-    <v-flex xs12 sm6>
-      <activities-form />
-    </v-flex>
-    <v-flex xs12 sm6>
-      <public-reaction />
-    </v-flex>
-  </v-layout>
-  <v-layout>
-    <short-key />
-  </v-layout>
-  <floating-button id="floating-component"/>
-  <hr />
+      <word-drag-and-drop />
+    </v-layout>
+    <hr class="bold-hr" />
+    <v-layout row>
+      <list-label-activities />
+    </v-layout>
+    <v-layout row id="activity-options">
+      <v-flex xs12 sm6>
+        <activities-form />
+      </v-flex>
+      <v-flex xs12 sm6>
+        <public-reaction />
+      </v-flex>
+    </v-layout>
+    <v-layout>
+      <short-key />
+    </v-layout>
+    <hr />
+    </v-container>
+    <floating-button id="floating-component"/>
 </v-app>
 </template>
 
@@ -51,16 +53,16 @@ export default {
 </script>
 
 <style>
-  #activity-options {
-    background-color: rgb(225, 233, 232);
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: rgba(0,0,0,0.2);
-  }
+#activity-options {
+  background-color: rgb(225, 233, 232);
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
 
 #page-activities {
-  position: relative
+  position: relative;
 }
 
 #floating-component {
@@ -69,9 +71,9 @@ export default {
 }
 
 .bold-hr {
-    border: none;
-    height: 2px;
-    color: rgba(0,0,0,0.2);
-    background-color: rgba(0,0,0,0.2);
+  border: none;
+  height: 2px;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 </style>

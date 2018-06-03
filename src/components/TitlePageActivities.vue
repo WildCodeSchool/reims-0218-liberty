@@ -1,8 +1,8 @@
 <template>
   <v-container fluid grid-list-md>
     <h2>
+      <v-icon class="outlined_flag">outlined_flag</v-icon>
       <span class="group pa-2 page-title">
-        <v-icon>outlined_flag</v-icon> <!-- lead-pencil -->
         {{ this.text }}
       </span>
     </h2>
@@ -24,6 +24,10 @@ export default {
 .page-title {
   color: grey;
   font-weight: normal;
+}
+.outlined_flag{
+  /* color: rgba(0, 0, 0, 0.5) */
+  color: red;
 }
 
 </style>

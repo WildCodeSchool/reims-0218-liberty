@@ -26,11 +26,11 @@ export default {
   letter-spacing: 0.2rem;
 }
 
-.theme--light .btn, .application .theme--light.btn {
+/* .theme--light .btn, .application .theme--light.btn {
   color: white;
   width: fit-content;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05em;
   background: linear-gradient(to right, #4959A3 0%, #3ACED9 100%);
-}
+} */
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <span id="shortkey" class="ml-2 mt-4">
+  <span id="shortkey" class="ma-1">
     Définir la touche raccourci
     <input class="inputField" type="text" readonly id="definedShortKey" value="">
     <v-chip class="activity-ready">C'est prêt !</v-chip>
@@ -73,7 +73,7 @@ export default {
   color:  rgba(0,0,0,0.54)
 }
 
-#shortkey > .activity-ready > .chip__content {
+#shortkey > .activity-ready {
   background: rgba(0,0,0,0.54);
   color: white;
   font-weight: 800;
@@ -87,6 +87,7 @@ export default {
 .inputField {
   border: 1px solid black;
   margin: 0 0.5em;
-  width: auto;
+  page-break-after: 0 0.25em;
+  width: 48px;
 }
 </style>
