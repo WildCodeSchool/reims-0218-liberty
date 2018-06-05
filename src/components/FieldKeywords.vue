@@ -1,13 +1,13 @@
 <template>
-  <v-toolbar>
+  <v-layout>
       <tous />
-      <v-spacer />
-    <div class="hidden-sm-and-down">
       <messages-diffuses />
       <messages-bloques />
+      <v-spacer />
+    <div class="hidden-sm-and-down">
       <filter-bouton />
     </div>
-  </v-toolbar>
+  </v-layout>
 </template>
 
 <script>
@@ -30,3 +30,7 @@ export default {
   })
 }
 </script>
+
+<style>
+
+</style>

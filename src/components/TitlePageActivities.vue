@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid grid-list-md>
+  <v-container fluid class="containerTitlePageActivities pb-2">
     <h2>
+      <v-icon>outlined_flag</v-icon>
       <span class="group pa-2 page-title">
-        <v-icon>outlined_flag</v-icon> <!-- lead-pencil -->
         {{ this.text }}
       </span>
     </h2>
@@ -30,5 +30,8 @@ export default {
   color: rgba(0,0,0,0.8);
 }
 
+.containerTitlePageActivities{
+  padding: 0px;
+}
 </style>
 

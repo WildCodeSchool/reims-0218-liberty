@@ -5,37 +5,41 @@
       <v-speed-dial class="speed-dial speed-dial--right speed-dial--bottom speed-dial--direction-top"
       >
         <v-btn
+          class="floating-buttons"
           slot="activator"
           color="blue darken-2"
           dark
           fab
         >
-          <v-icon>apps</v-icon>
+          <v-icon color="white">apps</v-icon>
           <v-icon>close</v-icon>
         </v-btn>
         <v-btn
+          class="floating-buttons"
           fab
           dark
           small
           color="green"
         >
-          <v-icon>edit</v-icon>
+          <v-icon color="white">edit</v-icon>
         </v-btn>
         <v-btn
+          class="floating-buttons"
           fab
           dark
           small
           color="indigo"
         >
-          <v-icon>add</v-icon>
+          <v-icon color="white">add</v-icon>
         </v-btn>
         <v-btn
+          class="floating-buttons"
           fab
           dark
           small
           color="red"
         >
-          <v-icon>delete</v-icon>
+          <v-icon color="white">delete</v-icon>
         </v-btn>
       </v-speed-dial>
       </v-container>
@@ -75,7 +79,7 @@ div #floating-button-card {
     z-index:99;
 }
 
-button i {
+.floating-buttons i {
   margin-top: 15px;
 }
 </style>

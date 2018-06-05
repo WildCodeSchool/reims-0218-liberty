@@ -18,9 +18,8 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 .rounded {
-  border-radius: 5px;
+  border-radius: 7px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0.2rem;
 }
 </style>

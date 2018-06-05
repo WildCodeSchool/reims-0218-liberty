@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-list-tile class="chosen-activity">
+    <v-list-tile class="pb-3 pt-3 listLabelKeywordsChosen">
       <v-icon>more_vert</v-icon>
       <v-chip class="blueChip">
         {{activity.index}}
@@ -16,6 +16,9 @@
       <v-icon hide-details class="ml-2" v-bind:class="[switch1 ? 'activeClass':'inactiveClass']">cast_connected</v-icon>
       <p v-if="!switch1" class="unfinished-description">Cette activité n'est pas complète</p>
     </v-list-tile>
+    <!-- So if the hr is the last one, we don't display it. -->
+    <!-- you can use activity.index because we initialized .index to 1. -->
+    <hr v-if="activity.index === activitiesLength" class="hidden-hr"/>
   </div>
 </template>
 
@@ -25,6 +28,10 @@ export default {
   props: {
     activity: {
       type: Object,
+      required: true
+    },
+    activitiesLength: {
+      type: Number,
       required: true
     }
   },
@@ -44,7 +51,9 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
-
+.list__tile{
+  padding: 0px;
+}
 .list__tile > .blueChip {
   background-color: rgb(5, 60, 122);
   color: white;
@@ -73,7 +82,10 @@ input {
   color:cyan !important;
 }
 
-.chosen-activity .inactiveClass {
+.listLabelKeywordsChosen .inactiveClass {
   color: rgba(0,0,0,0.2);
+}
+.listLabelKeywordsChosen{
+  padding: 0px;
 }
 </style>

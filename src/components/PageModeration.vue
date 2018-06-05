@@ -1,16 +1,16 @@
 <template>
-  <v-app class="page-moderation">
-    <v-layout row>
+  <v-container class="page-moderation">
+    <v-layout row class="moderation pb-1">
       <moderation />
     </v-layout>
-    <v-layout row>
+    <v-layout row class="fieldKeywords pt-1 pb-1">
       <field-keywords />
     </v-layout>
     <v-layout row>
       <list-messages />
     </v-layout>
     <floating-button class="floating-button" />
-  </v-app>
+  </v-container>
 </template>
 
 <script>
@@ -40,5 +40,13 @@ export default {
 .floating-button {
   position: absolute;
   right: 0;
+}
+
+.moderation{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.fieldKeywords{
+  border-bottom: 2px solid slateblue;
 }
 </style>
