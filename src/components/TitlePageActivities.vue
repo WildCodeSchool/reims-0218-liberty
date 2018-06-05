@@ -25,6 +25,11 @@ export default {
   color: grey;
   font-weight: normal;
 }
+
+.page-title .icon{
+  color: rgba(0,0,0,0.8);
+}
+
 .containerTitlePageActivities{
   padding: 0px;
 }

@@ -1,31 +1,31 @@
 <template>
 <v-app id="page-activities">
   <v-container>
-      <v-layout row>
-      <title-page-activities />
-    </v-layout>
-    <hr />
     <v-layout row>
-      <word-drag-and-drop />
-    </v-layout>
-    <hr class="bold-hr" />
-    <v-layout row>
-      <list-label-activities />
-    </v-layout>
-    <v-layout row id="activity-options">
-      <v-flex xs12 sm4>
-        <activities-form />
-      </v-flex>
-      <v-flex xs12 sm8>
-        <public-reaction />
-      </v-flex>
-    </v-layout>
-    <v-layout>
-      <short-key />
-    </v-layout>
-    <hr />
-    </v-container>
-    <floating-button id="floating-component"/>
+    <title-page-activities />
+  </v-layout>
+  <hr />
+  <v-layout row>
+    <word-drag-and-drop />
+  </v-layout>
+  <hr class="bold-hr" />
+  <v-layout row>
+    <list-label-activities />
+  </v-layout>
+  <v-layout row id="activity-options">
+    <v-flex xs12 sm4>
+      <activities-form />
+    </v-flex>
+    <v-flex xs12 sm8>
+      <public-reaction />
+    </v-flex>
+  </v-layout>
+  <v-layout>
+    <short-key />
+  </v-layout>
+  <hr />
+  </v-container>
+  <floating-button id="floating-component"/>
 </v-app>
 </template>
 

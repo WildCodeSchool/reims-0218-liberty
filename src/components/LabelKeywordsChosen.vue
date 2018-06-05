@@ -82,7 +82,7 @@ input {
   color:cyan !important;
 }
 
-.inactiveClass {
+.listLabelKeywordsChosen .inactiveClass {
   color: rgba(0,0,0,0.2);
 }
 .listLabelKeywordsChosen{
