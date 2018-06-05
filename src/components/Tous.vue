@@ -26,7 +26,7 @@ export default {
   letter-spacing: 0.2rem;
 }
 
-.theme--light .btn, .application .theme--light.btn {
+.theme--light .rounded {
   color: white;
   width: fit-content;
   font-family: "Roboto", sans-serif;

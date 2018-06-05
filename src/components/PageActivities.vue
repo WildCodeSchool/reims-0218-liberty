@@ -1,6 +1,6 @@
 <template>
 <v-app id="page-activities">
-    <v-layout row>
+  <v-layout row>
     <title-page-activities />
   </v-layout>
   <hr />
