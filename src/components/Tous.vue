@@ -29,5 +29,4 @@ export default {
   font-weight: 800;
   letter-spacing: 0.2rem;
 }
-
 </style>

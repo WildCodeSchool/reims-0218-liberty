@@ -2,10 +2,10 @@
   <div>
     <v-list-tile class="pb-3 pt-3 listLabelKeywordsChosen">
       <v-icon>more_vert</v-icon>
-      <v-chip class="blueChip">
+      <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
         {{activity.index}}
       </v-chip>
-      <v-chip class="blueChip">
+      <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
         {{activity.title}}
       </v-chip>
     <div>
@@ -16,8 +16,6 @@
       <v-icon hide-details class="ml-2" v-bind:class="[switch1 ? 'activeClass':'inactiveClass']">cast_connected</v-icon>
       <p v-if="!switch1" class="unfinished-description">Cette activité n'est pas complète</p>
     </v-list-tile>
-    <!-- So if the hr is the last one, we don't display it. -->
-    <!-- you can use activity.index because we initialized .index to 1. -->
     <hr v-if="activity.index === activitiesLength" class="hidden-hr"/>
   </div>
 </template>
@@ -51,18 +49,32 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
 .list__tile{
   padding: 0px;
 }
+
 .list__tile > .blueChip {
   background-color: rgb(5, 60, 122);
+  border-color: rgb(5, 60, 122);
+  border-width: 2px;
   color: white;
   font-weight: 800;
   width: fit-content;
 }
 
+.list__tile > .outline-blue {
+  background-color: white;
+}
+
 input {
   width: fit-content;
+}
+
+.outline-blue {
+    color: rgb(5, 60, 122);
+    border-color: rgb(5, 60, 122);
+    border-width: 2px;
 }
 
 .input-group.input-group--selection-controls.switch label {
@@ -85,6 +97,7 @@ input {
 .listLabelKeywordsChosen .inactiveClass {
   color: rgba(0,0,0,0.2);
 }
+
 .listLabelKeywordsChosen{
   padding: 0px;
 }
