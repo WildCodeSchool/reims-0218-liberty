@@ -1,8 +1,11 @@
 <template>
   <v-list id="activities">
     <template v-for="activity in listActivities">
-      <label-keywords-chosen :key="activity.index" v-bind:activity="activity">
-      </label-keywords-chosen>
+      <label-keywords-chosen
+        :key="activity.index"
+        v-bind:activity="activity"
+        v:bind:listActivities.length="activitiesLength"/>
+        <hr v-show="listActivities.length != activity.index" />
     </template>
   </v-list>
 </template>

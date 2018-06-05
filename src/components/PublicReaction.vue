@@ -12,7 +12,7 @@
               <v-radio label="pleine page" value="radio-2"></v-radio>
             </v-radio-group>
           </v-list-tile>
-          <v-list-tile class="label-hidden">
+          <v-list-tile class="time-tile">
             <li>
               Temps d'affichage du message :
               <input type="number" class="time-input" placeholder="10" min="5" max="20"/>
@@ -24,17 +24,25 @@
               /> -->
               secondes
             </li>
+            <v-text-field
+              placeholder="10"
+              value="10"
+              box
+              class="time-input"
+            />
+            <p>secondes</p>
           </v-list-tile>
           <v-list-tile>
             <li>
               Personnalisez la box du message :
             </li>
           </v-list-tile>
-            <v-list-tile-content>
+            <v-list-tile-content class="reaction-tile">
             <v-text-field
               id="reaction-input"
               name="personnalisation"
               label="Réagissez en direct !"
+              class="reaction-text-field"
             />
           </v-list-tile-content>
         </ul>
@@ -58,10 +66,13 @@ export default {
   text-align: left;
   background-color: rgb(255, 255, 255,0);
   color: rgba(0, 0, 0, 0.54);
+  max-width: 100%;
 }
 
-#reaction-input {
-  height: 1em;
+.time-input {
+  margin: 0 0.5em;
+  position: absolute;
+  width: 40px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -78,6 +89,4 @@ input[type="number"] {
     border: 1px solid black;
     background-color: white;
 }
-
-
 </style>

@@ -1,15 +1,15 @@
 <template>
-  <v-app>
-    <v-layout row>
+  <v-container>
+    <v-layout row class="moderation pb-1">
       <moderation />
     </v-layout>
-    <v-layout row>
+    <v-layout row class="fieldKeywords pt-1 pb-1">
       <field-keywords />
     </v-layout>
     <v-layout row>
       <list-messages />
     </v-layout>
-  </v-app>
+  </v-container>
 </template>
 
 <script>
@@ -29,4 +29,10 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
+.moderation{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.fieldKeywords{
+  border-bottom: 2px solid slateblue;
+}
 </style>
