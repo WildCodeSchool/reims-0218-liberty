@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-list-tile>
+    <v-list-tile class="chosen-activity">
       <v-icon>more_vert</v-icon>
       <v-chip class="blueChip">
         {{activity.index}}
@@ -73,7 +73,7 @@ input {
   color:cyan !important;
 }
 
-.inactiveClass {
+.chosen-activity .inactiveClass {
   color: rgba(0,0,0,0.2);
 }
 </style>
