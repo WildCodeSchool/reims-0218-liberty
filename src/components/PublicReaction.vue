@@ -16,20 +16,7 @@
             <li>
               Temps d'affichage du message :
               <input type="number" class="time-input" placeholder="10" min="5" max="20"/>
-              <!-- <v-text-field
-                placeholder="10"
-                value="10"
-                box
-                class="time-input"
-              /> -->
-              secondes
             </li>
-            <v-text-field
-              placeholder="10"
-              value="10"
-              box
-              class="time-input"
-            />
             <p>secondes</p>
           </v-list-tile>
           <v-list-tile>

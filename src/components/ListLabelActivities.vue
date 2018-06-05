@@ -1,5 +1,5 @@
 <template>
-  <v-list id="activities">
+  <v-list id="listActivities">
     <template v-for="activity in listActivities">
       <label-keywords-chosen
         :key="activity.index"
@@ -40,7 +40,8 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
-#activities {
+#listActivities {
   width: 100%;
+  padding: 0px;
 }
 </style>

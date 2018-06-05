@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid grid-list-md>
+  <v-container fluid class="containerWordDragAndDrop pt-2 pb-1">
     <span v-for="(activity, index) in activities" :key="index">
     <v-chip outline color="grey" class="drag-activity-chip">
       {{ activity }}
@@ -30,6 +30,10 @@ export default {
 
 .drag-and-drop-indication {
   font-size: 0.8em;
-  color: rgba(0,0,0,0.54)
+  color: rgba(0,0,0,0.54);
+  margin: 0;
+}
+.containerWordDragAndDrop{
+  padding: 0px
 }
 </style>

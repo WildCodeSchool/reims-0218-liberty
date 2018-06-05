@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-list-tile>
+    <v-list-tile class="pb-3 pt-3 listLabelKeywordsChosen">
       <v-icon>more_vert</v-icon>
       <v-chip class="blueChip">
         {{activity.index}}
@@ -51,7 +51,9 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
-
+.list__tile{
+  padding: 0px;
+}
 .list__tile > .blueChip {
   background-color: rgb(5, 60, 122);
   color: white;
@@ -83,8 +85,7 @@ input {
 .inactiveClass {
   color: rgba(0,0,0,0.2);
 }
-
-.hidden-hr {
-
+.listLabelKeywordsChosen{
+  padding: 0px;
 }
 </style>
