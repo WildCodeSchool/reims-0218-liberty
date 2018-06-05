@@ -76,7 +76,6 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 #card {
-  width: 40%;
   display: inline-grid;
   min-width: 300px;
   min-height: 500px;
