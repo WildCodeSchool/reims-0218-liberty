@@ -1,5 +1,5 @@
 <template>
-  <div id="card">
+  <!-- <div id="card">
     <v-layout row wrap>
       <v-flex xs12>
         <p id="author">{{ author }} - @{{ arobase }} - {{ date }}</p>
@@ -26,10 +26,43 @@
         <v-icon>image_plus</v-icon>
         <v-icon>cast_connected</v-icon>
         <v-icon>mouse</v-icon> <!-- pencil -->
-        <v-icon>mouse</v-icon> <!-- trash -->
-      </span>
+        <!--<v-icon>mouse</v-icon> <!-- trash -->
+      <!--</span>
     </v-layout>
-  </div>
+  </div> -->
+  <v-card class="cardMessage">
+    <div class="grey--text pa-2">{{ author }} - @{{ arobase }} - {{ date }}</div>
+
+    <v-layout row wrap>
+      <v-flex class="text-xs-center" xs2>
+        <v-avatar :size="64"><img :src="avatar"></v-avatar>
+      </v-flex>
+
+      <v-flex xs10>
+        <v-card-text class="textMessage">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, facere? Veniam nemo doloremque voluptate. Assumenda aliquam libero maxime, iste, repudiandae temporibus quidem eos ab aliquid odit mollitia, tempore totam eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis autem hic laborum, dignissimos quibusdam ad! Autem reiciendis eaque deserunt dolor iure aut ex? Nostrum adipisci nemo in similique eum odio?</p>
+        </v-card-text>
+      </v-flex>
+    </v-layout>
+
+    <v-card-media :src="cover" height="200px"></v-card-media>
+
+    <v-text-field
+      single-line
+      placeholder="truc bidule"
+      prepend-icon="label"
+      class="textFieldMessage"
+    ></v-text-field>
+
+    <v-card-actions>
+      <v-icon>mouse</v-icon>
+      <v-icon>mouse</v-icon>
+      <v-icon>favorite</v-icon>
+      <v-icon>bookmark</v-icon>
+      <v-icon>share</v-icon>
+    </v-card-actions>
+
+  </v-card>
 </template>
 
 <script>
@@ -73,9 +106,26 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+.cardMessage{
+  border: double 4px transparent;
+  border-radius: 1em;
+  background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #1E00FF,#05FBFF);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
 
-#card {
+.textFieldMessage{
+  padding: 0px;
+}
+
+.input-group__details{
+  display: none;
+}
+
+.textMessage{
+  padding: 0px;
+}
+/* #card {
   display: inline-grid;
   min-width: 300px;
   min-height: 500px;
@@ -167,6 +217,6 @@ input {
 #inputIcon {
   margin-left: 12px;
   height: 24px;
-}
+} */
 
 </style>
