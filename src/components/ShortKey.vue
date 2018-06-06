@@ -91,6 +91,6 @@ export default {
 .inputField {
   border: 1px solid rgba(0,0,0,0.5);
   margin: 0 0.5em;
-  width: 40px;
+  width: 100px;
 }
 </style>

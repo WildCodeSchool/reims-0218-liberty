@@ -68,6 +68,7 @@ export default {
 
 #floating-button-card .btn--floating {
   position: relative;
+  top: 210px;
 }
 
 div #floating-button-card {
