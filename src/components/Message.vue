@@ -51,7 +51,7 @@
       single-line
       placeholder="truc bidule"
       prepend-icon="label"
-      class="textFieldMessage"
+      class="textFieldMessage grey--text"
     ></v-text-field>
 
     <v-card-actions>
@@ -121,6 +121,11 @@ export default {
 .textFieldMessage .icon{
   /* cheating a little here */
   padding-left: 24px;
+  padding-right: 5px;
+}
+
+.textFieldMessage input {
+  font-size: 0.8em;
 }
 
 .input-group__details{
