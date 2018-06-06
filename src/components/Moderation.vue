@@ -1,7 +1,7 @@
 <template>
     <v-layout justify-space-between>
       <h2>
-        <v-icon>mouse</v-icon> <!-- lead-pencil -->
+        <v-icon class="mouse">mouse</v-icon> <!-- lead-pencil -->
         {{ this.text }}
       </h2>
       <Publier />
@@ -25,6 +25,10 @@ export default {
 .rounded {
   border-radius: 5px;
   font-family: 'Material Icons';
+}
+
+.theme--light .mouse{
+  color: black;
 }
 
 h2 {

@@ -1,17 +1,19 @@
 <template>
-  <v-flex>
-    <template v-for="message in messages">
-      <message
-        :key="message.index"
-        v-bind:author=message.author
-        v-bind:arobase=message.arobase
-        v-bind:date=message.date
-        v-bind:avatar=message.avatar
-        v-bind:message=message.message
-        v-bind:cover=message.cover
-      ></message>
-    </template>
-  </v-flex>
+  <v-container grid-list-md>
+    <v-layout row wrap>
+      <v-flex v-for="message in messages" :key="`${message.index}`" xs6>
+          <message
+            :key="message.index"
+            :author=message.author
+            :arobase=message.arobase
+            :date=message.date
+            :avatar=message.avatar
+            :message=message.message
+            :cover=message.cover
+          ></message>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>

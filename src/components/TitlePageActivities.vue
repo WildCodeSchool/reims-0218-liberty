@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="containerTitlePageActivities pb-2">
     <h2>
-      <v-icon>outlined_flag</v-icon>
+      <v-icon class="outlined_flag">outlined_flag</v-icon>
       <span class="group pa-2 page-title">
         {{ this.text }}
       </span>
@@ -26,8 +26,8 @@ export default {
   font-weight: normal;
 }
 
-.page-title .icon{
-  color: rgba(0,0,0,0.8);
+.theme--light .outlined_flag{
+  color: black;
 }
 
 .containerTitlePageActivities{
