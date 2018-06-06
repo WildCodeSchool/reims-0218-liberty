@@ -107,7 +107,7 @@ export default {
 
 <style>
 .cardMessage{
-  border: double 4px transparent;
+  border: double 2px transparent;
   border-radius: 1em;
   background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #1E00FF,#05FBFF);
   background-origin: border-box;

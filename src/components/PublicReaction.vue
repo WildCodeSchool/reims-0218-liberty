@@ -1,40 +1,68 @@
 <template>
-  <v-container grid-list-md text-xs-center>
-    <v-layout row wrap>
-      <v-list id="optionsPublic">
-        <ul>
-          <v-list-tile>
-            <li>
-              Style d'affichage à l'écran :
-            </li>
-            <v-radio-group v-model="row" row>
-              <v-radio label="bandeau" value="radio-1" ></v-radio>
-              <v-radio label="pleine page" value="radio-2"></v-radio>
-            </v-radio-group>
-          </v-list-tile>
-          <v-list-tile class="time-tile">
-            <li>
-              Temps d'affichage du message :
-              <input type="number" class="time-input" placeholder="10" min="5" max="20"/>
-            </li>
-            <p>secondes</p>
-          </v-list-tile>
-          <v-list-tile>
-            <li>
-              Personnalisez la box du message :
-            </li>
-          </v-list-tile>
-            <v-list-tile-content class="reaction-tile">
-            <v-text-field
-              id="reaction-input"
-              name="personnalisation"
-              label="Réagissez en direct !"
-              class="reaction-text-field"
-            />
-          </v-list-tile-content>
-        </ul>
-      </v-list>
-    </v-layout>
+  <!-- <v-list id="optionsPublic">
+    <ul>
+      <v-list-tile>
+        <li>
+          Style d'affichage à l'écran :
+        </li>
+        <v-radio-group v-model="row" row>
+          <v-radio label="bandeau" value="radio-1" ></v-radio>
+          <v-radio label="pleine page" value="radio-2"></v-radio>
+        </v-radio-group>
+      </v-list-tile>
+      <v-list-tile class="time-tile">
+        <li>
+          Temps d'affichage du message :
+          <input type="number" class="time-input" placeholder="10" min="5" max="20"/>
+        </li>
+        <p>secondes</p>
+      </v-list-tile>
+      <v-list-tile>
+        <li>
+          Personnalisez la box du message :
+        </li>
+      </v-list-tile>
+        <v-list-tile-content class="reaction-tile">
+        <v-text-field
+          id="reaction-input"
+          name="personnalisation"
+          label="Réagissez en direct !"
+          class="reaction-text-field"
+        />
+      </v-list-tile-content>
+    </ul>
+  </v-list> -->
+  <v-container>
+  <v-list-tile>
+    <v-list-tile-action>
+      <v-radio-group v-model="row" row>
+        <li>
+          Style d'affichage à l'écran :
+        </li><v-radio value="radio-1" ></v-radio><span>bandeau</span>
+        <v-radio value="radio-2"></v-radio><span>pleine page</span>
+      </v-radio-group>
+    </v-list-tile-action>
+  </v-list-tile>
+
+  <v-list-tile>
+    <li>
+      Temps d'affichage du message :
+    </li>
+      <v-text-field solo label="First Name"></v-text-field><span>secondes</span>
+  </v-list-tile>
+
+  <v-list-tile>
+    <li>
+      Personnalisez la box du message :
+    </li>
+  </v-list-tile>
+  <v-text-field
+          id="reaction-input"
+          name="personnalisation"
+          label="Réagissez en direct !"
+          class="reaction-text-field"
+        />
+
   </v-container>
 </template>
 

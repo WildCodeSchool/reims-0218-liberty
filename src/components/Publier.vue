@@ -29,10 +29,6 @@ export default {
   height: 26px;
 }
 
-.group {
-  color: black;
-}
-
 .toolbar__content > :not(.btn):not(.menu):last-child:not(:only-child) {
   margin-right: 0;
 }
