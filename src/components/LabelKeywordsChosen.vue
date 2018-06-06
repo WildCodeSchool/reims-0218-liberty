@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-list-tile class="pb-3 pt-3 listLabelKeywordsChosen">
-      <v-icon>more_vert</v-icon>
+      <v-icon class="pt-1">more_vert</v-icon>
       <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
         {{activity.index}}
       </v-chip>
@@ -85,14 +85,14 @@ input {
 .unfinished-description {
   color: orange;
   font-size: 13px;
-  font-weight: bolder;
   margin-left: 10px;
   margin-top: auto;
   margin-right: auto;
 }
 
 .activeClass {
-  color:cyan !important;
+  color:#2ccdbd !important;
+  font-weight: bolder;
 }
 
 .listLabelKeywordsChosen .inactiveClass {
@@ -101,5 +101,14 @@ input {
 
 .listLabelKeywordsChosen{
   padding: 0px;
+}
+
+.accent--text {
+  color: #2ccdbd !important;
+}
+
+.chip__content {
+  font-weight: bolder;
+  padding: 0 1px;
 }
 </style>

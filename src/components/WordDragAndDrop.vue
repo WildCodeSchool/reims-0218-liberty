@@ -26,6 +26,8 @@ export default {
 
 .drag-activity-chip {
   width: fit-content;
+  padding: 1px 0.5px;
+  margin-right: 8px;
 }
 
 .drag-and-drop-indication {
