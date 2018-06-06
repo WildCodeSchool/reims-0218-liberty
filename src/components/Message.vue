@@ -35,11 +35,11 @@
 
     <v-layout row wrap>
       <v-flex class="text-xs-center" xs2>
-        <v-avatar :size="64"><img :src="avatar"></v-avatar>
+        <v-avatar class="pl-3" :size="64"><img :src="avatar"></v-avatar>
       </v-flex>
 
       <v-flex xs10>
-        <v-card-text class="textMessage">
+        <v-card-text class="textMessage pl-3">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, facere? Veniam nemo doloremque voluptate. Assumenda aliquam libero maxime, iste, repudiandae temporibus quidem eos ab aliquid odit mollitia, tempore totam eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis autem hic laborum, dignissimos quibusdam ad! Autem reiciendis eaque deserunt dolor iure aut ex? Nostrum adipisci nemo in similique eum odio?</p>
         </v-card-text>
       </v-flex>
