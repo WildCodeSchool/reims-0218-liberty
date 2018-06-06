@@ -12,13 +12,15 @@
   <v-layout row>
     <list-label-activities />
   </v-layout>
-  <v-layout row id="activity-options">
-    <v-flex xs12 sm4>
+  <!-- <v-layout row id="activity-options"> -->
+    <v-layout id="activity-options">
+    <!-- <v-flex xs12 sm4> -->
+    <v-flex>
       <activities-form />
     </v-flex>
-    <v-flex xs12 sm8>
+    <!-- <v-flex xs12 sm8>
       <public-reaction />
-    </v-flex>
+    </v-flex> -->
   </v-layout>
   <v-layout>
     <short-key />
@@ -36,7 +38,6 @@ import WordDragAndDrop from './WordDragAndDrop.vue'
 import ListLabelActivities from './ListLabelActivities.vue'
 import ActivitiesForm from './ActivitiesForm.vue'
 import ShortKey from './ShortKey.vue'
-import PublicReaction from './PublicReaction.vue'
 
 export default {
   name: 'PageModeration',
@@ -46,8 +47,7 @@ export default {
     WordDragAndDrop,
     ListLabelActivities,
     ActivitiesForm,
-    ShortKey,
-    PublicReaction
+    ShortKey
   }
 }
 </script>
@@ -61,9 +61,9 @@ export default {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-#page-activities {
+/* #page-activities {
   position: relative;
-}
+} */
 
 #floating-component {
   position: absolute;
