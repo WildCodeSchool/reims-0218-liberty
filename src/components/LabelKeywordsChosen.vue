@@ -9,7 +9,7 @@
         {{activity.title}}
       </v-chip>
     <div>
-      <v-switch hide-details class="ml-2"
+      <v-switch hide-details class="ml-2 custom-turquoise-switch"
         v-model="switch1"
       ></v-switch>
     </div>
@@ -37,7 +37,7 @@ export default {
     chipColor: '#102C60',
     checkbox: true,
     radioGroup: 1,
-    switch1: false
+    switch1: true
   }),
   methods:{
     getClass(){
@@ -92,7 +92,13 @@ input {
 }
 
 .activeClass {
-  color:cyan !important;
+  color:#00D7BF !important;
+}
+
+div > .custom-tuquoise-switch {
+  /* Hell. */
+  color:#00D7BF !important;
+  background-color:#00D7BF !important;
 }
 
 .listLabelKeywordsChosen .inactiveClass {

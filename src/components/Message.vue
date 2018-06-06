@@ -40,7 +40,7 @@
 
       <v-flex xs10>
         <v-card-text class="textMessage">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, facere? Veniam nemo doloremque voluptate. Assumenda aliquam libero maxime, iste, repudiandae temporibus quidem eos ab aliquid odit mollitia, tempore totam eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis autem hic laborum, dignissimos quibusdam ad! Autem reiciendis eaque deserunt dolor iure aut ex? Nostrum adipisci nemo in similique eum odio?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, facere? Veniam nemo doloremque voluptate. Assumenda aliquam libero maxime, iste, repudiandae temporibus quidem eos ab aliquid odit mollitia, tempore totam eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis autem hic laborum, dignissimos quibusdam ad! Autem reiciendis eaque deserunt dolor iure aut ex? Nostrum adipisci nemo in similique eum odio?</p>
         </v-card-text>
       </v-flex>
     </v-layout>
@@ -55,11 +55,15 @@
     ></v-text-field>
 
     <v-card-actions>
+      <v-icon class="pl-3">mouse</v-icon>
+      <v-spacer />
       <v-icon>mouse</v-icon>
-      <v-icon>mouse</v-icon>
+      <v-spacer />
       <v-icon>favorite</v-icon>
+      <v-spacer />
       <v-icon>bookmark</v-icon>
-      <v-icon>share</v-icon>
+      <v-spacer />
+      <v-icon class="pr-3">share</v-icon>
     </v-card-actions>
 
   </v-card>
@@ -114,8 +118,9 @@ export default {
   background-clip: content-box, border-box;
 }
 
-.textFieldMessage{
-  padding: 0px;
+.textFieldMessage .icon{
+  /* cheating a little here */
+  padding-left: 24px;
 }
 
 .input-group__details{
