@@ -65,6 +65,7 @@ export default {
 
 .list__tile > .outline-blue {
   background-color: white;
+  color: rgb(5, 60, 122);
 }
 
 input {
@@ -72,7 +73,7 @@ input {
 }
 
 .outline-blue {
-    color: rgb(5, 60, 122);
+    font-weight:bolder;
     border-color: rgb(5, 60, 122);
     border-width: 2px;
 }

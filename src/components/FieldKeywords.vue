@@ -33,4 +33,8 @@ export default {
 
 <style>
 
+button span, button div {
+  text-transform: initial;
+}
+
 </style>
