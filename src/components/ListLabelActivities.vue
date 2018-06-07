@@ -1,22 +1,30 @@
 <template>
   <v-list id="listActivities">
-    <template v-for="activity in listActivities">
-      <label-keywords-chosen
-        :key="activity.index"
-        v-bind:activity="activity"
-        v:bind:listActivities.length="activitiesLength"/>
-        <hr v-show="listActivities.length != activity.index" />
-    </template>
+    <draggable v-model="listActivities">
+      <template v-for="activity in listActivities">
+        <label-keywords-chosen
+          :key="activity.index"
+          v-bind:activity="activity"
+          v:bind:listActivities.length="activitiesLength"/>
+          <!--
+            Le hr marchait bien tant qu'on n'avait pas le drag and drop
+            <hr v-show="listActivities.length != activity.index" />
+          -->
+      </template>
+    </draggable>
   </v-list>
 </template>
 
 <script>
+
+import draggable from 'vuedraggable'
 import LabelKeywordsChosen from './LabelKeywordsChosen.vue'
 
 export default {
   name: 'ListLabelActivities',
   components: {
-    LabelKeywordsChosen
+    LabelKeywordsChosen,
+    draggable
   },
   data: () => ({
     listActivities: [
