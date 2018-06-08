@@ -3,7 +3,7 @@
     <v-list-tile class="pb-3 pt-3 listLabelKeywordsChosen">
       <v-icon class="pt-1">more_vert</v-icon>
       <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
-        {{activity.index}}
+        {{index}}
       </v-chip>
       <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
         {{activity.title}}
@@ -29,6 +29,10 @@ export default {
       required: true
     },
     activitiesLength: {
+      type: Number,
+      required: true
+    },
+    index: {
       type: Number,
       required: true
     }

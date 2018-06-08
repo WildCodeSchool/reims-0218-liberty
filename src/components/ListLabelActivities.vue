@@ -1,15 +1,15 @@
 <template>
   <v-list id="listActivities">
     <draggable v-model="listActivities">
-      <template v-for="activity in listActivities">
+      <template v-for="(activity, index) in listActivities">
         <label-keywords-chosen
           :key="activity.index"
           v-bind:activity="activity"
-          v:bind:listActivities.length="activitiesLength"/>
-          <!--
-            Le hr marchait bien tant qu'on n'avait pas le drag and drop
-            <hr v-show="listActivities.length != activity.index" />
-          -->
+          v-bind:index="index"
+          v-bind:listActivities.length="activitiesLength"/>
+            <!-- <hr v-show="listActivities.length != index + 1"
+            :key="activity.index"/> -->
+
       </template>
     </draggable>
   </v-list>
