@@ -55,15 +55,15 @@
     ></v-text-field>
 
     <v-card-actions>
-      <v-icon class="pl-3">mouse</v-icon>
+      <v-icon class="pl-3 MessageIconeMouse">mouse</v-icon>
       <v-spacer />
-      <v-icon>mouse</v-icon>
+      <v-icon class="MessageIconeMouse">mouse</v-icon>
       <v-spacer />
-      <v-icon>favorite</v-icon>
+      <v-icon class="MessageIconeFavorite">favorite</v-icon>
       <v-spacer />
-      <v-icon>bookmark</v-icon>
+      <v-icon class="MessageIconeBookmark">bookmark</v-icon>
       <v-spacer />
-      <v-icon class="pr-3">share</v-icon>
+      <v-icon class="pr-3 MessageIconeShare">share</v-icon>
     </v-card-actions>
 
   </v-card>
@@ -113,7 +113,7 @@ export default {
 .cardMessage{
   border: double 2px transparent;
   border-radius: 1em;
-  background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #1E00FF,#05FBFF);
+  background-image: linear-gradient(white, white), radial-gradient(circle at bottom left, #542B8F,#2ECCD7);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -134,6 +134,9 @@ export default {
 
 .textMessage{
   padding: 0px;
+}
+.theme--light .MessageIconeMouse,.theme--light .MessageIconeFavorite{
+  color: #2CCDBD
 }
 /* #card {
   display: inline-grid;

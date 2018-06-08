@@ -21,6 +21,7 @@ import PageActivities from '../components/PageActivities.vue'
 import PageModeration from '../components/PageModeration.vue'
 import WordDragAndDrop from '../components/WordDragAndDrop.vue'
 import TitlePageActivities from '../components/TitlePageActivities.vue'
+import PageModoPropre from '../components/PageModoPropre.vue'
 
 Vue.use(Vuetify)
 // Stories: Book Component
@@ -139,4 +140,8 @@ storiesOf('Pages', module)
   .add('page Modération', () => ({
     components: { PageModeration },
     template: '<page-moderation />'
+  }))
+  .add('PageModoPropre', () => ({
+    components: { PageModoPropre },
+    template: '<page-modo-propre />'
   }))

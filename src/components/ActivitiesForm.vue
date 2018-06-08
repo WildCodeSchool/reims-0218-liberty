@@ -31,7 +31,7 @@
           <li>
             Temps d'affichage du message :
           </li>
-            <v-text-field solo label="First Name"></v-text-field><span>secondes</span>
+            <v-text-field solo></v-text-field><span>secondes</span>
         </v-list-tile>
 
         <v-list-tile>
@@ -51,7 +51,6 @@
 </template>
 
 <script>
-import Tous from './Tous.vue'
 export default {
   name: 'ActivitiesForm',
   data: () => ({
@@ -86,6 +85,16 @@ export default {
 #activity-options-left .list{
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.input-group.input-group--solo{
+  height: 2em;
+  max-width: 4em;
+  min-height: 0px;
+}
+
+.input-group.input-group--solo .input-group__input{
+  padding: 0px 16px 0px 16px;
 }
 
 </style>
