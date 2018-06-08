@@ -80,4 +80,7 @@ export default {
   width: 100%;
   padding: 0px;
 }
+.containerWordDragAndDrop{
+  padding: 0px;
+}
 </style>

@@ -137,10 +137,10 @@ storiesOf('Pages', module)
     components: { PageActivities },
     template: '<page-activities />'
   }))
-  .add('page Modération', () => ({
-    components: { PageModeration },
-    template: '<page-moderation />'
-  }))
+  // .add('page Modération', () => ({
+  //   components: { PageModeration },
+  //   template: '<page-moderation />'
+  // }))
   .add('PageModoPropre', () => ({
     components: { PageModoPropre },
     template: '<page-modo-propre />'
