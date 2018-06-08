@@ -1,10 +1,12 @@
 <template>
   <v-container fluid class="containerWordDragAndDrop pt-2 pb-1">
-    <span v-for="(activity, index) in activities" :key="index">
-    <v-chip outline color="grey" class="drag-activity-chip">
-      {{ activity }}
-    </v-chip>
-    </span>
+    <draggable v-model="activities">
+      <span v-for="(activity, index) in activities" :key="index">
+      <v-chip outline color="grey" class="drag-activity-chip">
+        {{ activity }}
+      </v-chip>
+      </span>
+    </draggable>
     <p class="drag-and-drop-indication">
       <!-- This is a SINGLE arrow down, we need a double one -->
       <v-icon>keyboard_arrow_down</v-icon> Glissez l'activité à ajouter ci-dessous
@@ -13,8 +15,13 @@
 </template>
 
 <script>
+import draggable from 'vuedraggable'
+
 export default {
   name: 'WordDragAndDrop',
+  components: {
+    draggable
+  },
   data: () => ({
     activities: ['Nuage de mots clés', 'Sondage', 'Quiz / QCM', 'Réaction du public', 'Pixel']
   })

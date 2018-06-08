@@ -6,7 +6,7 @@
           :key="activity.index"
           v-bind:activity="activity"
           v-bind:index="index"
-          v-bind:listActivities.length="activitiesLength"/>
+          />
             <!-- <hr v-show="listActivities.length != index + 1"
             :key="activity.index"/> -->
 
