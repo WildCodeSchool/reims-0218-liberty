@@ -2,10 +2,10 @@
   <div>
     <v-list-tile class="pb-3 pt-3 listLabelKeywordsChosen">
       <v-icon class="pt-1">more_vert</v-icon>
-      <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
-        {{activity.index}}
+      <v-chip :class="[switch1 ? 'blueChip':'outline-blue']">
+        {{index + 1}}
       </v-chip>
-      <v-chip v-bind:class="[switch1 ? 'blueChip':'outline-blue']">
+      <v-chip :class="[switch1 ? 'blueChip':'outline-blue']">
         {{activity.title}}
       </v-chip>
     <div>
@@ -29,6 +29,10 @@ export default {
       required: true
     },
     activitiesLength: {
+      type: Number,
+      required: true
+    },
+    index: {
       type: Number,
       required: true
     }
