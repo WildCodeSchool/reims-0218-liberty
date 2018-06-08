@@ -40,7 +40,7 @@
 
       <v-flex xs10>
         <v-card-text class="textMessage pl-3">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, facere? Veniam nemo doloremque voluptate. Assumenda aliquam libero maxime, iste, repudiandae temporibus quidem eos ab aliquid odit mollitia, tempore totam eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis autem hic laborum, dignissimos quibusdam ad! Autem reiciendis eaque deserunt dolor iure aut ex? Nostrum adipisci nemo in similique eum odio?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero cumque molestiae eos voluptates, voluptatum facere aspernatur, nobis numquam deserunt soluta sunt corporis? Quis accusantium recusandae placeat reprehenderit, repudiandae maiores.</p>
         </v-card-text>
       </v-flex>
     </v-layout>
