@@ -6,10 +6,6 @@
   </v-layout>
   <hr />
   <v-layout row>
-    <word-drag-and-drop />
-  </v-layout>
-  <hr class="bold-hr" />
-  <v-layout row>
     <list-label-activities />
   </v-layout>
   <!-- <v-layout row id="activity-options"> -->

@@ -11,7 +11,7 @@
     <!-- This is a SINGLE arrow down, we need a double one -->
     <v-icon>keyboard_arrow_down</v-icon> Glissez l'activité à ajouter ci-dessous
   </p>
-
+  <hr class="bold-hr"/>
   <v-list id="listActivities">
     <draggable v-model="listActivities" :options="{group:'activities'}">
       <template v-for="(activity, index) in listActivities">
