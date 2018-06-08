@@ -1,6 +1,6 @@
 <template>
 <v-container fluid class="containerWordDragAndDrop pt-2 pb-1">
-    <draggable v-model="activities">
+    <draggable v-model="activities" :options="{group:{ name:'activities',  pull:'clone', put:false }}">
       <span v-for="(activity, index) in activities" :key="index">
       <v-chip outline color="grey" class="drag-activity-chip">
         {{ activity }}
@@ -13,7 +13,7 @@
     </p>
 
   <v-list id="listActivities">
-    <draggable v-model="listActivities">
+    <draggable v-model="listActivities" :options="{group:'activities'}">
       <template v-for="(activity, index) in listActivities">
         <label-keywords-chosen
           :key="activity.index"
