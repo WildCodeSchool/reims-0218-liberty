@@ -91,9 +91,27 @@ export default {
   margin-left: 1em;
 }
 
+.input-group.input-group--solo {
+  height: 24px;
+  min-height: 24px;
+  max-width: 60px;
+}
+
 .input-group.input-group--solo .input-group__input {
   padding: 8px 0 8px 4px;
   vertical-align: middle;
+}
+
+.reaction-text-field {
+  width: 70%;
+  background-color: white;
+  padding: 0;
+  height: 30px;
+}
+
+.reaction-text-field label {
+  top: 0;
+  padding-left: 0.5em;
 }
 
 .input-group input-group--selection-controls {
@@ -105,12 +123,6 @@ export default {
 }
 
 .definedScreenDisplaySeconds {
-  height: 16px;
-  min-height: 16px;
-  max-height: 16px;
-  width: 72px;
-  min-width: 72px;
-  max-width: 72px;
   padding: 0 0 0 0.3em;
   margin: 0 0.75em;
   border: 1px solid black;
