@@ -31,7 +31,7 @@
           <li>
             Temps d'affichage du message :
           </li>
-            <v-text-field solo></v-text-field><span>secondes</span>
+            <v-text-field solo class="definedScreenDisplaySeconds"></v-text-field><span>secondes</span>
         </v-list-tile>
 
         <v-list-tile>
@@ -87,30 +87,33 @@ export default {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.input-group.input-group--solo{
-  height: 24px;
-  min-height: 24px;
-  max-height: 24px;
-  max-width: 3em;
-  vertical-align: middle;
-  margin: 0 0.75em;
-  border: 1px solid black;
-}
-
 .input-group.input-group--selection-controls {
   margin-left: 1em;
+}
+
+.input-group.input-group--solo .input-group__input {
+  padding: 8px 0 8px 4px;
+  vertical-align: middle;
 }
 
 .input-group input-group--selection-controls {
   margin-left: 1.5em;
 }
 
-.input-group.input-group--solo .input-group__input{
-  padding: 4px 0px 4px 4px;
-}
-
 .activitiesFormScreenDisplayLabel {
   margin-left: 0.5em;
+}
+
+.definedScreenDisplaySeconds {
+  height: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  width: 72px;
+  min-width: 72px;
+  max-width: 72px;
+  padding: 0 0 0 0.3em;
+  margin: 0 0.75em;
+  border: 1px solid black;
 }
 
 </style>
