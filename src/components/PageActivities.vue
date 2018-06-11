@@ -21,7 +21,6 @@
       <v-layout>
         <short-key />
       </v-layout>
-    <hr />
   </v-container>
   <floating-button id="floating-component"/>
 </v-app>
