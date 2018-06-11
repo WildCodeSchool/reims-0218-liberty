@@ -1,5 +1,5 @@
 <template>
-<v-container fluid class="containerWordDragAndDrop pt-2 pb-1">
+<v-container fluid class="containerWordDragAndDrop pt-2 pb-1" style="background-color: white;">
   <draggable v-model="activities" :options="{group:{ name:'activities',  pull:'clone', put:false }}">
     <span v-for="(activity, index) in activities" :key="index">
     <v-chip outline color="grey" class="drag-activity-chip">
