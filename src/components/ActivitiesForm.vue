@@ -20,9 +20,9 @@
                 Style d'affichage à l'écran
               </li>
               <v-radio value="radio-1"></v-radio>
-              <span>bandeau</span>
+              <span class="activitiesFormScreenDisplayLabel">Bandeau</span>
               <v-radio value="radio-2"></v-radio>
-              <span>pleine page</span>
+              <span class="activitiesFormScreenDisplayLabel">Pleine page</span>
             </v-radio-group>
           </v-list-tile-action>
         </v-list-tile>
@@ -88,13 +88,29 @@ export default {
 }
 
 .input-group.input-group--solo{
-  height: 2em;
-  max-width: 4em;
-  min-height: 0px;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  max-width: 3em;
+  vertical-align: middle;
+  margin: 0 0.75em;
+  border: 1px solid black;
+}
+
+.input-group.input-group--selection-controls {
+  margin-left: 1em;
+}
+
+.input-group input-group--selection-controls {
+  margin-left: 1.5em;
 }
 
 .input-group.input-group--solo .input-group__input{
-  padding: 0px 16px 0px 16px;
+  padding: 4px 0px 4px 4px;
+}
+
+.activitiesFormScreenDisplayLabel {
+  margin-left: 0.5em;
 }
 
 </style>
