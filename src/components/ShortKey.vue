@@ -3,7 +3,7 @@
     Définir la touche raccourci
     <input class="inputField" type="text" readonly id="definedShortKey" value="">
     <v-chip class="activity-ready">C'est prêt !</v-chip>
-    <v-icon>delete</v-icon>
+    <v-icon id="removeShortkey">delete</v-icon>
   </span>
 </template>
 
@@ -12,6 +12,12 @@ export default {
   name: 'ShortKey',
   mounted() {
     const target = document.getElementById('definedShortKey')
+    const trashShortKey = document.getElementById("removeShortKey")
+
+    const destroyShortKey = () => {
+      target.value = ''
+      target.setAttribute('placeholder', 'Appuyez sur une touche')
+    }
     const activatePlaceholder = () => {
       target.setAttribute('placeholder', 'Appuyez sur une touche')
     }
@@ -20,46 +26,51 @@ export default {
       target.setAttribute('placeholder', '')
     }
 
-    target.addEventListener('focusin', activatePlaceholder, false)
+    target.addEventListener('focus', activatePlaceholder, false)
     target.addEventListener('focusout', killPlaceholder, false)
+    
     document.addEventListener('keydown', function(event) {
-      target.value = event.key.toLowerCase()
-      switch (target.value) {
-        case '&':
-          target.value = '1'
-          break
-        case 'é':
-          target.value = '2'
-          break
-        case '"':
-          target.value = '3'
-          break
-        case "'":
-          target.value = '4'
-          break
-        case '(':
-          target.value = '5'
-          break
-        case '-':
-          target.value = '6'
-          break
-        case 'è':
-          target.value = '7'
-          break
-        case '_':
-          target.value = '8'
-          break
-        case 'ç':
-          target.value = '9'
-          break
-        case 'à':
-          target.value = '0'
-          break
-        case ' ':
-          target.value = 'ESPACE'
-          break
-        default:
-          break
+      if (target.value === "") {
+        target.value = event.key.toLowerCase()
+        target.setAttribute('readonly', true)
+        target.setAttribute('disabled', true)
+        switch (target.value) {
+          case '&':
+            target.value = '1'
+            break
+          case 'é':
+            target.value = '2'
+            break
+          case '"':
+            target.value = '3'
+            break
+          case "'":
+            target.value = '4'
+            break
+          case '(':
+            target.value = '5'
+            break
+          case '-':
+            target.value = '6'
+            break
+          case 'è':
+            target.value = '7'
+            break
+          case '_':
+            target.value = '8'
+            break
+          case 'ç':
+            target.value = '9'
+            break
+          case 'à':
+            target.value = '0'
+            break
+          case ' ':
+            target.value = 'ESPACE'
+            break
+          default:
+            break
+        }
       }
     })
   }
