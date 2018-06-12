@@ -29,7 +29,7 @@ export default {
     target.addEventListener('focus', activatePlaceholder, false)
     target.addEventListener('focusout', killPlaceholder, false)
     
-    document.addEventListener('keydown', function(event) {
+    target.addEventListener('keypress', function(event) {
       if (target.value === "") {
         target.value = event.key.toLowerCase()
         target.setAttribute('readonly', true)
