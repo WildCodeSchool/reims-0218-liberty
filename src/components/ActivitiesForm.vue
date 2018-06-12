@@ -98,8 +98,8 @@ export default {
 }
 
 .input-group.input-group--solo .input-group__input {
-  padding: 8px 0 8px 4px;
-  vertical-align: middle;
+  padding: 0 0 4px 4px;
+  height: 100%;
 }
 
 .reaction-text-field {
@@ -124,7 +124,7 @@ export default {
 
 .definedScreenDisplaySeconds {
   padding: 0 0 0 0.3em;
-  margin: 0 0.75em;
+  margin: 0 1em;
   border: 1px solid black;
 }
 
