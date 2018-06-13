@@ -20,9 +20,9 @@
                 Style d'affichage à l'écran
               </li>
               <v-radio value="radio-1"></v-radio>
-              <span>bandeau</span>
+              <span class="activitiesFormScreenDisplayLabel">Bandeau</span>
               <v-radio value="radio-2"></v-radio>
-              <span>pleine page</span>
+              <span class="activitiesFormScreenDisplayLabel">Pleine page</span>
             </v-radio-group>
           </v-list-tile-action>
         </v-list-tile>
@@ -31,7 +31,7 @@
           <li>
             Temps d'affichage du message :
           </li>
-            <v-text-field solo></v-text-field><span>secondes</span>
+            <v-text-field solo class="definedScreenDisplaySeconds"></v-text-field><span>secondes</span>
         </v-list-tile>
 
         <v-list-tile>
@@ -87,14 +87,45 @@ export default {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.input-group.input-group--solo{
-  height: 2em;
-  max-width: 4em;
-  min-height: 0px;
+.input-group.input-group--selection-controls {
+  margin-left: 1em;
 }
 
-.input-group.input-group--solo .input-group__input{
-  padding: 0px 16px 0px 16px;
+.input-group.input-group--solo {
+  height: 24px;
+  min-height: 24px;
+  max-width: 60px;
+}
+
+.input-group.input-group--solo .input-group__input {
+  padding: 0 0 4px 4px;
+  height: 100%;
+}
+
+.reaction-text-field {
+  width: 70%;
+  background-color: white;
+  padding: 0;
+  height: 30px;
+}
+
+.reaction-text-field label {
+  top: 0;
+  padding-left: 0.5em;
+}
+
+.input-group input-group--selection-controls {
+  margin-left: 1.5em;
+}
+
+.activitiesFormScreenDisplayLabel {
+  margin-left: 0.5em;
+}
+
+.definedScreenDisplaySeconds {
+  padding: 0 0 0 0.3em;
+  margin: 0 1em;
+  border: 1px solid black;
 }
 
 </style>

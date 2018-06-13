@@ -16,7 +16,7 @@
       <v-icon hide-details class="ml-2" v-bind:class="[switch1 ? 'activeClass':'inactiveClass']">cast_connected</v-icon>
       <p v-if="!switch1" class="unfinished-description">Cette activité n'est pas complète</p>
     </v-list-tile>
-    <hr v-if="activity.index === activitiesLength" class="hidden-hr"/>
+    <!-- <hr v-if="activity.index === activitiesLength" class="hidden-hr"/> -->
   </div>
 </template>
 
